@@ -1,0 +1,139 @@
+body {
+    font-family: 'Mv Boli', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', YuGothic, 'Yu Gothic', 'Meiryo UI', 'メイリオ', Meiryo, 'ＭＳ 明朝', 'MS Mincho', 'ＭＳ Ｐ明朝', 'MS PMincho', 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック', 'Yu Gothic UI', 'Segoe Print', sans-serif;
+
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    background-color: gray;
+    color: white;
+}
+
+/* for debug */
+* {
+    border: 0px solid white;
+}
+
+cover,
+name,
+auther,
+logo {
+    position: absolute;
+}
+
+cover {
+    top: auto;
+    left: auto;
+    height: 90%;
+    width: 90%;
+    transform: rotate(-5deg);
+
+    border-radius: 3px;
+    box-shadow:
+        1px 1px 1px 1px #666,
+        2px 2px 1px 1px #555,
+        3px 3px 1px 1px #444,
+        4px 4px 1px 1px #333,
+        5px 5px 1px 1px #222,
+        8px 7px 2px 2px #111,
+        8px 9px 2px 2px #000;
+
+    background:
+        radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.3) 70%,
+        rgba(255, 255, 255, 0.5) 100%), url("../pics/cover/black.jpg");
+}
+
+
+/*
+p {
+    background: linear-gradient(60deg, red, yellow, red, yellow, red);
+    background-image: url("../pics/gold.jpg");
+    font: 900 4em sans-serif;
+}*/
+
+
+name1 {
+    background-image: url("../pics/gold.jpg");
+    /*    font: 900 4em sans-serif;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+
+    transform: translate(-50%, -50%) rotate(3deg);
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+name {
+    background-image: url("../pics/gold.jpg");
+    /*    font: 900 4em sans-serif;*/
+    top: 50%;
+    left: 50%;
+
+
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+
+    transform: translate(-50%, -50%) rotate(3deg);
+    font-size: 6rem;
+    text-shadow:
+        1px 1px #aaa,
+        2px 2px #999,
+        3px 3px #888,
+        4px 4px #777,
+        5px 5px #666,
+        6px 6px #555,
+        7px 7px 4px #000;
+    /*
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+*/
+}
+
+
+/*
+
+name {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(3deg);
+    font-size: 4rem;
+    text-shadow:
+        1px 1px #aaa,
+        2px 2px #999,
+        3px 3px #888,
+        4px 4px #777,
+        5px 5px #666,
+        6px 6px #555,
+        7px 7px 4px #000;
+}
+
+name a {
+    color: gold;
+}
+*/
+
+logo {
+    top: 80%;
+    left: 60%;
+}
+
+auther {
+    top: 86%;
+    left: 68%;
+}
+
+auther a {
+    color: white;
+}

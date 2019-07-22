@@ -65,8 +65,10 @@ name1 {
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(0, 0, 0, 0);
-
+/*
     transform: translate(-50%, -50%) rotate(3deg);
+    */
+    transform: translate(-50% , -50%);
     font-size: 6rem;
     font-weight: bold;
 }
@@ -94,7 +96,7 @@ name {
         6px 6px #555,
         7px 7px 4px #000;
     /*
-    
+
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(0, 0, 0, 0);

@@ -44,15 +44,6 @@ cover {
         rgba(255, 255, 255, 0.5) 100%), url("../pics/black.jpg");
 }
 
-
-/*
-p {
-    background: linear-gradient(60deg, red, yellow, red, yellow, red);
-    background-image: url("../pics/gold.jpg");
-    font: 900 4em sans-serif;
-}*/
-
-
 name1 {
     background-image: url("../pics/gold.jpg");
     /*    font: 900 4em sans-serif;*/
@@ -94,7 +85,7 @@ name {
         6px 6px #555,
         7px 7px 4px #000;
     /*
-    
+
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(0, 0, 0, 0);

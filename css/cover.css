@@ -41,7 +41,7 @@ cover {
     background:
         radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 30%,
         rgba(255, 255, 255, 0.3) 70%,
-        rgba(255, 255, 255, 0.5) 100%), url("../pics/cover/black.jpg");
+        rgba(255, 255, 255, 0.5) 100%), url("../pics/black.jpg");
 }
 
 

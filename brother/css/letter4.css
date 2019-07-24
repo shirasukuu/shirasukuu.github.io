@@ -1,0 +1,274 @@
+﻿:root {
+    --main-gutter: 30px;
+}
+
+/*.box {*/
+/*    width: 300px;*/
+/*    height: 100px;*/
+/*    margin: var(--main-gutter);*/
+/*}*/
+
+body {
+    /*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;*/
+
+    font-family: 'Mv Boli', 'Segoe Print', 'Modern', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'メイリオ', Meiryo, sans-serif;
+
+    /*    width: var(--main-gutter);*/
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    background-color: green;
+    background-image: url(../../brother/pics/paperbrown.png);
+    color: black;
+}
+
+/* for debug */
+* {
+    border: 0px solid black;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    /* max-width: 960px; */
+
+    /*
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-radius: 5px;
+    box-shadow:
+        1px 1px 1px 1px #666,
+        2px 2px 1px 1px #555,
+        3px 3px 1px 1px #444;
+*/
+
+    /*background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 1.0) 100%), url("../../brother/pics/3.jpg");
+
+    background-repeat: round;*/
+    background-image: url(../../brother/pics/paperbrown.png);
+
+    /* 左右に　２画面にする */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "left right";
+    grid-gap: 2rem;
+}
+
+/*リンクの色の設定*/
+.page a {
+    /*
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-radius: 5px;
+    box-shadow:
+        1px 1px 1px 1px #666,
+        2px 2px 1px 1px #555,
+        3px 3px 1px 1px #444;
+
+*/
+    color: black;
+    text-decoration: none;
+}
+
+.left {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-radius: 5px;
+    box-shadow:
+        1px 1px 1px 1px #666,
+        2px 2px 1px 1px #555,
+        3px 3px 1px 1px #444;
+
+    grid-area: left;
+    background-image: url(../../brother/pics/paperbrownlight.png);
+    /*    background-repeat: no-repeat;*/
+    /*    background-position: top 10% left 50%;*/
+    background:
+        left 10% top 10% no-repeat url("../pics/fruit_green_papaya.png"),
+        no-repeat top 10% left 50% url("../pics/fruit_cassis.png"),
+        no-repeat top 100% left 40% url("../pics/soup_food_scotch_broth.png"),
+        no-repeat top 50% left 80% url("../pics/breads.png"),
+        no-repeat top 50% left 60% url("../pics/pans.png"),
+        no-repeat top 100% left 70% url("../pics/knife.png"),
+        url(../../brother/pics/paperbrownlight.png);
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-radius: 5px;
+    box-shadow:
+        1px 1px 1px 1px #666,
+        2px 2px 1px 1px #555,
+        3px 3px 1px 1px #444;
+
+    grid-area: right;
+    background-image: url(../../brother/pics/paperbrownlight.png);
+
+}
+
+/* タイトル */
+page-title {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: "logo story subtitle";
+}
+
+logo {
+    grid-area: logo;
+    margin-left: 1rem;
+    font-size: 0.7rem;
+
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+}
+
+story {
+    grid-area: story;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+subtitle {
+    grid-area: subtitle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*タイトル終わり*/
+
+/* 内容 */
+.left-contents {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: -10rem;
+    transform: rotate(15deg);
+    /*    transform: skewX(40deg);*/
+    clip-path: circle(35% at 55% 55%);
+
+    /*
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: "left-dummy1"
+    "left-title"
+    "left-subtitle"
+    ;*/
+}
+
+/*
+.left-dummy1 {
+    grid-area: left-dummy1;
+}
+
+.left-title {
+    /*    border: 2px solid black;
+
+    /*    margin-top: 2rem;
+    height: 200px;
+    grid-area: left-title;
+    font-size: 2rem;
+    display: flex;
+    /*    align-items: center;
+    justify-content: center;
+}
+
+.left-subtitle {
+    grid-area: left-subtitle;
+    display: flex;
+    /*    align-items: center;
+    justify-content: center;
+}
+*/
+
+.contents {
+    margin-top: 0rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "content1 content1 content1"
+        "contentImage content2 content2"
+        "content3 content3 content3";
+}
+
+.content1 {
+    grid-area: content1;
+    margin-top: 1rem;
+}
+
+.contentImage {
+    grid-area: contentImage;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content2 {
+    grid-area: content2;
+}
+
+/*left page definition
+.left .content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5rem;
+}*/
+
+.content3 {
+    grid-area: content3;
+}
+
+/*
+.left .content3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+/*navigation*/
+navigation {
+    margin-top: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: "navi1 navi2 navi3";
+}
+
+/*navis*/
+navi1,
+navi2,
+navi3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+navi1 {}
+
+navi2 {}
+
+navi3 {}
+
+/*navigation end*/

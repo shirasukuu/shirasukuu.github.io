@@ -1,0 +1,343 @@
+﻿  body {
+    font-family: 'Mv Boli', 'Segoe Print', 'Modern', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'メイリオ', Meiryo, sans-serif;
+/*    position:absolute;*/
+      
+      margin: 10px;
+    padding: 0px;
+    border-top: 2px solid white;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid white;
+    border-radius: 3px;
+    background-color: gray;
+    /*background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.3) 70%, rgba(210, 210, 190, 1) 100%), url("//shirasu.droppages.com/pics/egg.png");*/
+    color: brown;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #containerTitle {
+      margin-top: 20px;
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "bookLogo bookTitle bookSubTitle";
+  }
+
+  #bookLogo {
+    grid-area: bookLogo;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+
+  #bookTitle {
+    grid-area: bookTitle;
+    margin-top: 0px;
+    margin-left: 0px;
+   /* padding-top: 20px; */
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #bookSubTitle {
+    grid-area: bookSubTitle;
+    margin-top: 0px;
+    margin-left: 0px;
+    /* padding-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  #containerA {
+    margin: 0px;
+    padding: 3px;
+    border: 0px solid white;
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 1fr 1fr;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    grid-template-areas: "prev logo title next" "prev dummy navi next" "prev contentsA contentsA next" "prev contentsC contentsD next" "prev contentsE contentsF next"
+  }
+
+  #prev {
+    grid-area: prev;
+    font-weight: bold;
+    color: gray;
+  }
+
+  #prev a {
+    color: brown;
+    /* display: global flex; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #prev a:hover {
+    background-color: white;
+    opacity: 0.2;
+  }
+
+  #logo {
+    grid-area: logo;
+  }
+
+  #logo img {
+   /* vertical-align: middle; */
+  }
+
+  #logo span {
+   /* padding-top: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    vertical-align: middle; */
+  }
+
+  #title {
+    grid-area: title;
+   /* padding-top: 30px;
+    padding-left: 0px;
+    vertical-align: middle; */
+  }
+
+  #next {
+    grid-area: next;
+    color: gray;
+  }
+
+  #next a {
+    color: brown;
+      font-weight: bold;
+    /* display: global flex; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #next a:hover {
+    background-color: white;
+    opacity: 0.2;
+  }
+
+  #navi {
+    grid-area: navi;
+  }
+
+  /* navi start */
+
+  ul {
+    list-style: none;
+    font-size: 1rem;
+  }
+
+  .menu { 
+    position: relative;
+    width: 100%;
+    height: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+
+  .menu>li {
+    float: left;
+    width: 25%;
+    /* グローバルナビ4つの場合 */
+    height: 5 0px;
+    line-height: 30px;
+    /* color: rgb(200, 100, 100);
+    background: rgb(29, 33, 19); */
+  }
+
+  .menu>li a {
+    display: block;
+    color: #000;
+    /*字の色*/
+  }
+
+  .menu>li a:hover {
+    color: gray;
+    /* ホバーしたときの色*/
+  }
+
+  ul.menu__second-level {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .menu>li:hover {
+    /*background: #072A24; */
+    /*ホバーしたときに色なし*/
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .menu__second-level li {
+    /* border-top: 1px solid #f11; */
+  }
+
+  .menu__second-level li a:hover {
+    /* background: #111; */
+  }
+
+  /* floatクリア */
+
+  .menu:before,
+  .menu:after {
+    content: " ";
+    display: table;
+  }
+
+  .menu:after {
+    clear: both;
+  }
+
+  .menu {
+    *zoom: 1;
+  }
+
+  .menu>li.menu__single {
+    position: relative;
+  }
+
+  li.menu__single ul.menu__second-level {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    /* background: #072A24; */
+    /* -webkit-transition: all .2s ease;
+  transition: all .2s ease; */
+  }
+
+  li.menu__single:hover ul.menu__second-level {
+    top: 1rem;
+    padding: 1rem;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* navi end */
+
+  #dummy {
+    grid-area: dummy;
+  }
+
+  #contentsA {
+    grid-area: contentsA;
+  }
+
+  /*
+#contentsB {
+  grid-area: contentsB;
+}
+*/
+
+  #contentsC {
+    grid-area: contentsC;
+    /* background-color: gray; */
+      /*
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.7) 70%, rgba(220, 220, 220, 1) 100%), url("//shirasu.droppages.com/pics/doll.jpg"); */
+    /*
+    background-image: url("//shirasu.droppages.com/pics/doll.jpg");*/
+    opacity: 0.7;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  #contentsD {
+    grid-area: contentsD;
+    padding-left: 1rem;
+  }
+
+  #contentsE {
+    grid-area: contentsE;
+    padding-left: 1rem;
+  }
+
+  #contentsF {
+    grid-area: contentsF;
+    padding-left: 1rem;
+  }
+
+
+  #page {
+    grid-area: page;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  * {
+    border: 0px solid black;
+  }
+
+  /*
+  #prev,
+  #dummy,
+  #title,
+  #next,
+  #navi,
+  #contentsA,
+  /*#contentsB,*/
+
+  /*
+  #contentsC,
+  #contentsD,
+  #page {
+    margin: 0px;
+    border: 1px solid black;
+  }
+	*/
+
+  #containerB {
+    margin: 0px;
+    padding: 3px;
+    border: 0px solid white;
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "footer0 footer1 footer2"
+  }
+
+  #footer0 {
+    grid-area: footer0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #footer1 {
+    grid-area: footer1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #footer2 {
+    grid-area: footer2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

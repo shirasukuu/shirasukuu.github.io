@@ -63,16 +63,16 @@ name1 {
 }
 
 name {
-    background-image: url("../pics/gold.jpg");
+    /* background-image: url("../pics/gold.jpg"); */
     /*    font: 900 4em sans-serif;*/
     top: 50%;
     left: 50%;
 
 
 
-    background-clip: text;
+    /* background-clip: text;
     -webkit-background-clip: text;
-    color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0); */
 
     transform: translate(-50%, -50%) rotate(3deg);
     font-size: 6rem;
@@ -109,11 +109,10 @@ name {
         6px 6px #555,
         7px 7px 4px #000;
 }
-
+*/
 name a {
     color: gold;
 }
-*/
 
 logo {
     top: 80%;

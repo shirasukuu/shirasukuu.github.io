@@ -44,9 +44,8 @@ cover {
         rgba(255, 255, 255, 0.5) 100%), url("../pics/black.jpg");
 }
 
-name1 {
+/* name1 {
     background-image: url("../pics/gold.jpg");
-    /*    font: 900 4em sans-serif;*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,7 +59,7 @@ name1 {
     transform: translate(-50%, -50%) rotate(3deg);
     font-size: 6rem;
     font-weight: bold;
-}
+} */
 
 name {
     /* background-image: url("../pics/gold.jpg"); */
@@ -92,24 +91,6 @@ name {
 */
 }
 
-
-/*
-
-name {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(3deg);
-    font-size: 4rem;
-    text-shadow:
-        1px 1px #aaa,
-        2px 2px #999,
-        3px 3px #888,
-        4px 4px #777,
-        5px 5px #666,
-        6px 6px #555,
-        7px 7px 4px #000;
-}
-*/
 name a {
     color: gold;
 }

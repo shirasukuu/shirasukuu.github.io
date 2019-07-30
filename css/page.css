@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --window-size: 96%;
     --ab: 5%;
 }
@@ -42,6 +42,26 @@ page {
         1px 1px 1px 1px #666,
         2px 2px 1px 1px #555,
         3px 3px 1px 1px #444;
+
+    background-color: gray;
+    color: black;
+}
+
+hd {
+    position: relative;
+    left: 0%;
+    width: calc(100% - 2rem);
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+contents {
+    position: relative;
+    left: 0%;
+    width: calc(100% - 2rem);
+    justify-content: flex-start;
+
 }
 
 logo {
@@ -120,22 +140,6 @@ right_high {
     flex-direction: column;
 }
 
-hd {
-    position: relative;
-    left: 0%;
-    width: calc(100% - 2rem);
-    justify-content: flex-start;
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-contents {
-    position: relative;
-    left: 0%;
-    width: calc(100% - 2rem);
-    justify-content: flex-start;
-
-}
 
 right_center {
     position: absolute;
@@ -209,95 +213,3 @@ next-page {
     width: 6rem;
     height: 1rem;
 }
-
-
-/*
-page {
-    background:
-        linear-gradient(to right bottom, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
-        url(../../brother/pics/maplel.jpg);
-}
-
-
-mado1 {
-    top: 0%;
-    left: 0%;
-
-    height: 100%;
-    width: 100%;
-
-    background:
-        center/cover url("../../brother/pics/brother1.png");
-
-
-    
-    clip-path:
-        polygon(0% 10%, 90% 10%, 100% 40%, 10% 40%) circle(10% at 20% 60%);
-
-
-    clip-path:
-        inset(10% 70% 60% var(--ab) round 20px 20px 10px 10px);
-    opacity: 0.8;
-}
-
-mado2 {
-    top: 0%;
-    left: 0%;
-
-    height: 100%;
-    width: 100%;
-
-    background:
-        center/cover url("../../brother/pics/brother1.png");
-
-    clip-path:
-        inset(10% 40% 60% 38% round 20px 20px 10px 10px);
-    opacity: 0.8;
-}
-
-mado3 {
-    top: 10%;
-    left: 65%;
-    width: 30%;
-    height: 30%;
-    background-color: blue;
-    border-style: solid;
-    border-width: 5px;
-    border-color: brown;
-    border-radius: 20px 50px 40px 20px / 40px;
-    background:
-        center/cover url("../../brother/pics/brother1.png");
-}
-
-table {
-    top: 60%;
-    left: 5%;
-    width: 40%;
-    height: 45%;
-
-    background-image: url(../pics/wood-deck-small-b.jpg);
-    
-      transform-style: preserve-3d;
-      perspective-origin: 0% 100%;
-
-    transform:
-        rotate(-30deg) rotateY(-45deg) rotateX(-45deg);
-    box-shadow:
-        1px 5px 3px brown,
-        1px 5px 1px black;
-}
-
-foods {
-    top: 50%;
-    left: 0%;
-    width: 50%;
-    height: 50%;
-
-    background:
-        left 10% top 60% no-repeat url("../pics/fruit_green_papaya.png"),
-        no-repeat top 60% left 50% url("../pics/fruit_cassis.png"),
-        no-repeat top 90% left 30% url("../pics/soup_food_scotch_broth.png"),
-        no-repeat top 80% left 90% url("../pics/breads.png"),
-        no-repeat top 90% left 70% url("../pics/pans.png"),
-        no-repeat top 70% left 70% url("../pics/knife.png");
-}*/

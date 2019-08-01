@@ -99,34 +99,36 @@ left_top,
 left_high {
     position: relative;
     top: calc(50px + 1.5rem);
-    left: 0%;
+    left: 2rem;
     width: calc(50% - 4rem);
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 left_center {
+  position: absolute;
     top: 50%;
     left: 2rem;
     width: calc(50% - 4rem);
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 left_mid {
+  position: absolute;
     top: calc(30% + 50px);
     left: 2rem;
     width: calc(50% - 4rem);
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 left_low {
     top: calc(60% + 50px);
     left: 2rem;
     width: calc(50% - 4rem);
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 right,
@@ -136,8 +138,8 @@ right_high {
     top: calc(50px + 1.5rem);
     left: calc(50% + 2rem);
     width: calc(50% - 4rem);
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 
@@ -146,8 +148,8 @@ right_center {
     top: 50%;
     left: calc(50% + 2rem);
     width: calc(50% - 4rem);
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 right_mid {
@@ -155,8 +157,8 @@ right_mid {
     top: calc(30% + 50px);
     left: calc(50% + 2rem);
     width: calc(50% - 4rem);
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 right_low {

@@ -9,134 +9,88 @@
     <meta name="author" content="Hajime Takamatsu">
     <link rel="shortcut icon" href="https://shirasukuu.github.io/pics/favicon.png">
 
-    <title>三つの物語　＜三兄弟＞</title>
+    <title>三つの物語</title>
 
     <link href="https://shirasukuu.github.io/css/reset.css" rel="stylesheet">
+    <link href="https://shirasukuu.github.io/css/page.css" rel="stylesheet">
+
     <link href="./css/letter3.css" rel="stylesheet">
 
-    <!-- fade in/out -->
-    <!--
-        http://www.detelu.com/fademover/
-    -->
-
+    <!--// fade in/out-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://shirasukuu.github.io/js/jquery.fademover.js"></script>
-
     <script>
         $(function() {
             $('body').fadeMover();
         });
     </script>
-
-    <!-- option -->
-    <script>
-        $(function() {
-            $('body').fadeMover({
-                'effectType': 1,
-                'inSpeed': 3000, <!-- fade out time -->
-                'outSpeed': 3000,
-                'inDelay': '0',
-                'outDelay': '0',
-                'nofadeOut': 'nonmover'
-            });
-        });
-    </script>
-
-    <!-- if needed??? -->
-    <script>
-        $("head").append('<style>.box { opacity: 0;-ms-filter:"alpha( opacity=0 )";filter: alpha( opacity=0 ); }</style>');
-        $(function() {
-            $(".box").fadeMover();
-        });
-    </script>
-
-    <!-- fade in/out end -->
-
+    <script src="https://shirasukuu.github.io/js/option.js"></script>
+    <script src="https://shirasukuu.github.io/js/needed.js"></script>
+    <!--//fade in/out end-->
 </head>
 
 <body>
-    <div id="container">
-        <div id="containerTitle">
-            <div id="logo">
-                <a href="https://shirasukuu.github.io/index.html">
-                    <!-- <a href="../../index.html"> -->
-                    <img src="https://shirasukuu.github.io/pics/logo.png" alt="logo" width="40px" height="40px">
-                </a>
-            </div>
-            <div id="title">
-                <a href="brother.html">三兄弟の物語</a>
-            </div>
-            <div id="SubTitle">美味しいごはん</div>
-        </div>
+    <page>
+        <!--            header      -->
+        <logo>
+            <a href="https://shirasukuu.github.io/index.html">
+                <img src="https://shirasukuu.github.io/pics/logo.png" alt="logo" width="40px" height="40px">
+                <span>三つの物語</span>
+            </a>
+        </logo>
+        <story_title>三兄弟の夢</story_title>
+        <subtitle>美味しい食事</subtitle>
 
-        <div id="contents">
+        <!--                main contents    -->
+        <mado1></mado1>
+        <mado2></mado2>
+        <mado3></mado3>
 
-            <!-- 内容その1 -->
-            <div id="content1">
-                <p>
-                    お母さんから「みんな、、、、、ご飯ができましたよ！！」と、、すんだ高い声が、、、、
-                    今日はみんなが大好きな黄色く熟したバナナの房もテーブルの上に、、、 壁の作り付けの棚からそれぞれ自分のお皿とコップを出してきて席の前に並べます。ナイフとフォークもいっしょに、、、お父さんは自分用のひときわ大きなお皿を取り出しています！！
-                </p>
-                <p>
+        <table></table>
+        <foods></foods>
 
-                    <br>
-                    にらだれ、：おろししょうが、ごまあぶら、しちみ、にら
-                    ソーメンつゆ
-                    <br>
-                    マヨネーズ　枝豆　しお　練乳　れもんじる。
-                    トマト、玉ねぎ　ニンニク　ショウガ　（フープ路）　塩　佐藤　故障
-                    テーブルの上にはパンの入ったツタで編んだバケットとその横の大きなお皿に、こ～～んなにオレンジとか苺とか果物がたくさん。そしてゆでた卵焼いたお芋達も盛り付けられています。
+        <left_mid>
+            そこに風に乗ってちょうど台所からパンが焼けたふっくらしたふくよかな香りがこちらまで香ってきます。
+            <br>
+            「ご飯ができましたよ～～」
+            <br>
+            お母さんの大きな声が聞こえてきました！！
+            <br>
 
+            クルミとか木の実がちょびっと焦げる香ばしいにおいも一緒に。みんな一斉に振り返って手紙のことなんかもう忘れてバタバタと台所に走っていきます。
+        </left_mid>
 
-                    そこに風に乗ってちょうど台所からパンが焼けたふっくらしたふくよかな香りがこちらまで香ってきました。クルミとか木の実がちょびっと焦げる香ばしいにおいも一緒に。みんな一斉に振り返って手紙のことなんかもう忘れてバタバタと台所に走っていきます。
-                </p>
-                <p>
-                    そこにはパンの入ったツタで編んだバケットとその横の大きなお皿に、こ～～んなにオレンジとか苺とか果物がたくさん。そこにはゆでた卵焼いたお芋達も盛り付けられています。お兄さんが慌てて隣の部屋に置いた今朝絞った羊のお乳が入ったひょうたん型のブリキのバケツを持ってきました。
-                    今日はみんなが大好きな黄色く熟したバナナの房もテーブルの上に、、、
-                </p>
-            </div>
+        <img style="top:60%; width:100px" src="./pics/knife.png" alt="Knife" width="100px" height="auto">
 
-            <!-- 内容その2 -->
-            <div id="contentImage">
-                <div id="letterImage">
-                    <p>
-                        <img src="pics/food.jpg" alt="letter" width="200px" height=>
-                    </p>
-                </div>
+        <right_center>
+            <l1>美味しい食事</l1>
+            <br>
+            テーブルの上にはたくさんのパンその横の大きなお皿には優しく煮た取り立ての野菜たち、こ～～んなに葡萄、苺とか果物がたくさん。お兄さんが慌てて隣の部屋に今朝絞った羊のお乳が入ったひょうたん型のバケツを取りに行きます。
+        </right_center>
 
-                <div id="letter">
-                </div>
-            </div>
+        <right_low>
+            みんな各々自分の食器を持ってきてテーブルの横に集まりました。
+            お父さんも手紙を置いて大きなナイフとおさらを持ってきました。
+            <br>
+            だぶだぶの前掛けをつけてお母さんがみんなにスープを配ります。お兄さんがヤギの乳をカップに、、、、
+            <br>
+            しーちゃんもドッグフードをもらって嬉しそう！！
+            <br>
 
-            <!-- 内容その3 -->
-            <div id="content2">
-                <p>
-                    壁の作り付けの棚からそれぞれ自分のお皿とコップを出してきて席の前に並べます。ナイフとフォークもいっしょに、、、お父さんは自分用のひときわ大きなお皿を取り出しています！！
-                </p>
-
-            </div>
-
-            <div id="content3">
-                <p>
-                    、、、＜<a href="brother2.html">次のページに続く</a>＞、、、
-                </p>
-
-            </div>
-        </div>
-
-        <!-- ページナンバーその他の表示リンク -->
-        <div id="footer">
-            <div id="footer0">
-                <a href="brother.html">前のページに戻る</a></div>
-
-            <div id="footer1">
-                <a href="#"> －２－ </a></div>
-
-            <div id="footer2">
-                <a href="brother.html"> 次のページへ </a></div>
-
-        </div>
-    </div>
+            わいわいがやがやともう手紙のことはすっかり忘れたように楽しい食事が始まりました。
+            <a href="./letter4.html">次のページに続く</a>
+        </right_low>
+        <!---->
+        <!--    footer    -->
+        <!---->
+        <previous-page>
+            <a href="./letter2.html">前のページ</a>
+        </previous-page>
+        <current-page>- 4 -</current-page>
+        <next-page>
+            <a href="./letter4.html">次のページ</a>
+        </next-page>
+    </page>
 </body>
 
 </html>

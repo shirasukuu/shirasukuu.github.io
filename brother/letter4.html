@@ -1,4 +1,5 @@
-﻿<html lang="ja" data-ember-extension="1">
+<!DOCTYPE html>
+<html lang="ja" data-ember-extension="1">
 
 <head>
     <meta charset="utf-8">
@@ -6,128 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="小説　物語　お話">
     <meta name="author" content="Hajime Takamatsu">
-    <link rel="shortcut icon" href="//shirasu.droppages.com/pics/favicon.png">
+    <link rel="shortcut icon" href="https://shirasukuu.github.io/pics/favicon.png">
 
-    <title>三つの物語　＜三兄弟＞</title>
+    <title>三つの物語</title>
 
-    <link href="../css/reset.css" rel="stylesheet">
-    <link href="./css/letter3.css" rel="stylesheet">
+    <link href="https://shirasukuu.github.io/css/reset.css" rel="stylesheet">
+    <link href="https://shirasukuu.github.io/css/page.css" rel="stylesheet">
 
-    <!-- fade in/out -->
-    <!--
-        http://www.detelu.com/fademover/
-    -->
+    <link href="./css/letter4.css" rel="stylesheet">
 
+    <!--// fade in/out-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="//shirasu.droppages.com/js/jquery.fademover.js"></script>
-
+    <script src="https://shirasukuu.github.io/js/jquery.fademover.js"></script>
     <script>
         $(function() {
             $('body').fadeMover();
         });
-
     </script>
-
-    <!-- option -->
-    <script>
-        $(function() {
-            $('body').fadeMover({
-                'effectType': 1,
-                'inSpeed': 3000, <!-- fade out time -->
-                'outSpeed': 3000,
-                'inDelay': '0',
-                'outDelay': '0',
-                'nofadeOut': 'nonmover'
-            });
-        });
-
-    </script>
-
-    <!-- if needed??? -->
-    <script>
-        $("head").append('<style>.box { opacity: 0;-ms-filter:"alpha( opacity=0 )";filter: alpha( opacity=0 ); }</style>');
-        $(function() {
-            $(".box").fadeMover();
-        });
-
-    </script>
-
-    <!-- fade in/out end -->
-
+    <script src="https://shirasukuu.github.io/js/option.js"></script>
+    <script src="https://shirasukuu.github.io/js/needed.js"></script>
+    <!--//fade in/out end-->
 </head>
 
 <body>
-    <div id="container">
-        <div id="containerTitle">
-            <div id="logo">
-                <a href="https://shirasukuu.github.io/index.html">
-                    <!-- <a href="../../index.html"> -->
-                    <img src="https://shirasukuu.github.io/pics/logo.png" alt="logo" width="40px" height="40px">
-                </a>
-            </div>
-            <div id="title">
-                <a href="brother.html">三兄弟の物語</a>
-            </div>
-            <div id="SubTitle">美味しいごはん</div>
-        </div>
+    <page>
+        <!--            header      -->
+        <logo>
+            <a href="https://shirasukuu.github.io/index.html">
+                <img src="https://shirasukuu.github.io/pics/logo.png" alt="logo" width="40px" height="40px">
+                <span>三つの物語</span>
+            </a>
+        </logo>
+        <story_title>三兄弟の夢</story_title>
+        <subtitle></subtitle>
 
-        <div id="contents">
+        <!--                main contents    -->
+        <left_mid>
+          <l1>サツキさんの夢</l1>
+          <br>
+          <contents>
+            そこに風に乗ってちょうど台所からパンが焼けたふっくらしたふくよかな香りがこちらまで香ってきます。
+            「ご飯ができましたよ～～」
+            お母さんの大きな声が聞こえてきました！！
+            <a href="./garden/garden.html">次のページに続く</a></contents>
+        </left_mid>
 
-            <!-- 内容その1 -->
-            <div id="content1">
-                <p>
-                    お母さんから「みんな、、、、、ご飯ができましたよ！！」と、、すんだ高い声が、、、、
-                </p>
-                <p>
-                    そこに風に乗ってちょうど台所からパンが焼けたふっくらしたふくよかな香りがこちらまで香ってきました。クルミとか木の実がちょびっと焦げる香ばしいにおいも一緒に。みんな一斉に振り返って手紙のことなんかもう忘れてバタバタと台所に走っていきます。
-                </p>
-                <p>
-                    そこにはパンの入ったツタで編んだバケットとその横の大きなお皿に、こ～～んなにオレンジとか苺とか果物がたくさん。そこにはゆでた卵焼いたお芋達も盛り付けられています。お兄さんが慌てて隣の部屋に置いた今朝絞った羊のお乳が入ったひょうたん型のブリキのバケツを持ってきました。
-                    今日はみんなが大好きな黄色く熟したバナナの房もテーブルの上に、、、
-                </p>
-            </div>
+        <right_top>
+            <hd>イクツ君の夢</hd>
+            <br>
+            <contents>
+            テーブルの上にはたくさんのパンその横の大きなお皿には優しく煮た取り立ての野菜たち、こ～～んなに葡萄、苺とか果物がたくさん。お兄さんが慌てて隣の部屋に今朝絞った羊のお乳が入ったひょうたん型のバケツを取りに行きます。
+            <a href="./whiteCity/whiteCity.html">白い都市に行く</a></contents>
+        </right_top>
 
-            <!-- 内容その2 -->
-            <div id="contentImage">
-                <div id="letterImage">
-                    <p>
-                        <img src="pics/food.jpg" alt="letter" width="200px" height=>
-                    </p>
-                </div>
-
-                <div id="letter">
-                </div>
-            </div>
-
-            <!-- 内容その3 -->
-            <div id="content2">
-                <p>
-                    壁の作り付けの棚からそれぞれ自分のお皿とコップを出してきて席の前に並べます。ナイフとフォークもいっしょに、、、お父さんは自分用のひときわ大きなお皿を取り出しています！！
-                </p>
-
-            </div>
-
-            <div id="content3">
-                <p>
-                    、、、＜<a href="brother2.html">次のページに続く</a>＞、、、
-                </p>
-
-            </div>
-        </div>
-
-        <!-- ページナンバーその他の表示リンク -->
-        <div id="footer">
-            <div id="footer0">
-                <a href="brother.html">前のページに戻る</a></div>
-
-            <div id="footer1">
-                <a href="#"> －２－ </a></div>
-
-            <div id="footer2">
-                <a href="brother.html"> 次のページへ </a></div>
-
-        </div>
-    </div>
+        <right_low>
+          <hd>イキちゃんの夢</hd>
+          <br>
+            みんな各々自分の食器を持ってきてテーブルの横に集まりました。
+            わいわいがやがやともう手紙のことはすっかり忘れたように楽しい食事が始まりました。
+            <a href="./adventure/adventure.html">次のページに続く</a>
+        </right_low>
+        <!---->
+        <!--    footer    -->
+        <!---->
+        <previous-page>
+            <a href="./letter3.html">前のページ</a>
+        </previous-page>
+        <current-page>- 5 -</current-page>
+    </page>
 </body>
 
 </html>

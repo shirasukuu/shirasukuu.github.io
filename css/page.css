@@ -1,6 +1,5 @@
 :root {
     --window-size: 96%;
-    --ab: 5%;
 }
 
 body {
@@ -22,10 +21,10 @@ a {
 }
 
 a:hover {
-    color: gray;
+    color: white;
 }
 
-page {
+.page {
     top: calc(0.5 * calc(100% - var(--window-size)));
 
     left: calc(0.5 * calc(100% - var(--window-size)));
@@ -47,25 +46,8 @@ page {
     color: black;
 }
 
-hd {
-    position: relative;
-    left: 0%;
-    width: calc(100% - 2rem);
-    justify-content: flex-start;
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-contents {
-    position: relative;
-    left: 0%;
-    width: calc(100% - 2rem);
-    justify-content: flex-start;
-
-}
-
-logo {
-    position: absolute;
+.logo {
+    /* position: absolute; */
     top: 5px;
     left: 5px;
     width: 200px;
@@ -73,13 +55,13 @@ logo {
     font-size: 0.8rem;
 }
 
-logo span {
+.logo span {
     top: 25px;
     left: 50px;
     width: 5rem;
 }
 
-story_title {
+.story_title {
     top: 2rem;
     left: 50%;
     /*position at center*/
@@ -87,82 +69,62 @@ story_title {
     font-size: 1.3rem;
 }
 
-subtitle {
+.subtitle {
     top: 2rem;
     left: 75%;
     transform: translate(-50%, -50%);
     font-size: 0.8rem;
 }
 
-left,
-left_top,
-left_high {
-    position: relative;
+.left,
+.left_top,
+.left_high {
     top: calc(50px + 1.5rem);
     left: 2rem;
     width: calc(50% - 4rem);
-    /*display: flex;
-    flex-direction: column;*/
 }
 
-left_center {
-  position: absolute;
+.left_center {
     top: 50%;
     left: 2rem;
     width: calc(50% - 4rem);
-    /*display: flex;
-    flex-direction: column;*/
 }
 
-left_mid {
-  position: absolute;
+.left_mid {
     top: calc(30% + 50px);
     left: 2rem;
     width: calc(50% - 4rem);
-    /*display: flex;
-    flex-direction: column;*/
 }
 
-left_low {
+.left_low {
     top: calc(60% + 50px);
     left: 2rem;
     width: calc(50% - 4rem);
-    /*display: flex;
-    flex-direction: column;*/
 }
 
-right,
-right_top,
-right_high {
+.right,
+.right_top,
+.right_high {
     position: absolute;
     top: calc(50px + 1.5rem);
     left: calc(50% + 2rem);
     width: calc(50% - 4rem);
-    /*display: flex;
-    flex-direction: column;*/
 }
 
 
-right_center {
-    position: absolute;
+.right_center {
     top: 50%;
     left: calc(50% + 2rem);
     width: calc(50% - 4rem);
-    /*display: flex;
-    flex-direction: column;*/
 }
 
-right_mid {
-    position: absolute;
+.right_mid {
     top: calc(30% + 50px);
     left: calc(50% + 2rem);
     width: calc(50% - 4rem);
-    /*display: flex;
-    flex-direction: column;*/
 }
 
-right_low {
-    position: absolute;
+.right_low {
     top: calc(60% + 50px);
     left: calc(50% + 2rem);
     width: calc(50% - 4rem);
@@ -171,45 +133,47 @@ right_low {
 }
 
 
-full_top,
-full_high {
+.full_top,
+.full_high {
     top: 50px;
     left: 2rem;
     width: calc(100% - 4rem);
 }
 
-full_center {
+.full_center {
     top: 50%;
     left: 2rem;
     width: calc(100% - 4rem);
 }
 
-full_mid {
+.full_mid {
     top: calc(30% + 50px);
     left: 2rem;
     width: calc(100% - 4rem);
 }
 
-full_low {
+.full_low {
     top: calc(60% + 50px);
     left: 2rem;
     width: calc(100% - 4rem);
 }
 
-previous-page {
+.previous-page {
     bottom: 1rem;
     left: 10%;
     width: 6rem;
     height: 1rem;
 }
 
-current-page {
+.current-page {
     bottom: 1rem;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 6rem;
+    height: 1rem;
 }
 
-next-page {
+.next-page {
     bottom: 1rem;
     right: 10%;
     width: 6rem;

@@ -1,12 +1,11 @@
 body {}
 
-page {
+.page {
     background-image:
     url(https://shirasukuu.github.io/misc/pics/yamasemi.jpg);
     background-size: cover;
     }
-
-/* 内容 */
+/*  
 content1 {
     top: 10%;
     left: 0%;
@@ -17,4 +16,4 @@ content1 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */

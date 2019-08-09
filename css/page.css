@@ -13,7 +13,6 @@ body {
     position: absolute;
 }
 
-
 /*リンクの色の設定*/
 a {
     color: black;
@@ -21,7 +20,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: blue;
 }
 
 .page {
@@ -76,85 +75,24 @@ a:hover {
     font-size: 0.8rem;
 }
 
-.left,
-.left_top,
-.left_high {
-    top: calc(50px + 1.5rem);
-    left: 2rem;
+.left{
+  position: relative;
+    margin-top: 4rem;
+  margin-left: 2rem;
     width: calc(50% - 4rem);
 }
 
-.left_center {
-    top: 50%;
-    left: 2rem;
+.right{
+  position: relative;
+    margin-top: 4rem;
+  margin-left: calc(50% + 2rem);
     width: calc(50% - 4rem);
 }
 
-.left_mid {
-    top: calc(30% + 50px);
-    left: 2rem;
-    width: calc(50% - 4rem);
-}
-
-.left_low {
-    top: calc(60% + 50px);
-    left: 2rem;
-    width: calc(50% - 4rem);
-}
-
-.right,
-.right_top,
-.right_high {
-    position: absolute;
-    top: calc(50px + 1.5rem);
-    left: calc(50% + 2rem);
-    width: calc(50% - 4rem);
-}
-
-
-.right_center {
-    top: 50%;
-    left: calc(50% + 2rem);
-    width: calc(50% - 4rem);
-}
-
-.right_mid {
-    top: calc(30% + 50px);
-    left: calc(50% + 2rem);
-    width: calc(50% - 4rem);
-}
-
-.right_low {
-    top: calc(60% + 50px);
-    left: calc(50% + 2rem);
-    width: calc(50% - 4rem);
-    /*display: flex;
-    flex-direction: column;*/
-}
-
-
-.full_top,
-.full_high {
-    top: 50px;
-    left: 2rem;
-    width: calc(100% - 4rem);
-}
-
-.full_center {
-    top: 50%;
-    left: 2rem;
-    width: calc(100% - 4rem);
-}
-
-.full_mid {
-    top: calc(30% + 50px);
-    left: 2rem;
-    width: calc(100% - 4rem);
-}
-
-.full_low {
-    top: calc(60% + 50px);
-    left: 2rem;
+.full{
+  position: relative;
+  margin-top: 4rem;
+    margin-left: 2rem;
     width: calc(100% - 4rem);
 }
 

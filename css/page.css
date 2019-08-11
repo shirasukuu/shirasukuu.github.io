@@ -9,7 +9,13 @@ body {
     color: black;
 }
 
-* :not(body) {
+.page,
+.logo,
+.story-title,
+.subtitle,
+ .previous-page,
+ .current-page,
+ .next-page{
     position: absolute;
 }
 
@@ -46,7 +52,6 @@ a:hover {
 }
 
 .logo {
-    /* position: absolute; */
     top: 5px;
     left: 5px;
     width: 200px;
@@ -60,7 +65,7 @@ a:hover {
     width: 5rem;
 }
 
-.story_title {
+.story-title {
     top: 2rem;
     left: 50%;
     /*position at center*/
@@ -76,21 +81,21 @@ a:hover {
 }
 
 .left{
-  position: relative;
+  /* position: relative; */
     margin-top: 4rem;
-  margin-left: 2rem;
+    margin-left: 2rem;
     width: calc(50% - 4rem);
 }
 
 .right{
-  position: relative;
+  /* position: relative; */
     margin-top: 4rem;
-  margin-left: calc(50% + 2rem);
+    margin-left: calc(50% + 2rem);
     width: calc(50% - 4rem);
 }
 
 .full{
-  position: relative;
+  /* position: relative; */
   margin-top: 4rem;
     margin-left: 2rem;
     width: calc(100% - 4rem);

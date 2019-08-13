@@ -1,7 +1,6 @@
 :root {
     --window-size: 96%;
 }
-
 body {
     font-family: 'Mv Boli', 'Segoe Print', 'Modern', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'メイリオ', Meiryo, sans-serif;
 
@@ -27,13 +26,12 @@ a {
 
 a:hover {
     color: blue;
+    text-decoration: underline;
 }
 
 .page {
     top: calc(0.5 * calc(100% - var(--window-size)));
-
     left: calc(0.5 * calc(100% - var(--window-size)));
-
     height:
         calc(var(--window-size));
     width:
@@ -51,6 +49,7 @@ a:hover {
     color: black;
 }
 
+/*header*/
 .logo {
     top: 5px;
     left: 5px;
@@ -78,29 +77,29 @@ a:hover {
     left: 75%;
     transform: translate(-50%, -50%);
     font-size: 0.8rem;
+    font-weight: bold;
 }
 
+/*contents*/
 .left{
-  /* position: relative; */
     margin-top: 4rem;
     margin-left: 2rem;
     width: calc(50% - 4rem);
 }
 
 .right{
-  /* position: relative; */
     margin-top: 4rem;
     margin-left: calc(50% + 2rem);
     width: calc(50% - 4rem);
 }
 
 .full{
-  /* position: relative; */
-  margin-top: 4rem;
+    margin-top: 4rem;
     margin-left: 2rem;
     width: calc(100% - 4rem);
 }
 
+/*footer*/
 .previous-page {
     bottom: 1rem;
     left: 10%;

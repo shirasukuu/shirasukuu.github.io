@@ -1,12 +1,5 @@
-﻿/* for debug */
-* {
-    border: 0px solid black;
-}
-
-
 body {}
-
-page {
+.page {
     background-image:
         url("../pics/illust199s.png"),
         url("../pics/hashibirous.png"),
@@ -42,8 +35,4 @@ page {
         no-repeat,
         no-repeat,
         no-repeat;
-
-    /*    transform: rotate(3deg);*/
 }
-
-/* 内容 */

@@ -16,11 +16,11 @@ body {}
         no-repeat,
         no-repeat,
         no-repeat;
-    /*    transform: rotate(3deg);*/
 }
 
 /* 内容 */
 .content1 {
+    position: absolute;
     top: 10%;
     left: 0%;
     width: 50%;
@@ -36,6 +36,7 @@ body {}
 }
 
 .letter_image {
+    position: absolute;
     top: 35%;
     left: 55%;
     width: 200px;

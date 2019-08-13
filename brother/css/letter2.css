@@ -1,17 +1,14 @@
-﻿/*
-:root {
-    --window-size: 2%;
-    --ab: 5%;
-}*/
-body {}
+body{
 
-page {
+}
+.page {
     background:
         linear-gradient(to right bottom, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
         url(../../brother/pics/wood-deck-small-b.jpg);
 }
 
-mado1 {
+.mado1 {
+  position: absolute;
     top: 0%;
     left: 0%;
 
@@ -25,11 +22,12 @@ mado1 {
         polygon(0% 10%, 90% 10%, 100% 40%, 10% 40%) circle(10% at 20% 60%);
 */
     clip-path:
-        inset(10% 70% 60% var(--ab) round 20px 20px 10px 10px);
+        inset(10% 70% 60% 2% round 20px 20px 10px 10px);
     opacity: 0.8;
 }
 
-mado2 {
+.mado2 {
+    position: absolute;
     top: 0%;
     left: 0%;
 
@@ -44,7 +42,8 @@ mado2 {
     opacity: 0.8;
 }
 
-mado3 {
+.mado3 {
+    position: absolute;
     top: 0%;
     left: 0%;
 
@@ -59,7 +58,8 @@ mado3 {
     opacity: 0.8;
 }
 
-table {
+.table {
+    position: absolute;
     top: 60%;
     left: 5%;
     width: 40%;
@@ -76,7 +76,8 @@ table {
         1px 5px 1px black;
 }
 
-foods {
+.foods {
+    position: absolute;
     top: 50%;
     left: 0%;
     width: 50%;
@@ -89,4 +90,19 @@ foods {
         no-repeat top 80% left 90% url("../pics/breads.png"),
         no-repeat top 90% left 70% url("../pics/pans.png"),
         no-repeat top 70% left 70% url("../pics/knife.png");
+}
+
+.left-food{
+  position: absolute;
+  top:45%;
+  left: 2rem;
+  width: calc(50% - 4rem);
+}
+
+
+.right-food{
+  position: absolute;
+  top:45%;
+  left: calc(50% + 2rem);
+  width: calc(50% - 4rem);
 }

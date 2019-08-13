@@ -10,10 +10,12 @@
     <link rel="shortcut icon" href="https://shirasukuu.github.io/pics/favicon.png">
 
     <title>三つの物語</title>
-
+<!--
     <link href="https://shirasukuu.github.io/css/reset.css" rel="stylesheet">
-    <link href="https://shirasukuu.github.io/css/page.css" rel="stylesheet">
+    <link href="https://shirasukuu.github.io/css/page.css" rel="stylesheet"> -->
 
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/page.css" rel="stylesheet">
     <link href="./css/letter2.css" rel="stylesheet">
 
     <!--// fade in/out-->
@@ -30,26 +32,27 @@
 </head>
 
 <body>
-    <page>
-        <!--            header      -->
-        <logo>
+    <div class="page">
+<!--     header      -->
+        <header class="logo">
             <a href="https://shirasukuu.github.io/index.html">
-                <img src="https://shirasukuu.github.io/pics/logo.png" alt="logo" width="40px" height="40px">
+                <img src="https://shirasukuu.github.io/pics/logo.png" alt="logo" width="40" height="40">
                 <span>三つの物語</span>
             </a>
-        </logo>
-        <story_title>三兄弟の夢</story_title>
-        <subtitle>美味しい食事</subtitle>
+        </header>
+        <header class="story-title">三兄弟の夢</header>
+        <header class="subtitle">美味しい食事</header>
 
-        <!--                main contents    -->
-        <mado1></mado1>
-        <mado2></mado2>
-        <mado3></mado3>
+<!--    main contents    -->
 
-        <table></table>
-        <foods></foods>
+        <div class="mado1"></div>
+        <div class="mado2"></div>
+        <div class="mado3"></div>
 
-        <left_mid>
+        <div class="table"></div>
+        <div class="foods"></div>
+
+        <section class="left-food">
             そこに風に乗ってちょうど台所からパンが焼けたふっくらしたふくよかな香りがこちらまで香ってきます。
             <br>
             「ご飯ができましたよ～～」
@@ -58,39 +61,29 @@
             <br>
 
             クルミとか木の実がちょびっと焦げる香ばしいにおいも一緒に。みんな一斉に振り返って手紙のことなんかもう忘れてバタバタと台所に走っていきます。
-        </left_mid>
+        </section>
 
-        <img style="top:60%; width:100px" src="./pics/knife.png" alt="Knife" width="100px" height="auto">
-
-        <right_center>
-            <l1>美味しい食事</l1>
-            <br>
+        <section class="right-food">
             テーブルの上にはたくさんのパンその横の大きなお皿には優しく煮た取り立ての野菜たち、こ～～んなに葡萄、苺とか果物がたくさん。お兄さんが慌てて隣の部屋に今朝絞った羊のお乳が入ったひょうたん型のバケツを取りに行きます。
-        </right_center>
-
-        <right_low>
             みんな各々自分の食器を持ってきてテーブルの横に集まりました。
             お父さんも手紙を置いて大きなナイフとおさらを持ってきました。
-            <br>
+            <br><br>
             だぶだぶの前掛けをつけてお母さんがみんなにスープを配ります。お兄さんがヤギの乳をカップに、、、、
             <br>
             しーちゃんもドッグフードをもらって嬉しそう！！
             <br>
-
             わいわいがやがやともう手紙のことはすっかり忘れたように楽しい食事が始まりました。
-            <a href="./letter3.html">次のページに続く</a>
-        </right_low>
-        <!---->
-        <!--    footer    -->
-        <!---->
-        <previous-page>
-            <a href="./letter1-1.html">前のページ</a>
-        </previous-page>
-        <current-page>- 3 -</current-page>
-        <next-page>
-            <a href="./letter3.html">次のページ</a>
-        </next-page>
-    </page>
-</body>
+            <a href="./letter3.html">＜次のページに続く＞</a>
+        </section>
 
+        <!--    footer    -->
+        <footer class="previous-page">
+            <a href="./letter1-1.html">前のページ</a>
+        </footer>
+        <footer class="current-page">- 3 -</footer>
+        <footer class="next-page">
+            <a href="./letter3.html">次のページ</a>
+        </footer>
+    </div>
+</body>
 </html>

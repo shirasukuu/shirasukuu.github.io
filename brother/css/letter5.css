@@ -3,7 +3,7 @@ body {}
     background-image:
         url("../pics/illust275.png"),
         radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
-        url("../../brother/pics/autumn.png");
+        url("../../brother/pics/Autumn.png");
     background-position:
         top 85% left 40%,
         top 0% left 0%,

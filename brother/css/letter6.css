@@ -1,19 +1,19 @@
 body {}
 .page {
     background-image:
-        url("../pics/illust275.png"),
+        /* url("../pics/illust275.png"), */
         radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
-        url("../../brother/pics/window-fan.png");
+        url("../../brother/pics/autumn.jpg");
     background-position:
-        top 85% left 40%,
+        /* top 85% left 40%, */
         top 0% left 0%,
         top 0% left 0%;
     background-size:
-        100px auto,
+        /* 100px auto, */
         cover,
         cover;
     background-repeat:
-        no-repeat,
+        /* no-repeat, */
         no-repeat,
         no-repeat;
 }
@@ -34,7 +34,7 @@ body {}
     background:
         radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 70%);
 }
-/* 
+/*
 .letter_image {
     position: absolute;
     top: 35%;

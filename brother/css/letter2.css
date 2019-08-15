@@ -1,108 +1,38 @@
-body{
-
-}
+body {}
 .page {
-    background:
-        linear-gradient(to right bottom, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
-        url(../../brother/pics/wood-deck-small-b.jpg);
-}
+    background-image:
+        url("../pics/illust199s.png"),
+        url("../pics/hashibirous.png"),
+        url("../pics/hashibirousr.png"),
+        url("../pics/hashibirous.png"),
+        url("../pics/kodai.png"),
+        radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.8) 100%),
+        url("../../brother/pics/brother1.png");
+    background-position:
+        top 85% left 40%,
+        top 65% left 15%,
+        top 68% left 10%,
+        top 65% left 20%,
+        top 70% left 25%,
+        top 0% left 0%,
+        top 0% left 0%;
 
-.mado1 {
-  position: absolute;
-    top: 0%;
-    left: 0%;
+    background-size:
+        /*added*/
+        100px auto,
+        40px auto,
+        50px auto,
+        40px auto,
+        80px auto,
+        cover,
+        cover;
 
-    height: 100%;
-    width: 100%;
-
-    background:
-        center/cover url("../../brother/pics/brother1.png");
-    /*
-    clip-path:
-        polygon(0% 10%, 90% 10%, 100% 40%, 10% 40%) circle(10% at 20% 60%);
-*/
-    clip-path:
-        inset(10% 70% 60% 2% round 20px 20px 10px 10px);
-    opacity: 0.8;
-}
-
-.mado2 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-
-    height: 100%;
-    width: 100%;
-
-    background:
-        center/cover url("../../brother/pics/brother1.png");
-
-    clip-path:
-        inset(10% 40% 60% 31% round 20px 20px 10px 10px);
-    opacity: 0.8;
-}
-
-.mado3 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-
-    height: 100%;
-    width: 100%;
-
-    background:
-        center/cover url("../../brother/pics/brother1.png");
-
-    clip-path:
-        inset(10% 10% 60% 61% round 20px 20px 10px 10px);
-    opacity: 0.8;
-}
-
-.table {
-    position: absolute;
-    top: 60%;
-    left: 5%;
-    width: 40%;
-    height: 45%;
-
-    background-image: url(../pics/wood-deck-small-b.jpg);
-
-    /*    transform-style: preserve-3d;*/
-    /*    perspective-origin: 0% 100%;*/
-    transform:
-        rotate(-30deg) rotateY(-45deg) rotateX(-45deg);
-    box-shadow:
-        1px 5px 3px brown,
-        1px 5px 1px black;
-}
-
-.foods {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    width: 50%;
-    height: 50%;
-
-    background:
-        left 10% top 60% no-repeat url("../pics/fruit_green_papaya.png"),
-        no-repeat top 60% left 50% url("../pics/fruit_cassis.png"),
-        no-repeat top 90% left 30% url("../pics/soup_food_scotch_broth.png"),
-        no-repeat top 80% left 90% url("../pics/breads.png"),
-        no-repeat top 90% left 70% url("../pics/pans.png"),
-        no-repeat top 70% left 70% url("../pics/knife.png");
-}
-
-.left-food{
-  position: absolute;
-  top:45%;
-  left: 2rem;
-  width: calc(50% - 4rem);
-}
-
-
-.right-food{
-  position: absolute;
-  top:45%;
-  left: calc(50% + 2rem);
-  width: calc(50% - 4rem);
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
 }

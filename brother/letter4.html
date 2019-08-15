@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja" data-ember-extension="1">
 
 <head>
@@ -11,12 +11,14 @@
 
     <title>三つの物語</title>
 
-    <link href="https://shirasukuu.github.io/css/reset.css" rel="stylesheet">
-    <link href="https://shirasukuu.github.io/css/page.css" rel="stylesheet">
+        <!-- <link href="https://shirasukuu.github.io/css/reset.css" rel="stylesheet"> -->
+        <!-- <link href="https://shirasukuu.github.io/css/page.css" rel="stylesheet"> -->
 
-    <link href="./css/letter4.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/page.css" rel="stylesheet">
+    <link href="./css/letter1.css" rel="stylesheet">
 
-    <!--// fade in/out-->
+    <!-- fade in/out-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://shirasukuu.github.io/js/jquery.fademover.js"></script>
     <script>
@@ -26,55 +28,59 @@
     </script>
     <script src="https://shirasukuu.github.io/js/option.js"></script>
     <script src="https://shirasukuu.github.io/js/needed.js"></script>
-    <!--//fade in/out end-->
+    <!-- fade in/out end-->
 </head>
 
 <body>
-    <page>
-        <!--            header      -->
-        <logo>
+    <div class="page">
+<!--      header      -->
+        <header class="logo">
             <a href="https://shirasukuu.github.io/index.html">
-                <img src="https://shirasukuu.github.io/pics/logo.png" alt="logo" width="40px" height="40px">
+                <img src="https://shirasukuu.github.io/pics/logo.png" alt="logo" width="40" height="40">
                 <span>三つの物語</span>
             </a>
-        </logo>
-        <story_title>三兄弟の夢</story_title>
-        <subtitle></subtitle>
+        </header>
+        <header class="story-title">三兄弟の物語</header>
+        <header class="subtitle">兄弟の冒険</header>
 
-        <!--                main contents    -->
-        <left_mid>
-          <l1>サツキさんの夢</l1>
-          <br>
-          <contents>
-            そこに風に乗ってちょうど台所からパンが焼けたふっくらしたふくよかな香りがこちらまで香ってきます。
-            「ご飯ができましたよ～～」
-            お母さんの大きな声が聞こえてきました！！
-            <a href="./garden/garden.html">次のページに続く</a></contents>
-        </left_mid>
+<!--    main contents    -->
+        <section class="content1">三兄弟の物語</section>
+        
+        <div class="letter_image">
+            <img src="../brother/pics/hane.png" alt="hane" width="180">
+        </div>
 
-        <right_top>
-            <hd>イクツ君の夢</hd>
+        <section class="right">
+            無邪気な３人の兄弟が不思議の国のお爺さんの家で見た夢の物語がここに語られています。（三つの物語だよ、、、、、
             <br>
-            <contents>
-            テーブルの上にはたくさんのパンその横の大きなお皿には優しく煮た取り立ての野菜たち、こ～～んなに葡萄、苺とか果物がたくさん。お兄さんが慌てて隣の部屋に今朝絞った羊のお乳が入ったひょうたん型のバケツを取りに行きます。
-            <a href="./whiteCity/whiteCity.html">白い都市に行く</a></contents>
-        </right_top>
+            可愛いフレンチブルドッグのしらすちゃんも一緒に冒険の旅に！！
+        </section>
 
-        <right_low>
-          <hd>イキちゃんの夢</hd>
-          <br>
-            みんな各々自分の食器を持ってきてテーブルの横に集まりました。
-            わいわいがやがやともう手紙のことはすっかり忘れたように楽しい食事が始まりました。
-            <a href="./adventure/adventure.html">次のページに続く</a>
-        </right_low>
-        <!---->
-        <!--    footer    -->
-        <!---->
-        <previous-page>
-            <a href="./letter3.html">前のページ</a>
-        </previous-page>
-        <current-page>- 5 -</current-page>
-    </page>
+<!-- get space 4 rem. -->
+        <section class="right">　</section>
+        <section class="right">　</section>
+
+        <section class="right">
+            <h4>お爺ちゃんからの手紙</h4>
+                まん丸メガネ のお父さんが珍しく大声でみんなを呼んでいます。
+                <br>
+                「おおい、、、、」
+                <br>
+                「あの大きな虹の向こうの国のお爺ちゃんから久しぶりに手紙が来てるぞ！！」
+                <br>
+                <br>
+                手にはまるで鳥のように見える羽のついた大きな封筒が握られてます。
+                遠くから山をたくさん越えて飛んできた封筒は茶褐色に汚れてところどころ破れてボロボロになっています。
+                お兄ちゃんがそしてお姉さんが吃驚したように部屋から出てきてお父さんのそばに来ました。
+                これ以上傷つけないように気を付けながら中の手紙を出しています。お兄さん、イクツ君はそっと手を出して落ちそうになっている封筒を支えます。<a href="letter1-1.html">＜次のページへ行く＞</a>
+        </section>
+        <footer class="previous-page">
+            <a href="../index.html">前のページ</a>
+        </footer>
+        <footer class="current-page">- 1 -</footer>
+        <footer class="next-page">
+            <a href="letter1-1.html">次のページ</a>
+        </footer>
+    </div>
 </body>
-
 </html>

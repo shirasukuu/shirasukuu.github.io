@@ -71,7 +71,7 @@ a:hover {
     left: 50%;
     /*position at center*/
     transform: translate(-50%, -50%);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .subtitle {

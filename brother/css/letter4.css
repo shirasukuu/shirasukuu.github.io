@@ -1,5 +1,7 @@
 body {}
 .page {
+    background-color: blue;
+    color: black;
     background-image:
         url("../pics/illust275.png"),
         radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
@@ -34,12 +36,3 @@ body {}
     background:
         radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 70%);
 }
-/* 
-.letter_image {
-    position: absolute;
-    top: 35%;
-    left: 55%;
-    width: 200px;
-    z-index: 5;
-    opacity: 0.8;
-} */

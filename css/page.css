@@ -14,6 +14,9 @@ body {
 .logo,
 .story-title,
 .subtitle,
+.full,
+.left,
+.right,
  .previous-page,
  .current-page,
  .next-page{
@@ -84,20 +87,20 @@ a:hover {
 
 /*contents*/
 .left{
-    margin-top: 4rem;
-    margin-left: 2rem;
+    top: 4rem;
+    left: 2rem;
     width: calc(50% - 4rem);
 }
 
 .right{
-    margin-top: 4rem;
-    margin-left: calc(50% + 2rem);
+    top: 4rem;
+    left: calc(50% + 2rem);
     width: calc(50% - 4rem);
 }
 
 .full{
-    margin-top: 4rem;
-    margin-left: 2rem;
+    top: 4rem;
+    left: 2rem;
     width: calc(100% - 4rem);
 }
 

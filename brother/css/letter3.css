@@ -58,6 +58,20 @@ body{
     opacity: 0.8;
 }
 
+.left-food{
+    top: 40%;
+    left: 2rem;
+    width: calc(50% - 4rem);
+    white-space: pre-wrap;
+}
+
+.right-food{
+    top: 40%;
+    left: calc(50% + 2rem);
+    width: calc(50% - 4rem);
+    white-space: pre-wrap;
+}
+
 .table {
     position: absolute;
     top: 60%;

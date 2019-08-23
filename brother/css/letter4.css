@@ -1,13 +1,13 @@
 body {}
 .page {
-    background-color: blue;
+    background-color: #bbffff;
     color: black;
     background-image:
         url("../pics/illust275.png"),
         radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
         url("../../brother/pics/window-fan.png");
     background-position:
-        top 85% left 40%,
+        top 75% left 45%,
         top 0% left 0%,
         top 0% left 0%;
     background-size:
@@ -18,21 +18,4 @@ body {}
         no-repeat,
         no-repeat,
         no-repeat;
-}
-
-/* 内容 */
-.content1 {
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    width: 50%;
-    height: 60%;
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background:
-        radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 70%);
 }

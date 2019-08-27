@@ -5,7 +5,7 @@ body {}
 
     background-image:
         radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
-        url("../../brother/pics/water.jpg");
+        url("../../brother/pics/water-black.jpg");
     background-position:
         top 0% left 0%,
         top 0% left 0%;
@@ -52,7 +52,7 @@ body {}
     background-color: black;
     color: white;
 
-    background-image: url(../../brother/pics/hina.jpg);
+    background-image: url(../../brother/pics/hina0.jpg);
     background-size: cover;
     z-index: 3;
     opacity: 0.2;

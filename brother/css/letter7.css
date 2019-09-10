@@ -21,39 +21,43 @@ body {}
 
 .ikutsu-dream{
     position: absolute;
-    top: 5%;
-    left: 2%;
+    top: 10%;
+    left: 3rem;
     width: 30%;
-    height: 20%;
+    height: 30%;
 
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     background-color: #75A9FF;
     color: white;
-/*
+
     background-image: url(../../brother/pics/haikyo.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     z-index: 5;
-    opacity: 0.3; */
+    opacity: 0.5;
 
-    border-radius: 89% 89% 26% 31% / 35% 39% 42% 34% ;
+    border-radius: 10%;
     padding-top: 2rem;
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 0rem;
 
     cursor: pointer;
-transition-duration: 0.3s;
+    transition-duration: 0.5s;
 
 }
 
+/* .ikutsu-dream img{
+  width:100px;
+} */
+
 .ikutsu-dream:hover{
     position: absolute;
-    top: 5%;
-    left: 2%;
+    top: 20%;
+    left: 2rem;
     width: 60%;
     height: 40%;
 
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     background-color: #75A9FF;
     color: white;
 
@@ -61,25 +65,23 @@ transition-duration: 0.3s;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 7;
-    opacity: 1;
-    /* opacity: 0.3; */
+    opacity: 0.7;
 
-    /* border-radius: 89% 89% 26% 31% / 35% 39% 42% 34% ; */
-    border-radius: 0;
+    border-radius: 50%;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
 
 .satsuki-dream{
     position: absolute;
     top: 30%;
-    right: 2%;
-    width: 55%;
-    height: 40%;
+    right: 2rem;
+    width: 30%;
+    height: 30%;
 
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 
     background-color: black;
     color: white;
@@ -89,31 +91,85 @@ transition-duration: 0.3s;
     z-index: 3;
     opacity: 0.3;
 
-    border-radius: 89% 89% 26% 31% / 35% 39% 42% 34% ;
+    border-radius: 10%;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.satsuki-dream:hover{
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    width: 55%;
+    height: 40%;
+
+    font-size: 0.8rem;
+
+    background-color: black;
+    color: white;
+
+    background-image: url(../../brother/pics/hina0.jpg);
+    background-size: cover;
+    z-index: 3;
+    opacity: 0.7;
+
+    border-radius: 50%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    transition-duration: 0.5s;
 }
 
 .hiromu-dream{
     position: absolute;
-    top: 60%;
-    left: 2%;
-    width: 60%;
-    height: 35%;
+    top: 55%;
+    left: 3rem;
+    width: 30%;
+    height: 30%;
 
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     background-color: black;
     color: white;
 
     background-image: url(../../brother/pics/hihou.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
     opacity: 0.3;
 
-    border-radius: 89% 89% 26% 31% / 35% 39% 42% 34% ;
+    border-radius: 10%;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.hiromu-dream:hover{
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    width: 55%;
+    height: 40%;
+
+    font-size: 0.8rem;
+    background-color: black;
+    color: white;
+
+    background-image: url(../../brother/pics/hihou.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+    opacity: 0.7;
+
+    border-radius: 50%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition-duration: 0.5s;
 }

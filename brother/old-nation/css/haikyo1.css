@@ -3,7 +3,7 @@ body {
 
 .page {
     background-color: gray;
-    color: red;
+    color: white;
 
 
     margin-right: auto;
@@ -17,7 +17,7 @@ body {
 
       background-image:
           radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
-          url("../pics/haikyo.jpg");
+          url("../city/pics/haikyo.jpg");
       background-position:
           top 0% left 0%,
           top 0% left 0%;
@@ -31,7 +31,7 @@ body {
       opacity: 0.9;
 }
 
-.ege{
+.city1{
     position: absolute;
     top: 10%;
     left: 10%;
@@ -42,7 +42,7 @@ body {
     background-color: black;
     color: white;
 
-    background-image: url(../pics/ege.jpg);
+    background-image: url(../city/pics/city1.jpg);
     background-size: cover;
     z-index: 5;
     opacity: 0.5;
@@ -65,7 +65,7 @@ body {
     background-color: black;
     color: white;
 
-    background-image: url(../pics/haikyo1.jpg);
+    background-image: url(../city/pics/city-christ.jpg);
     background-size: cover;
     z-index: 3;
     opacity: 0.9;

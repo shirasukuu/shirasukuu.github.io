@@ -48,10 +48,10 @@ a:hover {
     border-left: 1px solid white;
     border-top: 1px solid white;
     border-radius: 3px;
-    box-shadow:
+    /* box-shadow:
         1px 1px 1px 1px #666,
         2px 2px 1px 1px #555,
-        3px 3px 1px 1px #444;
+        3px 3px 1px 1px #444; */
 
     background-color: gray;
     color: black;

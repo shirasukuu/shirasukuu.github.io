@@ -7,7 +7,7 @@ body {
 
       background-image:
           radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
-          url("../pics/nation.jpg");
+          url("../pics/city0.jpg");
       background-position:
           top 0% left 0%,
           top 0% left 0%;
@@ -97,16 +97,4 @@ body {
 
   font-size: 0.8rem;
   white-space: pre-wrap;
-}
-
-.city{
-  position: absolute;
-  top: 30%;
-  left: 60%;
-  width: 30%;
-  height: 20%;
-
-  background-image: url("../pics/city-mirano.jpg");
-  background-size: cover;
-  opacity: 0.5;
 }

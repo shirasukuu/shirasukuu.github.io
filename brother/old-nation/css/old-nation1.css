@@ -39,11 +39,11 @@ body {
 .dragon1{
   position: absolute;
   top: 20%;
-  left: -5%;
+  left: 0%;
   width: 60%;
   height: 60%;
 
-  background-image:
+   background-image:
       radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.7) 100%),
       url("../pics/dragon1.jpg");
   background-position:
@@ -55,10 +55,33 @@ body {
   background-repeat:
       no-repeat,
       no-repeat;
-  border-radius: 40%;
-  opacity: 0.5;
+  border-radius:30%;
+  opacity: 0.2;
 }
 
+
+.dragon1-1{
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  width: 60%;
+  height: 60%;
+
+   background-image:
+      radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.7) 100%),
+      url("../pics/dragon1.jpg");
+  background-position:
+      top 0% left 0%,
+      top 0% left 0%;
+  background-size:
+      cover,
+      cover;
+  background-repeat:
+      no-repeat,
+      no-repeat;
+  border-radius:50%;
+  opacity: 0.3;
+}
 
 .city{
   position: absolute;
@@ -68,7 +91,7 @@ body {
   height: 20%;
 
   background-image:
-      radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0.7) 100%),
+      radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 1) 100%),
       url("../pics/city-mirano.jpg");
   background-position:
       top 0% left 0%,
@@ -79,7 +102,7 @@ body {
   background-repeat:
       no-repeat,
       no-repeat;
-  border-radius: 50%;
+  border-radius: 30%;
   opacity: 0.5;
 }
 

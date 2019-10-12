@@ -56,7 +56,11 @@ body {
       no-repeat,
       no-repeat;
   border-radius:30%;
-  opacity: 0.2;
+  /* filter: blur(1px); */
+  /* filter: alpha(style=0, opacity=50); */
+  /* background-blend-mode: overlay; */
+  /* opacity: 0.5; */
+  filter:opacity(30);
 }
 
 

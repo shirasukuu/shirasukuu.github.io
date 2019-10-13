@@ -2,18 +2,23 @@ body {
 }
 
 .page {
-    background-color: black;
+     background-color: transparent;
     color: black;
 
       background-image:
-          radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(0, 0, 0, 0.7) 100%),
-          url("../pics/nation.jpg");
-      background-position:
-          top 0% left 0%,
-          top 0% left 0%;
+      url("../pics/nation.jpg"),
+      url("../pics/dragon1.jpg");
+
+      background-blend-mode: hard-light;
+      /* background-position: */
+          /*top 0% left 0%,*/
+          /* top 10%; */
       background-size:
-          cover,
-          cover;
+          100%,
+          50%;
+      background-position:
+      0% 0%, 20% 30%;
+
       background-repeat:
           no-repeat,
           no-repeat;
@@ -36,16 +41,22 @@ body {
     transform: skewY(20deg); */
 }
 
-.dragon1{
+.dragon11{
   position: absolute;
   top: 20%;
   left: 0%;
   width: 60%;
   height: 60%;
-
+/*
    background-image:
       radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.7) 100%),
-      url("../pics/dragon1.jpg");
+      url("../pics/dragon1.jpg"); */
+
+
+         background-image:
+            url("../pics/dragon1.jpg"),
+            radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.0  ) 100%);
+
   background-position:
       top 0% left 0%,
       top 0% left 0%;
@@ -55,12 +66,21 @@ body {
   background-repeat:
       no-repeat,
       no-repeat;
+
   border-radius:30%;
   /* filter: blur(1px); */
   /* filter: alpha(style=0, opacity=50); */
-  /* background-blend-mode: overlay; */
-  /* opacity: 0.5; */
-  filter:opacity(30);
+  background-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+.test{
+  position: absolute;
+  top: 30%;
+  /* filter: alpha(opacity=50); */
+  background-blend-mode: multiply;
+
+  /* filter: opacity(50%); */
 }
 
 

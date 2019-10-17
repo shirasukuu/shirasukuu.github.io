@@ -82,6 +82,13 @@ body {
 
   /* filter: opacity(50%); */
 }
+.sample{
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  mask-image: url=("../pics/6Ws.jpg");
+  mask-mode: alpha;
+}
 
 
 .dragon1-1{

@@ -90,9 +90,9 @@ body {
   /* background-color: #8cffa0; */
 /* -webkit-mask-image: url(https://mdn.mozillademos.org/files/12676/star.svg);
 mask-image: url(https://mdn.mozillademos.org/files/12676/star.svg); */
-  -webkit-mask-image:  linear-gradient(rgba(0, 0, 0, 1.0), transparent);
-  mask-image:  linear-gradient(rgba(0, 0, 0, 1.0), transparent);
-  /* mask-mode: alpha; */
+  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0), transparent 90%);
+  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0), transparent 90%);
+  mask-mode: alpha;
 }
 
 

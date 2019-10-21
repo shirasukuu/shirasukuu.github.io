@@ -3,7 +3,7 @@ body {
 
 .page {
      background-color: transparent;
-    color: black;
+    color: white;
 
       background-image:
       url("../pics/nation.jpg");
@@ -24,17 +24,19 @@ body {
       opacity: 0.7;
 }
 
-.city-title{
-  /* background-image: url("../pics/6Wsepia.jpg"); */
+.story-title-big{
     position: absolute;
     top: 20%;
     left: 10%;
     width: 40%;
     height: 10%;
 
-    font-size: 1.3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
     text-align: center;
-    /* transform: scaleX(2);
+    
+        /* transform: scaleX(2);
     transform: rotateZ(45deg);
     transform: skewY(20deg); */
 }
@@ -137,7 +139,7 @@ body {
   left: 10%;
   width: 30%;
   height: 20%;
-
+/*
   background-image:
       radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 1) 100%),
       url("../pics/city-mirano.jpg");
@@ -149,9 +151,22 @@ body {
       cover;
   background-repeat:
       no-repeat,
-      no-repeat;
+      no-repeat; */
   border-radius: 30%;
-  opacity: 0.5;
+  opacity: 0.7;
+}
+
+.city-mask{
+  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  -webkit-mask-position: 50% 50%;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
 }
 
 .description{

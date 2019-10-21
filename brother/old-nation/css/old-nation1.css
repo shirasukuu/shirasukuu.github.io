@@ -6,13 +6,11 @@ body {
     color: black;
 
       background-image:
-      url("../pics/nation.jpg"),
-      url("../pics/dragon1.jpg");
+      url("../pics/nation.jpg");
+      /*url("../pics/dragon1.jpg");
 
-      background-blend-mode: hard-light;
-      /* background-position: */
-          /*top 0% left 0%,*/
-          /* top 10%; */
+      background-blend-mode: hard-light;*/
+
       background-size:
           cover,
           40%;
@@ -29,7 +27,7 @@ body {
 .city-title{
   /* background-image: url("../pics/6Wsepia.jpg"); */
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 10%;
     width: 40%;
     height: 10%;
@@ -87,19 +85,26 @@ body {
   height: 400px;
   position: absolute;
   top: 25%;
-  left: 0%;
-  border-radius: 10%;
-
+  left: -10%;
+  border-radius: 40%;
+/*
   border: solid 1px black;
-  border: double 10px #0000ff;
-  background-color: #8cffa0;
+  background-color: #8cffa0; */
   color: black;
-/* -webkit-mask-image: url(https://mdn.mozillademos.org/files/12676/star.svg);
-mask-image: url(https://mdn.mozillademos.org/files/12676/star.svg); */
-  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 0%, transparent 90%);
-  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 0%, transparent 90%);
+  opacity: 0.7;
+}
+
+.sample-mask{
+  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
   mask-mode: alpha;
-  opacity: 1;
+  -webkit-mask-mode: alpha;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  -webkit-mask-position: 50% 50%;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
 }
 
 

@@ -31,11 +31,27 @@ body {
     width: 40%;
     height: 10%;
 
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    
+    text-shadow:
+        1px 1px #aaa,
+        2px 2px #999,
+        3px 3px #888,
+        4px 4px #777,
+        5px 5px #666,
+        6px 6px #555,
+        7px 7px 4px #000;
+    /* box-shadow:
+        1px 1px 1px 1px #666,
+        2px 2px 1px 1px #555,
+        3px 3px 1px 1px #444,
+        4px 4px 1px 1px #333,
+        5px 5px 1px 1px #222,
+        8px 7px 2px 2px #111,
+        8px 9px 2px 2px #000; */
+
         /* transform: scaleX(2);
     transform: rotateZ(45deg);
     transform: skewY(20deg); */
@@ -89,9 +105,11 @@ body {
   top: 25%;
   left: -10%;
   border-radius: 40%;
-/*
-  border: solid 1px black;
-  background-color: #8cffa0; */
+  /* blend mode */
+  mix-blend-mode: hard-light;
+  /*filter*/
+  filter: blur(0.5px);
+
   color: black;
   opacity: 0.7;
 }
@@ -107,6 +125,10 @@ body {
   -webkit-mask-position: 50% 50%;
   mask-size: 100%;
   -webkit-mask-size: 100%;
+
+transform: scale(0.7);
+/* transform: rotateZ(45deg); */
+/* transform: skewY(20deg); */
 }
 
 

@@ -3,24 +3,17 @@ body {
 
 .page {
      background-color: transparent;
-    color: white;
+     color: white;
 
       background-image:
       url("../pics/nation.jpg");
-      /*url("../pics/dragon1.jpg");
-
-      background-blend-mode: hard-light;*/
 
       background-size:
-          cover,
-          40%;
+          cover;
       background-position:
-      0% 0%, 0% 0%;
-
+        0% 0%;
       background-repeat:
-          no-repeat,
           no-repeat;
-
       opacity: 0.7;
 }
 
@@ -30,6 +23,7 @@ body {
     left: 10%;
     width: 40%;
     height: 10%;
+    color: #ddd;
 
     font-size: 3rem;
     font-weight: bold;
@@ -43,61 +37,12 @@ body {
         5px 5px #666,
         6px 6px #555,
         7px 7px 4px #000;
-    /* box-shadow:
-        1px 1px 1px 1px #666,
-        2px 2px 1px 1px #555,
-        3px 3px 1px 1px #444,
-        4px 4px 1px 1px #333,
-        5px 5px 1px 1px #222,
-        8px 7px 2px 2px #111,
-        8px 9px 2px 2px #000; */
 
-        /* transform: scaleX(2);
+    /* transform: scaleX(2);
     transform: rotateZ(45deg);
     transform: skewY(20deg); */
 }
 
-.dragon11{
-  position: absolute;
-  top: 20%;
-  left: 0%;
-  width: 60%;
-  height: 60%;
-/*
-   background-image:
-      radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.7) 100%),
-      url("../pics/dragon1.jpg"); */
-
-
-         background-image:
-            url("../pics/dragon1.jpg"),
-            radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.0  ) 100%);
-
-  background-position:
-      top 0% left 0%,
-      top 0% left 0%;
-  background-size:
-      cover,
-      cover;
-  background-repeat:
-      no-repeat,
-      no-repeat;
-
-  border-radius:30%;
-  /* filter: blur(1px); */
-  /* filter: alpha(style=0, opacity=50); */
-  background-blend-mode: multiply;
-  opacity: 0.5;
-}
-
-.test{
-  width: 20%;
-  position: absolute;
-  top:0%;
-  mix-blend-mode: hard-light;
-
-  /* filter: opacity(50%); */
-}
 .sample{
   width: 500px;
   height: 400px;
@@ -126,33 +71,7 @@ body {
   mask-size: 100%;
   -webkit-mask-size: 100%;
 
-transform: scale(0.7);
-/* transform: rotateZ(45deg); */
-/* transform: skewY(20deg); */
-}
-
-
-.dragon1-1{
-  position: absolute;
-  top: 20%;
-  left: 0%;
-  width: 60%;
-  height: 60%;
-
-   background-image:
-      radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.7) 100%),
-      url("../pics/dragon1.jpg");
-  background-position:
-      top 0% left 0%,
-      top 0% left 0%;
-  background-size:
-      cover,
-      cover;
-  background-repeat:
-      no-repeat,
-      no-repeat;
-  border-radius:50%;
-  opacity: 0.3;
+  transform: scale(0.7);
 }
 
 .city{
@@ -161,19 +80,6 @@ transform: scale(0.7);
   left: 10%;
   width: 30%;
   height: 20%;
-/*
-  background-image:
-      radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 1) 100%),
-      url("../pics/city-mirano.jpg");
-  background-position:
-      top 0% left 0%,
-      top 0% left 0%;
-  background-size:
-      cover,
-      cover;
-  background-repeat:
-      no-repeat,
-      no-repeat; */
   border-radius: 30%;
   opacity: 0.7;
 }
@@ -198,7 +104,6 @@ transform: scale(0.7);
     width: 45%;
     height: 60%;
     padding: 1rem 1rem 1rem 1rem;
-
     font-size: 0.8rem;
 }
 
@@ -210,27 +115,10 @@ transform: scale(0.7);
   width: 50%;
   height: 50%;
   background-color: transparent;
-/*
-  background-image:
-      radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.7) 100%),
-      url("../pics/dragon0.jpg"); */
-
-      background:
-       radial-gradient(closest-side, transparent, rgba(255,255,100,0.5)),
-        url(../pics/dragon0.jpg);
-/* background-repeat: no-repeat; */
+  background:
+    radial-gradient(closest-side, transparent, rgba(255,255,100,0.5)),
+    url(../pics/dragon0.jpg);
 /* background-blend-mode: hard-light; */
-/* background-size: cover; */
-/*
-  background-position:
-      top 0% left 0%,
-      top 0% left 0%;
-  background-size:
-      cover,
-      cover;
-  background-repeat:
-      no-repeat,
-      no-repeat; */
   border-radius: 40%;
-  /* opacity: 0.8; */
+  opacity: 0.8;
 }

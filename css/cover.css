@@ -9,11 +9,6 @@ body {
     color: white;
 }
 
-/* for debug */
-* {
-    border: 0px solid white;
-}
-
 cover,
 name,
 auther,
@@ -26,7 +21,7 @@ cover {
     left: auto;
     height: 90%;
     width: 90%;
-    transform: rotate(-5deg);
+    /* transform: rotate(-5deg); */
 
     border-radius: 3px;
     box-shadow:
@@ -44,37 +39,11 @@ cover {
         rgba(255, 255, 255, 0.5) 100%), url("../pics/black.jpg");
 }
 
-name1 {
-    background-image: url("../pics/gold.jpg");
-    /*    font: 900 4em sans-serif;*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-
-
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: rgba(0, 0, 0, 0);
-
-    transform: translate(-50%, -50%) rotate(3deg);
-    font-size: 6rem;
-    font-weight: bold;
-}
-
 name {
-    /* background-image: url("../pics/gold.jpg"); */
-    /*    font: 900 4em sans-serif;*/
     top: 50%;
     left: 50%;
 
-
-
-    /* background-clip: text;
-    -webkit-background-clip: text;
-    color: rgba(0, 0, 0, 0); */
-
-    transform: translate(-50%, -50%) rotate(3deg);
+    transform: translate(-50%, -50%);
     font-size: 6rem;
     text-shadow:
         1px 1px #aaa,
@@ -84,32 +53,8 @@ name {
         5px 5px #666,
         6px 6px #555,
         7px 7px 4px #000;
-    /*
-
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: rgba(0, 0, 0, 0);
-*/
 }
 
-
-/*
-
-name {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(3deg);
-    font-size: 4rem;
-    text-shadow:
-        1px 1px #aaa,
-        2px 2px #999,
-        3px 3px #888,
-        4px 4px #777,
-        5px 5px #666,
-        6px 6px #555,
-        7px 7px 4px #000;
-}
-*/
 name a {
     color: gold;
 }

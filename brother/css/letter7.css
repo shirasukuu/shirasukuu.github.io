@@ -19,6 +19,10 @@ body {}
     opacity: 0.9;
 }
 
+a{
+  color: white;
+}
+
 .ikutsu-dream{
     position: absolute;
     top: 10%;
@@ -27,12 +31,12 @@ body {}
     height: 30%;
 
     font-size: 0.8rem;
-    background-color: #75A9FF;
+    /* background-color: #75A9FF; */
     color: white;
-
+/*
     background-image: url(../../brother/pics/haikyo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     z-index: 5;
     opacity: 0.5;
 
@@ -43,7 +47,23 @@ body {}
 
         cursor: pointer;
     transition-duration: 0.5s;
+}
 
+.ikutsu-mask{
+  position: absolute;
+  top: 30%;
+  left:0%;
+  width: 100%;
+  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  -webkit-mask-position: 50% 50%;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
 }
 
 .ikutsu-dream a {
@@ -59,8 +79,8 @@ body {}
     position: absolute;
     top: 20%;
     left: 2rem;
-    width: 60%;
-    height: 40%;
+    width: 40%;
+    height: 20%;
 
     font-size: 0.8rem;
     background-color: #75A9FF;
@@ -70,9 +90,9 @@ body {}
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 7;
-    opacity: 0.7;
+    opacity: 0.5;
 
-    border-radius: 50%;
+    border-radius: 30%;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -88,13 +108,13 @@ body {}
 
     font-size: 0.8rem;
 
-    background-color: black;
+    /* background-color: black; */
     color: white;
-
+/*
     background-image: url(../../brother/pics/hina0.jpg);
-    background-size: cover;
+    background-size: cover; */
     z-index: 3;
-    opacity: 0.3;
+    opacity: 0.7;
 
     border-radius: 10%;
     padding-top: 2rem;
@@ -105,12 +125,29 @@ body {}
     transition-duration: 0.5s;
 }
 
+.satsuki-mask{
+  position: absolute;
+  top: 30%;
+  right: 1rem;
+  width: 100%;
+  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  -webkit-mask-position: 50% 50%;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+}
+
 .satsuki-dream:hover{
     position: absolute;
-    top: 30%;
+    top: 40%;
     right: 2%;
-    width: 55%;
-    height: 40%;
+    width: 40%;
+    height: 30%;
 
     font-size: 0.8rem;
 
@@ -120,9 +157,9 @@ body {}
     background-image: url(../../brother/pics/hina0.jpg);
     background-size: cover;
     z-index: 3;
-    opacity: 0.7;
+    opacity: 0.5;
 
-    border-radius: 50%;
+    border-radius: 40%;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -138,12 +175,12 @@ body {}
     height: 30%;
 
     font-size: 0.8rem;
-    background-color: black;
+    /* background-color: black; */
     color: white;
 
-    background-image: url(../../brother/pics/hihou.jpg);
+    /* background-image: url(../../brother/pics/hihou.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     z-index: 5;
     opacity: 0.3;
 
@@ -155,11 +192,28 @@ body {}
     transition-duration: 0.5s;
 }
 
+.hiromu-mask{
+  position: absolute;
+  top: 30%;
+  right: 1rem;
+  width: 100%;
+  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  -webkit-mask-position: 50% 50%;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+}
+
 .hiromu-dream:hover{
     position: absolute;
     top: 50%;
     left: 2rem;
-    width: 55%;
+    width: 40%;
     height: 40%;
 
     font-size: 0.8rem;
@@ -170,9 +224,9 @@ body {}
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
-    opacity: 0.7;
+    opacity: 0.5;
 
-    border-radius: 50%;
+    border-radius: 40%;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;

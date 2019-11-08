@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #200122, #6f0000);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  background: url("https://dl.dropbox.com/s/pzaxobsyspbfrjw/wa.png?dl=0");
+  background-attachment: fixed;
+  background-size: cover;
+  clip-path: circle(40%);
+  animation: clipmove 12s ease-in-out infinite;
+}
+
+@keyframes clipmove {
+  0%,
+  100% {
+    clip-path: circle(10% at 0 0);
+  }
+
+  50% {
+    clip-path: circle(80% at 100% 100%);
+  }
+}

@@ -78,6 +78,40 @@ footer{
   opacity: 0.5;
 }
 
+gold-title{
+  width:400px;
+  height: 70px;
+  position: absolute;
+  top:10px;
+  left:30%;
+
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+
+  background-image: url("../pics/gold.jpg");
+  color: transparent;
+  -webkit-background-clip: text;
+  z-index: 10;
+}
+
+gold-title-shadow{
+  width:400px;
+  height: 70px;
+  position: absolute;
+  top:10px;
+  left:30%;
+
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px black;
+
+  color: black;
+  z-index: 9;
+}
+
+
 mokuji1{
   width: 300px;
   height:400px;
@@ -103,7 +137,7 @@ mokuji2{
   height:400px;
   position: absolute;
   top:8%;
-  left:40%;
+  left:calc(10% + 150px);
   background-color: #EADCC2;
   background-image: url("../pics/old-paper.png");
   background-size: 100% 100%;
@@ -125,7 +159,7 @@ mokuji2:hover{
   width: 300px;
   height:400px;
   position: absolute;
-  top:8%;
+  top:3%;
   left:40%;
   background-color: #EADCC2;
   background-image: url("../pics/old-paper.png");

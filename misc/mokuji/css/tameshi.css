@@ -82,7 +82,8 @@ gold-title{
   border-radius: 10px;
   position: absolute;
   top:10px;
-  left:30%;
+  left:calc(50% - 225px);
+  /* transform: translate(-50%, -50%); */
 
   /* box-shadow:  */
   box-shadow:
@@ -121,7 +122,8 @@ gold-title-shadow{
   border-radius: 10px;
   position: absolute;
   top:10px;
-  left:30%;
+  left:calc(50% - 225px);
+  /* transform: translate(-50%, -50%); */
 
   font-size: 3rem;
   font-weight: bold;

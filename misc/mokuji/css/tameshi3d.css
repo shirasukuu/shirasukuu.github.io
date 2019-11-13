@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  transform-style:preserve-3d;
+  /* perspective-origin:bottom; */
+}
+
+yuka-1{
+  width: 100px;
+  height: 400px;
+  position: absolute;
+  top: 100px;
+  left: 40%;
+  background-color: blue;
+  /* perspective-origin:bottom; */
+
+  transform-origin: right;
+  transform:
+  perspective(500px)
+  translatez(0px)
+  rotatey(135deg)
+  scaleX(3);
+}
+
+yuka-2{
+  width: 100px;
+  height: 400px;
+  position: absolute;
+  top: 100px;
+  left: 40%;
+  background-color: green;
+  transform-origin: left;
+  transform:
+  perspective(500px)
+  translateZ(0px)
+  rotatey(225deg)
+  scaleX(3);
+}
+
+yuka-3{
+  width: 100px;
+  height: 400px;
+  position: absolute;
+  top: 100px;
+  left: 40%;
+  background-color: brown;
+opacity: 0.5;
+transform-origin: bottom;
+transform:
+perspective(500px)
+translatey(0px)
+rotateX(-95deg)
+scaleX(2);
+}
+
+yuka-4{
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 100px;
+  left: 40%;
+  background-color: white;
+  border:1px solid black;
+  opacity: 0.3;
+}

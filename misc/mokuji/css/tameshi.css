@@ -107,8 +107,8 @@ mokuji-1{
   top:90px;
   left:10%;
   border-radius: 5px;
-  background-color: #EADCC2;
-  background-image: url("../pics/old-paper.png");
+  /* background-color: #EADCC2; */
+  background-image: url("../pics/old-paper-r.png");
   background-size: 102% 102%;
   background-position: -5px -5px;
   background-repeat: no-repeat;
@@ -133,8 +133,8 @@ mokuji-2{
   position: absolute;
   top:100px;
   left:calc(10% + 150px);
-  background-color: #EADCC2;
-  background-image: url("../pics/old-paper.png");
+  /* background-color: #EADCC2; */
+  background-image: url("../pics/old-paper-r.png");
   background-size: 102% 102%;
   background-position: -5px -5px;
   background-repeat: no-repeat;

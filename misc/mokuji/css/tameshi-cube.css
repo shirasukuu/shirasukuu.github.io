@@ -1,3 +1,7 @@
+
+/*************************/
+/* 300px X 200px sample */
+
 #demo-1 {
   margin: 250px 0;
 }
@@ -6,12 +10,11 @@
 /* 3D perspective */
 
 #demo-1 .cube {
-  /* animation: rotateCube 15s infinite linear; */
   height: 200px;
   margin: 0 auto;
   position: relative;
   transform: perspective(1000px);
-  transform-origin: 50% 50% -700px;
+  transform-origin: 50% 50% -500px;
   /* perspective-origin:center; */
   transform-style: preserve-3d;
   width: 300px;
@@ -21,19 +24,6 @@
       rotateX(0deg) rotateY(0deg)
       scaleX(1) scaleY(1) scaleZ(1);
 }
-
-/*
- @keyframes rotateCube {
-  0% {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-
-  100% {
-    transform: perspective(1000px) rotateX(-360deg) rotateY(-360deg) rotateZ(0deg);
-  }
-}
-
-*/
 
 #demo-1 .cube div {
   background-color: rgba(162, 176, 206, 0.1);

@@ -12,10 +12,10 @@
   --cube-depth:200px;
   --cube-size:200px;
 
-  --top-color: rgba(162, 176, 206, 0.1);
-  --bottom-color: #000088;
+  --top-color: rgba(200, 200, 255, 0.3);
+  --bottom-color: rgba(0, 0, 100, 0.7);
   --my-gradient: linear-gradient(to left, var(--top-color), var(--bottom-color) 50%);
-  --bg-gradient: linear-gradient(135deg, var(--top-color), var(--bottom-color));
+  --bg-gradient: linear-gradient(90deg, var(--top-color)40%, var(--bottom-color)90%);
 }
 
 *{
@@ -24,20 +24,13 @@
   box-sizing: border-box;
   border: 0px solid red;
 }
+
 body {
-  /* width:100%; */
-  /* height: 100vh; */
-
+  width: 100%;
   background-image: var(--bg-gradient);
-
+background-color: rgba(100, 100, 255, 0.5);
   /* hidden scroll-bar */
   overflow:hidden;
-}
-
-.no-name{
-  /* width: 100%; */
-  /* height: 15vh; */
-  background-color: brown;
 }
 
 /* view point setting */
@@ -64,10 +57,6 @@ left: 0px;
   width: var(--c-w);
   height: var(--c-h);
   margin: 35% 85%;
-  /* padding: 35% 85%; */
-
-  /* perspective:500px;
-  perspective-origin:center; */
 
 /* transform */
   transform-style: preserve-3d;
@@ -82,7 +71,7 @@ left: 0px;
 /* item creation */
 /* small cube */
 .pers .cube .s-cube{
-  background-color: rgba(8, 8, 100, 0.6);
+  background-color: rgba(8, 8, 100, 0.3);
   color: white;
   border: 0px solid white;
   border-radius: 0px;
@@ -99,6 +88,23 @@ left: 0px;
   z-index: 10;
 }
 
+/*bottom*/
+.pers .cube .s-cube .bottom {
+  background-image:
+  linear-gradient(45deg, rgba(180, 180, 180, 0.1), rgba(30, 30, 50, 0.15));
+  border: 0px solid gray;
+
+  color:white;
+  transform: rotateX(90deg) translate3d(0, -100px, -100px);
+
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  opacity: 0.8;
+}
+
 .pers .cube .s-cube .back{
   background-color: rgba(50, 50, 100, 0.3);
   color: white;
@@ -112,29 +118,15 @@ left: 0px;
   justify-content: center;
 }
 
-.pers .cube .s-cube .city{
-  background-color: rgba(10, 10, 100, 0.5);
-  transform: translate3d(100px, 50px, -25px);
-
-
-  text-align: center;
-  line-height: 200px;
-  z-index: 8;
-  opacity: 0.5;
-}
-
 .pers .cube .s-cube .title{
   background-color:
   rgba(10, 10, 80, 0.4);
-
-  /* --top-color; */
-  /* rgba(8, 8, 100, 0.3); */
   border: 0px solid white;
 
   transform: translate3d(0px, -0px, -25px);
 
-color: gray;
-font-size: 2rem;
+  color: gray;
+  font-size: 2rem;
   text-align: center;
   line-height: 200px;
   z-index: 7;
@@ -144,7 +136,6 @@ font-size: 2rem;
 .pers .cube .s-cube .doll{
   background-color:
   rgba(8, 8, 100, 0.3);
- /* rgba(0, 0, 10, 0.6); */
   transform: translate3d(0px, -0px, -50px);
   border: 0px solid white;
 
@@ -154,8 +145,6 @@ color: white;
   z-index: 4;
   opacity: 0.3;
 }
-
-
 
 .pers .cube .s-cube .left{
   background-image: var(--my-gradient);
@@ -170,54 +159,8 @@ color: white;
   justify-content: center;
 }
 
-.pers .cube .s-cube .right{
-  /* background-image:
-   linear-gradient(to right, var(--top-color), var(--bottom-color) 50%); */
-   border: 0px solid white;
 
-  transform: rotateY(90deg) translate3d(calc(0.5 * var(--c-w)), 0, calc(0.5 * var(--c-d)));
-
-  opacity: 0.5;
-
-  /* text-align: center; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* diplay off */
-  display: none;
-}
-
-.pers .cube .s-cube .top {
-  background-image:
-   linear-gradient(var(--top-color), var(--bottom-color) 50%);
-   border: 0px solid white;
-
-  transform: rotateX(-90deg) translate3d(0, 100px, -100px);
-display: none;
-  opacity: 0.8;
-}
-
-/*bottom*/
-.pers .cube .s-cube .bottom {
-  /* background-color:
-  rgba(50, 50, 50, 0.3); */
-  background-image:
-  linear-gradient(45deg, rgba(80, 80, 100, 0.3), rgba(30, 30, 50, 0.3));
-  border: 0px solid gray;
-
-  color:white;
-  transform: rotateX(90deg) translate3d(0, -100px, -100px);
-
-  /* text-align: center; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 3;
-  opacity: 0.8;
-}
-
-/* end */
-
+/**************end*********************/
 
 
 /* old-code, reference purpose only */

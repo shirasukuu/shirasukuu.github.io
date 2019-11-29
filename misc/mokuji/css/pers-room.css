@@ -7,14 +7,15 @@
   --c-h:var(--cube-height);
   --c-d:var(--cube-depth);
   --c-s:var(--cube-size);
-  --cube-width:200px;
+  --cube-width:300px;
   --cube-height:200px;
   --cube-depth:200px;
   --cube-size:200px;
 
+  --bg-color:rgba(200, 255, 255, 0.3);
   --top-color: rgba(200, 200, 255, 0.3);
   --bottom-color: rgba(0, 0, 100, 0.7);
-  --my-gradient: linear-gradient(to left, var(--top-color), var(--bottom-color) 50%);
+
   --bg-gradient: linear-gradient(90deg, var(--top-color)40%, var(--bottom-color)90%);
 }
 
@@ -28,9 +29,101 @@
 body {
   width: 100%;
   background-image: var(--bg-gradient);
-  background-color: rgba(100, 100, 255, 0.5);
+
   /* hidden scroll-bar */
-  overflow:hidden;
+  /* overflow:hidden; */
+}
+
+.pers{
+  width: 100%;
+  /* height: 100px; */
+  background-color: lightgreen;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+/*
+.transform-room{
+  width: 600px;
+  height: 300px;
+  transform-origin: 50% 10% 100px;
+}
+*/
+.紙{
+  /* width: 100%; */
+  /* height: 100vh; */
+
+  background-color:blue;
+
+  z-index: 3;
+}
+
+.transform-room {
+  width: 600px;
+  height: 300px;
+  margin: 0% 0%;
+
+/* transform */
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% -100px;
+
+  transform:
+    perspective(1000px)
+    rotateX(0deg) rotateY(0deg)
+    scaleX(1) scaleY(1) scaleZ(1);
+}
+.背景{
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: yellow;
+  border: 1px solid blue;
+
+  transform-origin: center;
+  transform:
+  translateZ(0px)
+  rotateX(0deg)
+  rotateY(0deg)
+  rotateZ(0deg);
+  z-index: 2;
+}
+
+.床{
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  top: 300px;
+  left: 0px;
+  background-color: yellow;
+  border: 1px solid black;
+
+  transform-origin: top;
+  transform:
+  translatez(0px)
+  rotateX(90deg)
+  rotateY(0deg)
+  rotateZ(0deg);
+  z-index: 2;
+}
+
+.壁{
+  width: 100px;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  left: 600px;
+  background-color: yellow;
+  border: 1px solid red;
+
+  transform-origin: left;
+  transform:
+  translatez(0px)
+  rotateX(0deg)
+  rotateY(-90deg)
+  rotateZ(0deg);
+  z-index: 2;
 }
 
 /* view point setting */
@@ -49,12 +142,12 @@ body {
 
   /* view point position */
   /* default:50% 50% */
-    perspective-origin:30% 140%;
+    perspective-origin:50% 50%;
 }
 
 
 /* item transformation */
-.pers .cube {
+.pers .transform-object {
   width: var(--c-w);
   height: var(--c-h);
   margin: 35% 85%;
@@ -166,16 +259,17 @@ color: white;
 
 /* old-code, reference purpose only */
 .pers .cube div {
-  background-color: rgba(162, 176, 206, 0.1);
-  border: 1px solid #A2B0CE;
+  background-color: rgba(162, 176, 206, 0.9);
+  /* border: 1px solid #A2B0CE; */
   height: var(--c-h);
-  width: var(--c-w);
+  width: 200px;
 
   position: absolute;
   left: 0;
   top: 0;
 }
 
+/*
 .pers .cube .back {
   transform: translate3d(0, 0, -200px);
 }
@@ -191,62 +285,4 @@ color: white;
 .pers .cube .left {
   transform: rotateY(-90deg) translate3d(-100px, 0, 100px);
 }
-
-
-
-
-
-/*
-#demo-1 .cube div {
-  background-color: rgba(162, 176, 206, 0.1);
-  border: 1px solid #A2B0CE;
-  height: 200px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 200px;
-}
 */
-
-
-/*front*/
-/*
-#demo-1 .cube .front {
-  position: relative;
-  transform: translate3d(0, 0, -30px);
-
-  text-align: center;
-  line-height: 200px;
-}
-*/
-
-/*left*/
-/*
-#demo-1 .cube .left {
-  transform: rotateY(-90deg) translate3d(-100px, 0, 100px);
-}
-*/
-
-/*right*/
-
-#demo-1 .cube .right {
-  transform: rotateY(90deg) translate3d(100px, 0, 100px);
-}
-
-/*back*/
-
-#demo-1 .cube .back {
-  transform: translate3d(0, 0, -200px);
-}
-
-/*top*/
-#demo-1 .cube .top {
-  transform: rotateX(-90deg) translate3d(0, 100px, -100px);
-}
-
-/*bottom*/
-#demo-1 .cube .bottom {
-  transform: rotateX(90deg) translate3d(0, -100px, -100px);
-}
-
-/* end */

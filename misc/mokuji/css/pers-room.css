@@ -3,6 +3,11 @@
 /* 200px X 200px cube sample */
 
 :root {
+  --幅:95%;
+  --高さ:85vh;
+  --壁幅:calc(0.25 * var(--幅));
+  --床幅:40vh;
+
   --c-w:var(--cube-width);
   --c-h:var(--cube-height);
   --c-d:var(--cube-depth);
@@ -27,54 +32,61 @@
 }
 
 body {
-  width: 100%;
+  /* width: 100%; */
   background-image: var(--bg-gradient);
 
   /* hidden scroll-bar */
   /* overflow:hidden; */
 }
 
-.pers{
-  width: 100%;
-  /* height: 100px; */
-  background-color: lightgreen;
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
-}
 
-/*
-.transform-room{
-  width: 600px;
-  height: 300px;
-  transform-origin: 50% 10% 100px;
-}
-*/
 .紙{
-  /* width: 100%; */
-  /* height: 100vh; */
+  width: 100%;
+  height: 100vh;
 
   background-color:blue;
 
   z-index: 3;
 }
 
+
+/* view point setting */
+.pers {
+  width: var(--幅);
+  height: var(--高さ);
+  background-color: lime;
+  /* margin: 0px; */
+  padding-top: 0px;
+  padding-left: 0px;
+  /* position: absolute; */
+  /* top:70px; */
+  /* left: 150px; */
+  /* distance from item? */
+    perspective:1000px;
+
+  /* view point position */
+  /* default:50% 50% */
+    perspective-origin:50% 50%;
+}
+
 .transform-room {
-  width: 600px;
-  height: 300px;
+  width: var(--幅);
+  height: var(--高さ);
   margin: 0% 0%;
+  background-color: lime;
 
 /* transform */
   transform-style: preserve-3d;
   transform-origin: 50% 50% -100px;
 
   transform:
-    perspective(1000px)
+    perspective(100000px)
     rotateX(0deg) rotateY(0deg)
     scaleX(1) scaleY(1) scaleZ(1);
 }
 .背景{
-  width: 600px;
-  height: 300px;
+  width: var(--幅);
+  height: var(--高さ);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -91,10 +103,10 @@ body {
 }
 
 .床{
-  width: 600px;
-  height: 100px;
+  width: var(--幅);
+  height: var(--床幅);
   position: absolute;
-  top: 300px;
+  top: var(--高さ);
   left: 0px;
   background-color: yellow;
   border: 1px solid black;
@@ -109,11 +121,11 @@ body {
 }
 
 .壁{
-  width: 100px;
-  height: 300px;
+  width: var(--壁幅);
+  height: var(--高さ);
   position: absolute;
   top: 0px;
-  left: 600px;
+  left: var(--幅);
   background-color: yellow;
   border: 1px solid red;
 
@@ -127,27 +139,27 @@ body {
 }
 
 /* view point setting */
-.pers {
-  width: 100%;
+ {
+  /* width: 100%; */
   /* height: 100%; */
-  /* background-color: green; */
-  margin: 0px;
-  padding-top: 100px;
-  padding-left: 100px;
+  background-color: green;
+  /* margin: 0px; */
+  padding-top: 50px;
+  padding-left: 50px;
   position: absolute;
-  top:0px;
-  left: 0px;
+  top:70px;
+  left: 150px;
   /* distance from item? */
     perspective:1000px;
 
   /* view point position */
   /* default:50% 50% */
-    perspective-origin:50% 50%;
+    /* perspective-origin:50% 50%; */
 }
 
 
 /* item transformation */
-.pers .transform-object {
+.pers .transform-object{
   width: var(--c-w);
   height: var(--c-h);
   margin: 35% 85%;

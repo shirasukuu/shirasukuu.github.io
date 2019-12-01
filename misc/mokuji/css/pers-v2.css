@@ -72,6 +72,8 @@ body {
 /* item creation */
 /* small cube */
 .pers .cube .s-cube{
+  background-image:
+    url(pics/gold.jpg);
   background-color: rgba(8, 8, 100, 0.3);
   color: white;
   border: 0px solid white;
@@ -122,16 +124,19 @@ body {
 .pers .cube .s-cube .title{
   background-color:
   rgba(10, 10, 80, 0.4);
+  background-image:
+    url(../pics/white-city.jpg);
+    background-size: cover;
   border: 0px solid white;
 
   transform: translate3d(0px, -0px, -25px);
 
-  color: gray;
+  color: white;
   font-size: 2rem;
   text-align: center;
   line-height: 200px;
   z-index: 7;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .pers .cube .s-cube .doll{

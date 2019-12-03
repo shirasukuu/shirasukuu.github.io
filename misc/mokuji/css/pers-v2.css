@@ -12,8 +12,8 @@
   --cube-depth:200px;
   --cube-size:200px;
 
-  --top-color: rgba(200, 200, 255, 0.3);
-  --bottom-color: rgba(0, 0, 100, 0.7);
+  --top-color: rgba(200, 200, 200, 0.3);
+  --bottom-color: rgba(0, 0, 100, 0.3);
   --my-gradient: linear-gradient(to left, var(--top-color), var(--bottom-color) 50%);
   --bg-gradient: linear-gradient(90deg, var(--top-color)40%, var(--bottom-color)90%);
 }
@@ -26,9 +26,9 @@
 }
 
 body {
-  width: 100%;
+  /* width: 100%; */
   background-image: var(--bg-gradient);
-  background-color: rgba(100, 100, 255, 0.5);
+  /* background-color: rgba(100, 100, 255, 0.5); */
   /* hidden scroll-bar */
   overflow:hidden;
 }
@@ -36,50 +36,61 @@ body {
 /* view point setting */
 .pers {
   width: 100%;
-  /* height: 100%; */
-  /* background-color: green; */
-  margin: 0px;
-  padding-top: 100px;
-  padding-left: 100px;
+  height: 100vh;
+
   position: absolute;
   top:0px;
-  left: 0px;
-  /* distance from item? */
+  left:0px;
+
+  /* distance from item */
     perspective:1000px;
 
   /* view point position */
   /* default:50% 50% */
-    perspective-origin:30% 140%;
+    perspective-origin:50% 50%;
 }
 
 
 /* item transformation */
 .pers .cube {
+  /* width:100%; */
+  /* height: 100vh; */
   width: var(--c-w);
   height: var(--c-h);
-  margin: 35% 85%;
+
+  position: absolute;
+  top: 50%;
+  left: 90%;
 
 /* transform */
   transform-style: preserve-3d;
-  transform-origin: 230% 90% -100px;
+  /* transform-origin: 230% 90% -100px; */
+  transform-origin:
+   200% 100% -120px;
 
   transform:
-    perspective(190px)
+    perspective(200px)
     rotateX(0deg) rotateY(0deg)
     scaleX(1.5) scaleY(1) scaleZ(1);
 }
 
+
+/* div{
+  width:inherit;
+  height: inherit;
+  border: inherit;
+  position: inherit;
+} */
+
 /* item creation */
 /* small cube */
 .pers .cube .s-cube{
-  background-image:
-    url(pics/gold.jpg);
-  background-color: rgba(8, 8, 100, 0.3);
-  color: white;
-  border: 0px solid white;
-  border-radius: 0px;
-  height: var(--c-h);
-  width: var(--c-w);
+  background-color: rgba(8, 8, 100, 0.5);
+
+  /* border: 0px solid white; */
+
+  height: var(--c-s);
+  width: var(--c-s);
 
   position: absolute;
   left: 0;
@@ -88,23 +99,41 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  /* z-index: 10; */
+}
+
+/* divは*かも？ */
+/*
+.pers .cube .s-cube div{
+  width:inherit;
+  height: inherit;
+  border: inherit;
+  position: inherit;
+} */
+
+.pers .cube .s-cube *{
+  width:var(--c-s);
+  height: var(--c-s);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*bottom*/
 .pers .cube .s-cube .bottom {
   background-image:
   linear-gradient(45deg, rgba(180, 180, 180, 0.1), rgba(30, 30, 50, 0.15));
-  border: 0px solid gray;
+  /* border: 0px solid gray; */
 
   color:white;
   transform: rotateX(90deg) translate3d(0, -100px, -100px);
 
   /* text-align: center; */
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  z-index: 3;
+  justify-content: center; */
+  /* z-index: 3; */
   opacity: 0.8;
 }
 
@@ -112,13 +141,13 @@ body {
   background-color: rgba(50, 50, 100, 0.3);
   color: white;
   border-radius: 0px;
-  border: 0px solid white;
+  /* border: 0px solid white; */
   transform: translate3d(0, 0, calc(-1 * var(--c-d)));
 
   /* text-align: center; */
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .pers .cube .s-cube .title{
@@ -127,131 +156,40 @@ body {
   background-image:
     url(../pics/white-city.jpg);
     background-size: cover;
-  border: 0px solid white;
+  /* border: 0px solid white; */
 
   transform: translate3d(0px, -0px, -25px);
 
   color: white;
   font-size: 2rem;
-  text-align: center;
-  line-height: 200px;
-  z-index: 7;
+  /* text-align: center;
+  line-height: 200px; */
+  /* z-index: 7; */
   opacity: 0.3;
 }
 
 .pers .cube .s-cube .doll{
   background-color:
   rgba(8, 8, 100, 0.3);
-  transform: translate3d(0px, -0px, -50px);
-  border: 0px solid white;
+  transform: translate3d(0px, -0px, -70px);
+  /* border: 0px solid white; */
 
 color: white;
-  text-align: center;
-  line-height: 200px;
-  z-index: 4;
+  /* text-align: center;
+  line-height: 200px; */
+  /* z-index: 4; */
   opacity: 0.3;
 }
 
 .pers .cube .s-cube .left{
   background-image: var(--my-gradient);
-  border: 0px solid white;
+  /* border: 0px solid white; */
 
-  transform: rotateY(-90deg) translate3d(calc(-0.5 * var(--c-w)), 0, calc(0.5 * var(--c-d)));
+  transform: rotateY(-90deg) translate3d(calc(-0.5 * var(--c-s)), 0, calc(0.5 * var(--c-s)));
 
   opacity: 0.2;
-
+/*
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
-
-
-/**************end*********************/
-
-
-/* old-code, reference purpose only */
-.pers .cube div {
-  background-color: rgba(162, 176, 206, 0.1);
-  border: 1px solid #A2B0CE;
-  height: var(--c-h);
-  width: var(--c-w);
-
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.pers .cube .back {
-  transform: translate3d(0, 0, -200px);
-}
-
-.pers .cube .front {
-  position: relative;
-  transform: translate3d(0, 0, -30px);
-
-  text-align: center;
-  line-height: 200px;
-}
-
-.pers .cube .left {
-  transform: rotateY(-90deg) translate3d(-100px, 0, 100px);
-}
-
-
-
-
-
-/*
-#demo-1 .cube div {
-  background-color: rgba(162, 176, 206, 0.1);
-  border: 1px solid #A2B0CE;
-  height: 200px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 200px;
-}
-*/
-
-
-/*front*/
-/*
-#demo-1 .cube .front {
-  position: relative;
-  transform: translate3d(0, 0, -30px);
-
-  text-align: center;
-  line-height: 200px;
-}
-*/
-
-/*left*/
-/*
-#demo-1 .cube .left {
-  transform: rotateY(-90deg) translate3d(-100px, 0, 100px);
-}
-*/
-
-/*right*/
-
-#demo-1 .cube .right {
-  transform: rotateY(90deg) translate3d(100px, 0, 100px);
-}
-
-/*back*/
-
-#demo-1 .cube .back {
-  transform: translate3d(0, 0, -200px);
-}
-
-/*top*/
-#demo-1 .cube .top {
-  transform: rotateX(-90deg) translate3d(0, 100px, -100px);
-}
-
-/*bottom*/
-#demo-1 .cube .bottom {
-  transform: rotateX(90deg) translate3d(0, -100px, -100px);
-}
-
-/* end */

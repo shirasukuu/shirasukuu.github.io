@@ -31,7 +31,7 @@ body {
   color: white;
   /* background-color: rgba(100, 100, 255, 0.5); */
   /* hidden scroll-bar */
-  /* overflow:hidden; */
+  overflow:hidden;
 }
 
 /* view point setting */
@@ -96,7 +96,6 @@ body {
   left: 0;
   top: 0;
 
-  /* transform: translate(50% 50%); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,84 +123,50 @@ body {
 .pers .cube .s-cube .bottom {
   background-image:
   linear-gradient(45deg, rgba(180, 180, 180, 0.1), rgba(30, 30, 50, 0.15));
-  /* border: 0px solid gray; */
 
-  color:white;
-  transform: rotateX(90deg) translate3d(0, -100px, -100px);
+  transform:
+    rotateX(90deg) translate3d(0, -100px, -100px);
 
-  /* text-align: center; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* z-index: 3; */
   opacity: 0.8;
 }
 
 .pers .cube .s-cube .back{
   background-color: rgba(50, 50, 100, 0.3);
-  color: white;
-  border-radius: 0px;
-  /* border: 0px solid white; */
-  transform: translate3d(0, 0, calc(-1 * var(--c-d)));
 
-  /* text-align: center; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  transform: translate3d(0, 0, calc(-1 * var(--c-d)));
 }
 
 .pers .cube .s-cube .title{
-  /* background-color:
-  rgba(10, 10, 80, 0.5);
-  background-image:
-    url(../pics/white-city.jpg);
-    background-size: cover; */
-
   background:
     /* var(--bg-gradient), */
     url(../pics/white-city.jpg);
-
   background-size: cover;
-
 
   transform: translate3d(0px, -0px, -25px);
 
-  /* color: blue; */
-  font-size: 1rem;
-  /* text-align: center;
-  line-height: 200px; */
-  /* z-index: 7; */
   opacity: 0.3;
 }
 
-.pers .cube .s-cube .title .text-area{
+.pers .cube * * .text-area{
   width: 100vw;
   height: 100vh;
-  transform: scaleY(1.5);
+  transform: scaleY(1.7);
 }
 
 .pers .cube .s-cube .doll{
   background-color:
   rgba(8, 8, 100, 0.3);
-  transform: translate3d(0px, -0px, -70px);
-  /* border: 0px solid white; */
 
-/* color: white; */
-  /* text-align: center;
-  line-height: 200px; */
-  /* z-index: 4; */
+  transform: translate3d(0px, -0px, -70px);
+
   opacity: 0.3;
 }
 
 .pers .cube .s-cube .left{
   background-image: var(--my-gradient);
-  /* border: 0px solid white; */
 
   transform: rotateY(-90deg) translate3d(calc(-0.5 * var(--c-s)), 0, calc(0.5 * var(--c-s)));
 
   opacity: 0.2;
-/*
-  display: flex;
-  align-items: center;
-  justify-content: center; */
+
 }

@@ -1,40 +1,145 @@
+:root{
 
-/* ???.container??? */
-/* hover */
-/* animation */
-/* ???before,after??? */
-/* box-shadow */
-/* text-shadow */
-/* background-blend-mode */
-/* -webkit-background-clip: text; */
-/* background: linear-gradient(to right, #200122, #6f0000); */
-/* transform */
-/* filter */
-
+}
 
 body {
   margin: 0;
   padding: 0;
-  /* width: 100%; */
-  /* height: 100vh; */
+  overflow:hidden;
+}
 
-  /* 全体に影響を与える。 */
-  /* background: linear-gradient(to right, #200122, #6f0000); *?
-  color: white;
+  * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
 
-/* background picture */
-  /*background-image:
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+    border: 0px solid black;
+    color: gray;
+    }
+
+    .目次１,
+    .目次２,
+    .目次３{
+      padding-top: 5rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      padding-bottom: 9rem;
+    }
+
+.壁紙{
+  background-image:
     url("../pics/old-paper2.jpg"),
     url("../pics/paper.jpg");
-  background-size:
-  30%,
+  background-size: 20%,
   cover;
   background-position:
   bottom 0 right 0;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
 
-/* background-blend-mode:  */
-  /* background-blend-mode: overlay; */
+  /* background-blend-mode:  */
+  background-blend-mode: overlay;
+}
+
+.視点{
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.変形{
+  color: black;
+
+  transform-style: preserve-3d;
+  transform-origin:
+    50% 50%  -100px;
+  transform:
+  perspective(1000px)
+  rotateX(15deg);
+
+}
+
+.目次１{
+  width:calc(0.3*100vw);
+  /* height: calc(0.7*100vh); */
+
+  top:18%;
+  left:20%;
+
+  background-image: url("../pics/old-paper-r.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  filter: drop-shadow(5px 5px 8px brown);
+
+  transform: translateZ(50px);
+
+  cursor: pointer;
+  transition-duration: 1s;
+  }
+
+  .目次１:hover{
+    opacity: 0.2;
+  }
+
+.目次２{
+  width:calc(0.3*100vw);
+  /* height: calc(0.7*100vh); */
+
+  top:18%;
+  left:40%;
+
+  background-image: url("../pics/old-paper-r.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  filter:
+  drop-shadow(5px 5px 8px brown)
+  hue-rotate(20deg);
+
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.目次２:hover{
+  /* top: 15px; */
+  opacity: 1;
+  transform:
+    translateZ(60px);
+}
+
+.目次３{
+  width:calc(0.3*100vw);
+  /* height: calc(0.7*100vh); */
+
+  top:18%;
+  left:60%;
+
+  background-image: url("../pics/old-paper-r.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  filter: drop-shadow(5px 5px 8px brown);
+
+  transform:
+    translateZ(-50px);
+
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.目次３:hover{
+  /* top: 20px; */
+  opacity: 1;
+  transform:
+    translateX(-100px)
+    translateZ(60px);
 }
 
 
@@ -259,3 +364,17 @@ mokuji-2:hover{
     clip-path: circle(10% at 100% 100%);
   }
 }
+
+
+
+/* ???.container??? */
+/* hover */
+/* animation */
+/* ???before,after??? */
+/* box-shadow */
+/* text-shadow */
+/* background-blend-mode */
+/* -webkit-background-clip: text; */
+/* background: linear-gradient(to right, #200122, #6f0000); */
+/* transform */
+/* filter */

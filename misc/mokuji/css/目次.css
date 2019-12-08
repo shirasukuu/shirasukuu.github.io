@@ -1,4 +1,5 @@
 :root{
+  --変形幅 : 80vw;
 
 }
 
@@ -22,66 +23,124 @@ body {
     left: 0px;
 
     border: 0px solid black;
-    color: gray;
+    color: black;
     }
 
     .目次１,
     .目次２,
     .目次３{
-      padding-top: 5rem;
-      padding-left: 5rem;
+      padding-top: 4rem;
+      padding-left: 3rem;
       padding-right: 5rem;
       padding-bottom: 9rem;
+
+      font-size: 0.7rem;
+
+      filter: drop-shadow(5px 5px 8px brown);
+
+        /* transform: translateZ(50px); */
+
+        cursor: pointer;
+        transition-duration: 1s;
     }
 
 .壁紙{
+  background-color: gray;
   background-image:
-    url("../pics/old-paper2.jpg"),
-    url("../pics/paper.jpg");
+    url("../pics/leather.jpg");
+
+  opacity: 0.5;
+
+  /*  url("../pics/paper.jpg");
   background-size: 20%,
   cover;
   background-position:
   bottom 0 right 0;
   background-repeat: no-repeat;
 
-  /* background-blend-mode:  */
-  background-blend-mode: overlay;
+  background-blend-mode:
+  background-blend-mode: overlay;*/
 }
 
 .視点{
-  perspective: 1000px;
+  perspective: 2000px;
   perspective-origin: 50% 50%;
 }
 
 .変形{
-  color: black;
+  width: var(--変形幅);
+  margin-left: calc(0.5*(100vw - var(--変形幅)));
+  margin-top: 5vh;
+
+    background-image:
+      url("../pics/old-paper2.jpg"),
+      url("../pics/paper.jpg");
+    background-size: 20%,
+    cover;
+    background-position:
+    bottom 0 right 0;
+    background-repeat: no-repeat;
+
+    /* background-blend-mode:  */
+    background-blend-mode: overlay;
+
+    color: white;
+
+    padding-top: 8rem;
+    padding-left: 3rem;
 
   transform-style: preserve-3d;
   transform-origin:
     50% 50%  -100px;
   transform:
-  perspective(1000px)
+  perspective(800px)
+  rotateY(0deg)
   rotateX(15deg);
 
 }
 
+.目次 {
+  width: 400px;
+  height: 50px;
+
+  position: absolute;
+  top:5%;
+  left: calc(0.5*((var(--変形幅) - 400px)));
+  border-radius: 5px;
+  box-shadow:
+  3px
+  3px
+  3px
+  brown;
+
+  color: white;
+  font-size: 1.8rem;
+  text-shadow:
+  3px
+  3px
+  3px
+  brown;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .目次１{
-  width:calc(0.3*100vw);
+  width:calc(0.22*100vw);
   /* height: calc(0.7*100vh); */
 
-  top:18%;
+  top:30%;
   left:20%;
 
   background-image: url("../pics/old-paper-r.png");
   background-size: 100%;
   background-repeat: no-repeat;
 
-  filter: drop-shadow(5px 5px 8px brown);
+  /* filter: drop-shadow(5px 5px 8px brown); */
 
-  transform: translateZ(50px);
-
-  cursor: pointer;
-  transition-duration: 1s;
+  transform: translateZ(100px);
   }
 
   .目次１:hover{
@@ -89,10 +148,10 @@ body {
   }
 
 .目次２{
-  width:calc(0.3*100vw);
+  width:calc(0.25*100vw);
   /* height: calc(0.7*100vh); */
 
-  top:18%;
+  top:30%;
   left:40%;
 
   background-image: url("../pics/old-paper-r.png");
@@ -103,35 +162,29 @@ body {
   drop-shadow(5px 5px 8px brown)
   hue-rotate(20deg);
 
-  cursor: pointer;
-  transition-duration: 0.5s;
+  transform: translateZ(50px);
 }
 
 .目次２:hover{
   /* top: 15px; */
   opacity: 1;
   transform:
-    translateZ(60px);
+    translateZ(105px);
 }
 
 .目次３{
-  width:calc(0.3*100vw);
+  width:calc(0.25*100vw);
   /* height: calc(0.7*100vh); */
 
-  top:18%;
+  top:30%;
   left:60%;
 
   background-image: url("../pics/old-paper-r.png");
   background-size: 100%;
   background-repeat: no-repeat;
 
-  filter: drop-shadow(5px 5px 8px brown);
-
   transform:
-    translateZ(-50px);
-
-  cursor: pointer;
-  transition-duration: 0.5s;
+    translateZ(10px);
 }
 
 .目次３:hover{
@@ -139,8 +192,16 @@ body {
   opacity: 1;
   transform:
     translateX(-100px)
-    translateZ(60px);
+    translateZ(80px);
 }
+
+
+
+
+
+
+
+
 
 
 mokuji3{

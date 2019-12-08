@@ -1,0 +1,53 @@
+〇フルスクリーン　画像う使う
+
+.fullscreen {
+  width: 100%;
+  height: 100vh;
+  padding: 40vh;
+}
+
+.a {
+  background: url('path/to/image.jpg') center/cover;
+}
+
+
+
+〇要素を簡単に中央に
+Viewport単位は、ユーザー画面の中央に要素を正確に配置する必要がある場合にとても役立ちます。要素の高さが分かっていれば、marginプロパティでtopとbottomの値を[(100 - height)/2]vhに設定するだけで表示できます。
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato';
+  text-align: center;
+  margin: 0;　
+}
+
+.centered {
+  width: 80vw;
+  height: 70vh;
+  margin: 15vh auto;
+  background: brown;
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 4em;
+  color: white;
+}
+
+〇親からすべて受け継ぐ all
+
+body { font-size: small; background-color: #F0F0F0; color:blue; }
+blockquote { background-color: skyblue; color: red; }
+blockquote { all: inherit; }
+
+〇ちなみに力技でCSS関数の calc() 使って掛け算で単位をつける方法も無いわけでもないですが・・・、ややこしいのであまりオススメしません。
+
+:root {
+  --hoge-fontsize: 12;
+}
+h1{
+  font-size:calc(var(--hoge-fontsize) * 1px);
+}

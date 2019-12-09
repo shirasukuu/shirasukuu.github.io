@@ -34,6 +34,9 @@ body {
       padding-right: 5rem;
       padding-bottom: 9rem;
 
+      width:calc(0.22*100vw);
+
+      top: 27%;
       font-size: 0.7rem;
 
       filter: drop-shadow(5px 5px 8px brown);
@@ -84,6 +87,11 @@ body {
     /* background-blend-mode:  */
     background-blend-mode: overlay;
 
+    box-shadow:
+    3px
+    3px
+    3px
+    brown;
     color: white;
 
     padding-top: 8rem;
@@ -94,18 +102,18 @@ body {
     50% 50%  -100px;
   transform:
   perspective(800px)
-  rotateY(0deg)
+  rotateY(3deg)
   rotateX(15deg);
 
 }
 
 .目次 {
-  width: 400px;
+  width: 200px;
   height: 50px;
 
   position: absolute;
   top:5%;
-  left: calc(0.5*((var(--変形幅) - 400px)));
+  left: calc(0.5*((var(--変形幅) - 200px)));
   border-radius: 5px;
   box-shadow:
   3px
@@ -128,10 +136,10 @@ body {
 }
 
 .目次１{
-  width:calc(0.22*100vw);
+  /* width:calc(0.22*100vw); */
   /* height: calc(0.7*100vh); */
 
-  top:30%;
+  /* top:30%; */
   left:20%;
 
   background-image: url("../pics/old-paper-r.png");
@@ -148,10 +156,10 @@ body {
   }
 
 .目次２{
-  width:calc(0.25*100vw);
+  /* width:calc(0.25*100vw); */
   /* height: calc(0.7*100vh); */
 
-  top:30%;
+  /* top:30%; */
   left:40%;
 
   background-image: url("../pics/old-paper-r.png");
@@ -173,10 +181,10 @@ body {
 }
 
 .目次３{
-  width:calc(0.25*100vw);
+  /* width:calc(0.25*100vw); */
   /* height: calc(0.7*100vh); */
 
-  top:30%;
+  /* top:30%; */
   left:60%;
 
   background-image: url("../pics/old-paper-r.png");

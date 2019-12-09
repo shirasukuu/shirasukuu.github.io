@@ -22,14 +22,13 @@
   margin: 0px;
   padding:0px;
   box-sizing: border-box;
-  border: 0px solid red;
+  border: 0px solid white;
 }
 
 body {
-  /* width: 100%; */
   background-image: var(--bg-gradient);
   color: white;
-  /* background-color: rgba(100, 100, 255, 0.5); */
+
   /* hidden scroll-bar */
   overflow:hidden;
 }
@@ -38,10 +37,6 @@ body {
 .pers {
   width: 100%;
   height: 100vh;
-
-  /* position: absolute;
-  top:50%;
-  left:90%; */
 
   /* distance from item */
     perspective:1000px;
@@ -54,8 +49,6 @@ body {
 
 /* item transformation */
 .pers .cube {
-  /* width:100%; */
-  /* height: 100vh; */
   width: var(--c-w);
   height: var(--c-h);
 
@@ -65,7 +58,6 @@ body {
 
 /* transform */
   transform-style: preserve-3d;
-  /* transform-origin: 230% 90% -100px; */
   transform-origin:
    200% 100% -120px;
 
@@ -75,20 +67,9 @@ body {
     scaleX(1.5) scaleY(1) scaleZ(1);
 }
 
-
-/* div{
-  width:inherit;
-  height: inherit;
-  border: inherit;
-  position: inherit;
-} */
-
 /* item creation */
 /* small cube */
 .pers .cube .s-cube{
-  background-color:
-    rgba(10, 130, 250, 0.5);
-
   height: var(--c-s);
   width: var(--c-s);
 
@@ -114,6 +95,12 @@ body {
   width:var(--c-s);
   height: var(--c-s);
   position: absolute;
+  box-shadow:
+    1px
+    1px
+    0.1px
+    blue;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,21 +129,41 @@ body {
     url(../pics/white-city.jpg);
   background-size: cover;
 
-  transform: translate3d(0px, -0px, -25px);
+  font-size: 0.7rem;
+  transform: translate3d(0px, 0px, -25px);
 
   opacity: 0.3;
 }
 
 .pers .cube * * .text-area{
-  width: 100vw;
-  height: 100vh;
+  color: : white;
+  text-shadow:
+  1px
+  1px
+  1px
+  blue;
+
   transform: scaleY(1.7);
 }
+
+.pers .cube .s-cube .title-front{
+  background:
+    var(--bg-gradient);
+    /* url(../pics/white-city.jpg);
+  background-size: cover; */
+
+  font-size: 0.8rem;
+  transform: translate3d(0px, 0px, -5px);
+
+  opacity: 0.3;
+}
+
 
 .pers .cube .s-cube .doll{
   background-color:
   rgba(8, 8, 100, 0.3);
 
+  font-size: 0.8rem;
   transform: translate3d(0px, -0px, -70px);
 
   opacity: 0.3;
@@ -168,5 +175,6 @@ body {
   transform: rotateY(-90deg) translate3d(calc(-0.5 * var(--c-s)), 0, calc(0.5 * var(--c-s)));
 
   opacity: 0.2;
+  z-index: 1;
 
 }

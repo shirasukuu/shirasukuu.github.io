@@ -12,7 +12,7 @@
   --cube-depth:200px;
   --cube-size:200px;
 
-  --top-color: rgba(200, 200, 200, 0.3);
+  --top-color: rgba(200, 200, 250, 0.3);
   --bottom-color: rgba(0, 0, 150, 0.8);
   --my-gradient: linear-gradient(to left, var(--top-color), var(--bottom-color) 50%);
   --bg-gradient: linear-gradient(135deg, var(--top-color)40%, var(--bottom-color)90%);
@@ -51,7 +51,6 @@ body {
 .pers .cube {
   width: var(--c-w);
   height: var(--c-h);
-
   position: absolute;
   top: 60%;
   left: 90%;
@@ -83,28 +82,31 @@ body {
 }
 
 /* divは*かも？ */
-/*
+
 .pers .cube .s-cube div{
   width:inherit;
   height: inherit;
   border: inherit;
   position: inherit;
-} */
 
-.pers .cube .s-cube *{
-  width:var(--c-s);
+  /* border-top: 1px solid white; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+.pers .cube1 .s-cube *{
+    width:var(--c-s);
   height: var(--c-s);
-  position: absolute;
-  box-shadow:
-    1px
-    1px
-    0.1px
-    blue;
+ position: absolute;
+
+    border-right: 1px solid white;
 
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 /*bottom*/
 .pers .cube .s-cube .bottom {
@@ -125,7 +127,7 @@ body {
 
 .pers .cube .s-cube .title{
   background:
-    /* var(--bg-gradient), */
+     /* var(--bg-gradient),  */
     url(../pics/white-city.jpg);
   background-size: cover;
 
@@ -143,14 +145,14 @@ body {
   1px
   blue;
 
+  border: 0px solid white;
+
   transform: scaleY(1.7);
 }
 
 .pers .cube .s-cube .title-front{
   background:
     var(--bg-gradient);
-    /* url(../pics/white-city.jpg);
-  background-size: cover; */
 
   font-size: 0.8rem;
   transform: translate3d(0px, 0px, -5px);

@@ -1,10 +1,10 @@
 body {
     font-family: 'Mv Boli', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', YuGothic, 'Yu Gothic', 'Meiryo UI', 'メイリオ', Meiryo, 'ＭＳ 明朝', 'MS Mincho', 'ＭＳ Ｐ明朝', 'MS PMincho', 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック', 'Yu Gothic UI', 'Segoe Print', sans-serif;
-
+/*
     padding-top: 40px;
     padding-right: 30px;
     padding-bottom: 30px;
-    padding-left: 40px;
+    padding-left: 40px; */
     background-color: gray;
     color: white;
 }
@@ -17,8 +17,11 @@ logo {
 }
 
 cover {
-    top: auto;
-    left: auto;
+    /* top: auto;
+    left: auto; */
+
+    margin-top: 5%;
+    margin-left: 5%;
     height: 90%;
     width: 90%;
     /* transform: rotate(-5deg); */

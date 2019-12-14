@@ -1,0 +1,150 @@
+:root{
+  --box-x: 20%;
+  --box-y: 15%;
+  --box-z: 200px;
+
+  --front-color:var(--mid-blue);
+
+  --light-blue:rgba(200, 200, 255, 0.5);
+  --mid-blue:rgba(200, 200, 255, 0.5);
+  --deep-blue:rgba(100, 100, 255, 0.5);
+  --heavy-blue:rgba(20, 20, 100, 0.8);
+
+  --my-gradient:linear-gradient(135deg, var(--light-blue) 10%, var(--deep-blue) 50%, var(--heavy-blue) 90%, green);
+}
+
+html{
+  /*理由は分からないけどbodyでgradientを使うときには必要。*/
+  min-height: 100%;
+  /* background-color: lightblue; */
+}
+
+body {
+    font-family: 'Mv Boli', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', YuGothic, 'Yu Gothic', 'Meiryo UI', 'メイリオ', Meiryo, 'ＭＳ 明朝', 'MS Mincho', 'ＭＳ Ｐ明朝', 'MS PMincho', 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック', 'Yu Gothic UI', 'Segoe Print', sans-serif;
+
+    margin: 0;
+
+    /* html 参照 */
+    /* background:
+      var(--my-gradient); */
+    color: black;
+}
+
+.紙{
+  width: 100%;
+  height: 100vh;
+  background: var(--my-gradient);
+}
+
+pers{
+  /* width: var(--box-x); */
+  width: var(--box-x);
+  height: var(--box-y);
+
+  position: absolute;
+    bottom: -20%;
+    right: -15%;
+    /* top: calc(0.5 * (100vh - var(--box-y)));
+    left: calc(0.5 * (100% - var(--box-x))); */
+    border: 1px solid green;
+
+  background-color: brown;
+
+  /* distance from item */
+  perspective:1000px;
+
+  /* view point position */
+  /* default:50% 50% */
+  perspective-origin:50% 50%;
+}
+
+cube{
+  /* width: var(--box-x); */
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid yellow;
+  /* depth: var(--box-z); */
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* top: calc(0.5 * (100vh - var(--cube-y)));
+  left: calc(0.5 * (100% - var(--cube-x))); */
+
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% 0px;
+  transform:
+    perspective(500px)
+    translateX(-130%)
+    translateY(-150%)
+    translateZ(0px)
+    rotateX(0deg)
+    rotateY(0deg);
+}
+
+
+cube back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid purple;
+  background-color: lightblue;
+
+  transform-origin: top;
+  transform:
+    rotateX(0deg)
+    translateZ(-100px);
+}
+cube top{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid red;
+
+  transform-origin: top;
+  transform:
+    rotateX(90deg)
+    translateZ(0px);
+}
+
+
+
+cube front{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid green;
+
+  /* transform-origin: top; */
+  transform:
+    rotateX(0deg)
+    translateZ(calc(2px * 100));
+}
+
+
+
+auther,
+logo {
+    position: absolute;
+}
+
+logo {
+    bottom: 0%;
+    left: 60%;
+}
+
+auther {
+    bottom: 5%;
+    left: 70%;
+}
+
+auther a {
+    color: white;
+}

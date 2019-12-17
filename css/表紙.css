@@ -6,7 +6,7 @@
   --by:var(--box-y);
   --bz:var(--box-z);
 
-  --front-color:rgba(150, 150, 255, 0.3);
+  --front-color:rgba(150, 150, 255, 0.7);
   --mid-color:rgba(140, 140, 255, 0.5);
   --base-color:rgba(100, 100, 255, 0.5);
 
@@ -148,17 +148,20 @@ mid{
     var(--my-gradient),
     url(../pics/cover/white-city.jpg);
 
-  background-size: cover;
-  /* background-color: var(--mid-color); */
-
-  /* font-size: 1.5rem;
-  text-shadow:
-    1px 1px 1px black; */
+  background-size:
+  cover;
 
   transform:
-    translate3d(0px, 0px, calc(0.5 * var(--bz)));
+    translate3d(0px, 0px, calc(0.65 * var(--bz)));
 
-  opacity: 0.5;
+  opacity: 0.3;
+}
+
+mid-text{
+  all:inherit;
+
+  transform:
+    translate3d(0px, 0px, calc(0.65 * var(--bz)));
 }
 
 front{
@@ -175,7 +178,7 @@ front{
 
   transform:
     rotateX(0deg)
-    translateZ(var(--bz));
+    translateZ(calc(var(--bz) - 5px));
 }
 
 /* front::after{
@@ -204,8 +207,8 @@ front::before{
 front:hover{
   color:blue;
   transform:
-  rotatex(0deg)
-  translateZ(210px);
+  rotatex(5deg)
+  translateZ(var(--bz));
 
 /* hover move setting */
   cursor: pointer;

@@ -1,0 +1,155 @@
+:root{
+  --sheet-width:100%;
+  --sheet-height:100%;
+  --sheet-depth:200px;
+  --sheet-x: 0px;
+  --sheet-y: 0px;
+  --sheet-z: 0px;
+}
+
+html{
+  /* background-color: gray; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+
+  background-color: silver;
+}
+
+  /* * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+    border: 1px solid black;
+    color: black;
+    } */
+
+pers{
+  /* width: var(--sheet-width);
+  height: var(--sheet-height); */
+  /* position: absolute;
+  top: 0px;
+  left: 0px; */
+
+  /* position: absolute;
+  top: calc(50% - 0.5 * var(--sheet-width));
+  left: calc(50% - 0.5 * var(--sheet-height)); */
+
+  width: var(--sheet-width);
+  height: var(--sheet-height);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  background-color: lightblue;
+
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+transform-sheet{
+  width: var(--sheet-width);
+  height: var(--sheet-height);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  background-color: green;
+
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% 0px;
+  transform:
+    perspective(1000px)
+    translate3d(0px, 0px, 0px);
+}
+
+sheet{
+  width: var(--sheet-width);
+  height: var(--sheet-height);
+  position: absolute;
+  top:0px; left:0px;
+
+  background-color: yellow;
+
+  /* transform:
+    translate3d(0px, 0px, 0px); */
+}
+
+back{
+  /* all: inherit; */
+  width: var(--sheet-width);
+  height: var(--sheet-height);
+
+position: absolute;
+top:0px; left:0px;
+
+background-color: brown;
+  transform:
+    translate3d(0px, 0px, calc(-1 * var(--sheet-depth)));
+
+opacity: 0.5;
+}
+/*
+front{
+width: 200px;
+height: 200px;
+position: absolute;
+  background-color: lightblue;
+
+  transform:
+    translate3d(0px, 0px, 200px);
+    opacity: 0.5;
+} */
+
+left{
+  width: var(--sheet-depth);
+  height: var(--sheet-height);
+  position: absolute;
+  top:0px; left:0px;
+
+  background-color: lime;
+  transform-origin: left;
+  transform:
+    rotateY(90deg)
+    translate3d(0px, 0px, 0px);
+    opacity: 0.5;
+}
+
+
+right{
+  width: var(--sheet-depth);
+  height: var(--sheet-height);
+  position: absolute;
+  top:0px;
+  left: calc(var(--sheet-width) - var(--sheet-depth));
+
+  background-color: lime;
+  transform-origin: right;
+  transform:
+    rotateY(-90deg)
+    translate3d(0px, 0px, 0px);
+    opacity: 0.5;
+}
+
+
+bottom{
+  width: var(--sheet-width);
+  height: var(--sheet-depth);
+  position: absolute;
+  top:calc(var(--sheet-height) - var(--sheet-depth));
+  left:0px;
+
+  background-color: gray;
+  transform-origin: bottom;
+  transform:
+    rotatex(90deg)
+    translate3d(0px, 0px, 0px);
+    opacity: 0.5;
+}

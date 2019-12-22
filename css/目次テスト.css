@@ -1,7 +1,7 @@
 :root{
   --sheet-width:100%;
   --sheet-height:100%;
-  --sheet-depth:200px;
+  --sheet-depth:50px;
   --sheet-x: 0px;
   --sheet-y: 0px;
   --sheet-z: 0px;
@@ -16,7 +16,33 @@ body {
   padding: 0;
   overflow:hidden;
 
-  background-color: silver;
+  /* background-color: silver; */
+}
+
+.city{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 50%;
+  height: 50%;
+  border-radius: 0%;
+  opacity:0.7;
+
+  z-index: 5;
+}
+
+/* 共有できそう */
+.city-mask{
+  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: 50% 50%; /* 中心で合わせる */
+  -webkit-mask-position: 50% 50%;
+  mask-size: 100%; /* 同じ大きさで */
+  -webkit-mask-size: 100%;
 }
 
   /* * {
@@ -32,25 +58,19 @@ body {
     } */
 
 pers{
-  /* width: var(--sheet-width);
-  height: var(--sheet-height); */
-  /* position: absolute;
-  top: 0px;
-  left: 0px; */
-
-  /* position: absolute;
-  top: calc(50% - 0.5 * var(--sheet-width));
-  left: calc(50% - 0.5 * var(--sheet-height)); */
-
   width: var(--sheet-width);
   height: var(--sheet-height);
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: var(--sheet-y);
+  left: var(--sheet-x);
 
-  background-color: lightblue;
+  /* background-color: lightblue; */
 
-  perspective: 1000px;
+/*****
+perspective settings
+*****/
+  /* とりあえず2000pxで　*/
+  perspective: 2000px;
   perspective-origin: 50% 50%;
 }
 
@@ -58,11 +78,14 @@ transform-sheet{
   width: var(--sheet-width);
   height: var(--sheet-height);
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: var(--sheet-y);
+  left: var(--sheet-x);
 
-  background-color: green;
+  /* background-color: green; */
 
+/*****
+  transform settings for object
+*****/
   transform-style: preserve-3d;
   transform-origin: 50% 50% 0px;
   transform:
@@ -74,82 +97,165 @@ sheet{
   width: var(--sheet-width);
   height: var(--sheet-height);
   position: absolute;
-  top:0px; left:0px;
+  top:var(--sheet-y);
+  left:var(--sheet-x);
 
-  background-color: yellow;
-
-  /* transform:
-    translate3d(0px, 0px, 0px); */
+  /* background-color: yellow; */
 }
 
 back{
-  /* all: inherit; */
-  width: var(--sheet-width);
-  height: var(--sheet-height);
+  all: inherit;
 
-position: absolute;
-top:0px; left:0px;
+      background-image:
+        url("../pics/old-paper2.jpg"),
+        url("../pics/paper.jpg");
+      background-size:
+      20%,
+      cover;
+      background-position:
+      bottom 10px right 10px,
+      bottom 0px right 0px;
 
-background-color: brown;
+      background-repeat: no-repeat;
+
+  /* background-blend-mode:  */
+      background-blend-mode: overlay;
+
+  border-radius: 0%;
+
   transform:
     translate3d(0px, 0px, calc(-1 * var(--sheet-depth)));
 
-opacity: 0.5;
+    opacity: 1;
+    z-index: 1;
 }
-/*
-front{
-width: 200px;
-height: 200px;
-position: absolute;
-  background-color: lightblue;
+
+front1{
+  all: inherit;
+
+  width: calc(0.4 * var(--sheet-height));
+  height: calc(1 * var(--sheet-height));
+
+  /* background-color: lightblue; */
+
+
+    background-image: url("../pics/old-paper-r.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 
   transform:
-    translate3d(0px, 0px, 200px);
-    opacity: 0.5;
-} */
+    translate3d(200px, 0px, -100px);
+    opacitpx: 0.9;
+    z-index: 4;
+}
+
+front2{
+  all: inherit;
+
+  width: calc(0.4 * var(--sheet-height));
+  height: calc(1 * var(--sheet-height));
+
+  /* background-color: lightblue; */
+
+
+    background-image: url("../pics/old-paper-r.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+  transform:
+    translate3d(300px, 0px, -150px);
+
+  opacity: 0.9;
+  z-index: 3;
+}
+
+front3{
+  all: inherit;
+
+  width: calc(0.4 * var(--sheet-height));
+  height: calc(1 * var(--sheet-height));
+
+  /* background-color: lightblue; */
+
+
+    background-image: url("../pics/old-paper-r.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+  transform:
+    translate3d(400px, 0px, -200px);
+  opacity: 0.9;
+  z-index: 2;
+}
 
 left{
+  all: inherit;
   width: var(--sheet-depth);
-  height: var(--sheet-height);
-  position: absolute;
-  top:0px; left:0px;
 
-  background-color: lime;
+  /* background-color: lime; */
+  background-image: url(../pics/wood.jpg);
+
+  /* border-radius: 50%; */
+
   transform-origin: left;
   transform:
     rotateY(90deg)
     translate3d(0px, 0px, 0px);
-    opacity: 0.5;
+
+  opacity: 1;
 }
 
 
 right{
-  width: var(--sheet-depth);
-  height: var(--sheet-height);
-  position: absolute;
-  top:0px;
+  all: inherit;
   left: calc(var(--sheet-width) - var(--sheet-depth));
 
-  background-color: lime;
+  width: var(--sheet-depth);
+
+  /* background-color: lime; */
+  background-image: url(../pics/wood.jpg);
+
+
   transform-origin: right;
   transform:
     rotateY(-90deg)
     translate3d(0px, 0px, 0px);
-    opacity: 0.5;
+    opacity: 1;
 }
 
 
-bottom{
-  width: var(--sheet-width);
+top{
+  all: inherit;
   height: var(--sheet-depth);
-  position: absolute;
-  top:calc(var(--sheet-height) - var(--sheet-depth));
-  left:0px;
 
-  background-color: gray;
+  /* background-color: lightblue; */
+  background-image: url(../pics/wood.jpg);
+
+
+  transform-origin: top;
+  transform:
+    rotatex(-90deg)
+    translate3d(0px, 0px, 0px);
+    opacity: 1;
+}
+
+bottom{
+  all: inherit;
+  height: var(--sheet-depth);
+  top:calc(var(--sheet-height) - var(--sheet-depth));
+
+  /* background-color: gray; */
+  background-image: url(../pics/wood.jpg);
+
+/* boder image settings */
+  border-image: url("../pics/gold.jpg") 30  round;
+  border-bottom-width: 30px;
+  border-style: solid;
+
   transform-origin: bottom;
   transform:
     rotatex(90deg)
     translate3d(0px, 0px, 0px);
-    opacity: 0.5;
+
+  opacity: 1;
 }

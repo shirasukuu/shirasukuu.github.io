@@ -1,7 +1,7 @@
 :root{
   --sheet-width:100%;
   --sheet-height:100%;
-  --sheet-depth:250px;
+  --sheet-depth:100px;
   --sheet-x: 0px;
   --sheet-y: 0px;
   --sheet-z: 0px;
@@ -31,30 +31,98 @@ body {
   z-index: 1;
 }
 
-/* 共有できそう */
-.city-mask{
-  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
-  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
-  mask-mode: alpha;
-  -webkit-mask-mode: alpha;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: 50% 50%; /* 中心で合わせる */
-  -webkit-mask-position: 50% 50%;
-  mask-size: 100%; /* 同じ大きさで */
-  -webkit-mask-size: 100%;
+/* line,
+.line{
+  width: var(--line-length, 100px);
+  height: 1px;
+  background:
+  linear-gradient(to right, white, var(--line-color));
+
+  position: absolute;
+  top: var(--line-y, 100px);
+  left: var(--line-x, 100px);
+  z-index: 10;
+} */
+
+line-d-test{
+  --lc:lime;
+  --ld:15deg;
+  --lx: 100px;
+  --ly: 100px;
+  z-index: 10;
+}
+
+line1,
+.line1{
+  --line-length-x: 200px;
+  --line-color: red;
+  --line-x: 10px;
+  --line-y: 10px;
+    color: red;
+  z-index: 10;
+}
+
+line2,
+.line2{
+  --line-length-y: 200px;
+  --line-color: red;
+  --line-x: 50px;
+
+  z-index: 10;
+}
+
+line3,
+.line3{
+  all:inherit;
+  background-color: lime;
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  width: 400px;
+  z-index: 10;
+}
+
+
+linetest,
+.linetest{
+  --ll: 500px;
+  --lx: 100px;
+  --ly: 200px;
+  --lcs:brown;
+  --lce:black;
+
+  z-index: 10;
+}
+
+linevertical,
+.linevertical{
+  --ll: 300px;
+  --lx: 100px;
+  --ly: 300px;
+  --lc: lime;
+
+  z-index: 10;
+}
+
+
+liney{
+  --lx:200px;
+  --ly:100px;
+  --lc: red;
+  --ll: 400px;
+
+  z-index: 10;
+}
+
+lineyy{
+  all:inherit;
+  left: 50px;
+  background-color: blue;
+  z-index: 10;
 }
 
   /* * {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    position: absolute;
-    top:0px;
-    left: 0px;
-
     border: 1px solid black;
-    color: black;
     } */
 
 pers{

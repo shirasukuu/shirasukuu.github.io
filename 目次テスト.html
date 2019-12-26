@@ -11,6 +11,7 @@
     <title>三つの物語</title>
 
     <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/utility.css" rel="stylesheet">
     <link href="./css/目次テスト.css" rel="stylesheet">
 
     <!-- fade in/out -->
@@ -30,19 +31,33 @@
 </head>
 <body>
 
-/* city の　window をこしらえて表示　*/
-    <section class="city"><img class="city-mask" src="pics/old-paper2.jpg" alt="mirano"></section>
+/* city の　window をこしらえて表示
+  utility.css の　_alpha-mask を
+  　*/
+    <section class="city"><img class="_alpha-mask" src="pics/old-paper2.jpg" alt="mirano"></section>
 
-    <pers>pers
-      <transform-sheet><sheet>sheet
+/* line utility test */
+    <line1 class="line">line1</line1>
+    <line2 class="line">line2</line2>
+    <line><line3>line3</line3></line>
+
+    <linetest class="linex">test</linetest>
+    <linevertical class="liney">vertical</linevertical>
+    <line-d-test class="line-d">Line-d</line-d-test>
+    <liney>liney</liney>
+    <Liney><lineyy>lineyy</lineyy></Liney>
+
+
+    <pers>
+      <transform-sheet><sheet>
         <back></back>
-        <left>left</left>
-        <right>right</right>
-        <top>top</top>
-        <bottom>bottom</bottom>
-        <front1>front1</front1>
-        <front2>front2</front2>
-        <front3>front3</front3>
+        <left></left>
+        <right></right>
+        <top></top>
+        <bottom></bottom>
+        <front1></front1>
+        <front2></front2>
+        <front3></front3>
       </sheet>
       </transform-sheet>
   </pers>

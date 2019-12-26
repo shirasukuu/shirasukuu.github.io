@@ -52,7 +52,6 @@ a:hover {
     text-decoration: underline;
 }
 
-sheet,
 page,
 .page {
     top: calc(0.5 * calc(100% - var(--window-size)));
@@ -217,4 +216,67 @@ _alpha-mask{
     -webkit-mask-position: 50% 50%;
     mask-size: 100%; /* 同じ大きさで */
     -webkit-mask-size: 100%;
+}
+
+
+/* ラインを書くユーティリティ　*/
+line,
+.line{
+  width: var(--line-length-x, 1px);
+  height: var(--line-length-y, 1px);
+  background-color:
+    var(--line-color, black);
+  /* background:
+  linear-gradient(to right, white, var(--line-color)); */
+
+  position: absolute;
+  top: var(--line-y, 0px);
+  left: var(--line-x, 0px);
+  /* z-index: 10; */
+}
+
+/* グラーデション付きの横線 */
+/* カラーの指定が必要、、、 -lc　*/
+.line-x,
+.linex,
+line-x,
+linex{
+  width: var(--ll, 100px);
+  height: 1px;
+  position: absolute;
+  top: var(--ly, 0px);
+  left: var(--lx, 0px);
+  background:
+    linear-gradient(to right, var(--lcs, transparent), var(--lce, transparent));
+  background-color: var(--lc, transparent);
+}
+
+/* グラーデション付きの縦線 */
+.line-y,
+.liney,
+line-y,
+liney{
+  width: 1px;
+  height: var(--ll, 100px);
+  position: absolute;
+  top: var(--ly, 0px);
+  left: var(--lx, 0px);
+  background:
+    linear-gradient(to bottom, var(--lcs, transparent), var(--lce, transparent));
+  background-color: var(--lc, transparent);
+}
+
+/* 斜め線 */
+lined,
+line-d,
+.lined,
+.line-d{
+  width: var(--ll, 100px);
+  height: var(--ll, 100px);
+  position:absolute;
+  top: var(--ly, 0px);
+  left: var(--lx, 0px);
+  background:
+  linear-gradient(var(--ld, 45deg), transparent 50%, var(--lc, black) 50.1%, transparent 50.4%);
+  /* z-index: 10; */
 }

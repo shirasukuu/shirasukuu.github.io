@@ -1,0 +1,244 @@
+:root{
+  --box-x: 300px;
+  --box-y:calc(var(--box-x) / 1.6);
+  --box-z: var(--box-x);
+  --bx:var(--box-x);
+  --by:var(--box-y);
+  --bz:var(--box-z);
+
+  --front-color:rgba(150, 150, 255, 0.7);
+  --mid-color:rgba(140, 140, 255, 0.5);
+  --base-color:rgba(100, 100, 255, 0.5);
+
+  --light-blue:rgba(200, 200, 255, 0.5);
+  --mid-blue:rgba(200, 200, 255, 0.5);
+  --deep-blue:rgba(100, 100, 255, 0.5);
+  --heavy-blue:rgba(20, 20, 100, 0.8);
+
+  --my-gradient:linear-gradient(135deg, var(--light-blue) 10%, var(--deep-blue) 50%, var(--heavy-blue) 90%, black);
+
+  --front-gradient:linear-gradient(135deg, var(--light-blue) 10%, var(--light-blue) 50%, var(--deep-blue) 90%, var(--deep-blue));
+}
+
+html{
+  /*理由は分からないけどbodyでgradientを使うときには必要。*/
+  min-height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mv Boli', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', YuGothic, 'Yu Gothic', 'Meiryo UI', 'メイリオ', Meiryo, 'ＭＳ 明朝', 'MS Mincho', 'ＭＳ Ｐ明朝', 'MS PMincho', 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック', 'Yu Gothic UI', 'Segoe Print', sans-serif;
+
+    margin: 0;
+
+/* html 参照 */
+/* background:
+      var(--my-gradient); */
+    color: white;
+    overflow: hidden;
+}
+
+.紙{
+  width: 100%; height: 100vh;
+  background: var(--my-gradient);
+}
+
+pers{
+  width: var(--bx);  height: var(--by);
+
+/*　右下隅の外に置く　*/
+  position: absolute;
+    bottom: calc(-1 * var(--by) - 100px);
+    right: calc(-1 * var(--bx) - 100px);
+
+/* distance from item */
+  perspective:1000px;
+
+/* view point position */
+/* default:50% 50% */
+  perspective-origin:50% 50%;
+}
+
+transform-box{
+  width: var(--bx); height: var(--by);
+
+  position: absolute;
+    top: 0px; left: 0px;
+
+/* 文字を中央に */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.3rem;
+  text-shadow:
+    1px 1px 1px blue;
+
+  /* set 3D */
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% 0px;
+  transform:
+    perspective(1200px)
+    translate3d(-500px, -300px, 30px);
+}
+
+back{
+  all: inherit;
+
+  border-left: 1px solid var(--deep-blue);
+  border-bottom: 1px solid blue;
+  background-image: var(--my-gradient);
+
+  transform-origin: top;
+  transform:
+    rotateX(0deg)
+    translate3d(0px, 0px, -100px);
+}
+
+base-window{
+  all:inherit;
+
+  border-left: 1px solid var(--deep-blue);
+  border-bottom: 1px solid blue;
+
+  background-color: var(--base-color);
+
+  transform:
+    translate3d(0px, 0px, 0px);
+}
+
+top{
+  all:inherit;
+
+  height: var(--bz);
+
+  border-bottom: 0px solid var(--deep-blue);
+  border-left: 1px solid var(--deep-blue);
+
+  transform-origin: top;
+  transform:
+    rotateX(90deg)
+    translate3d(0px, 0px, 0px);
+}
+
+bottom{
+  width: var(--bx); height: var(--bz);
+
+  position: absolute;
+  /* top: -50px; */
+    top: calc(-1 * (var(--bz) - var(--by)));
+    left: 0;
+
+  border-right: 1px solid lightblue;
+  border-left: 1px solid white;
+
+  transform-origin: bottom;
+  transform:
+    rotateX(-90deg)
+    translate3d(0px, 0px, 0px);
+}
+
+mid{
+  all: inherit;
+
+  /* border-left: 1px solid var(--deep-blue); */
+  border-bottom: 1px solid var(--deep-blue);
+  background:
+    var(--my-gradient);
+
+  background-size:
+  cover;
+
+  transform:
+    translate3d(0px, 0px, calc(0.65 * var(--bz)));
+
+  opacity: 0.3;
+}
+
+mid-text{
+  all:inherit;
+
+  transform:
+    translate3d(0px, 0px, calc(0.65 * var(--bz)));
+}
+
+front{
+  all: inherit;
+
+  /* border-left: 0.5px solid var(--deep-blue); */
+  border-bottom: 0.5px solid var(--deep-blue);
+
+  /* font-size: 1.3rem;
+  text-shadow:
+    1px 1px 1px blue; */
+
+  background:
+    var(--front-gradient);
+  background-size: cover;
+
+  opacity: 1;
+
+  transform:
+    rotateX(0deg)
+    translateZ(calc(var(--bz) - 5px));
+}
+
+front a{
+  color: white;
+}
+
+/* front::after{
+  content: "";
+
+  width: 10px;   height: 10px;
+  position: absolute;
+    top: calc(var(--by) - 1px);
+    right: -10px;
+  border-top: 1px solid var(--deep-blue);
+  border-left: 1px solid var(--deep-blue);
+}
+
+front::before{
+  content: "";
+
+  width: 10px;
+  height: 10px;
+  position: absolute;
+    top: calc(var(--by) - 1px);
+    left: -10px;
+  border-top: 1px solid var(--deep-blue);
+  border-right: 1px solid var(--deep-blue);
+} */
+
+front:hover{
+  color:blue;
+  transform:
+  rotatex(5deg)
+  translateZ(var(--bz));
+
+/* hover move setting */
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+auther,
+logo {
+    position: absolute;
+}
+
+logo {
+    bottom: 0%;
+    left: 60%;
+}
+
+auther {
+    bottom: 5%;
+    left: 70%;
+}
+
+auther a {
+    color: white;
+}

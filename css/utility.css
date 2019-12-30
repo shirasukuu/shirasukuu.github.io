@@ -218,6 +218,18 @@ _alpha-mask{
     -webkit-mask-size: 100%;
 }
 
+/* .city-mask{
+  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+  -webkit-mask-position: 50% 50%;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+} */
 
 /* ラインを書くユーティリティ　*/
 line,

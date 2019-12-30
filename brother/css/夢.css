@@ -4,7 +4,7 @@
   --cube-size: 200px;
   --half-size: calc(0.5 * var(--cube-size));
 
-  --i-c-front: url("https://shirasukuu.github.io\brother\pics\夢\城（縦）.jpg");
+  --i-c-front: url("../pics/夢/城（縦）.jpg");
   --i-c-right: url("https://shirasukuu.github.io/brother/pics/ege.jpg");
   --i-c-top: url("https://shirasukuu.github.io/brother/pics/ege.jpg");
 

@@ -15,8 +15,8 @@
   --i-g-top: url("https://shirasukuu.github.io/brother/pics/夢/人形3.jpg");
 
 
-  --i-a-front: url("https://shirasukuu.github.io/brother/pics/夢/ラスコー.jpg");
-  --i-a-right: url("https://shirasukuu.github.io/brother/pics/夢/地図.jpg");
+  --i-a-front: url("https://shirasukuu.github.io/brother/pics/夢/地図.jpg");
+  --i-a-right: url("https://shirasukuu.github.io/brother/pics/夢/ラスコー.jpg");
   --i-a-top: url("https://shirasukuu.github.io/brother/pics/夢/秘宝.jpg");
 
 }
@@ -27,7 +27,7 @@ body {
     color: white;
 
       background-image:
-          radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
+          radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
           url("https://shirasukuu.github.io/brother/pics/夢/銀河.jpg");
       background-position:
           top 0% left 0%,
@@ -39,7 +39,7 @@ body {
           no-repeat,
           no-repeat;
 }
-.page {
+/* .page {
   background-color: black;
   color: white;
 
@@ -62,16 +62,22 @@ body {
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-}
+} */
 
 a{
+  position: absolute;
+  bottom: 0%; left:30%;
   color: white;
+}
+
+.g-front a{
+  font-size: 0.5rem;
 }
 
 
 cube-city{
   width: var(--cs); height: var(--cs);
-  position: absolute; top: 100px; left: 200px;
+  position: absolute; top: 20%; left: 15%;
 
   /* background-color: lightblue; */
 
@@ -94,7 +100,7 @@ cube-city{
 
 cube-garden{
   width: var(--cs); height: var(--cs);
-  position: absolute; top: 300px; left: 500px;
+  position: absolute; top: 35%; left: 45%;
 
   /* background-color: lightblue; */
 
@@ -117,7 +123,7 @@ cube-garden{
 
 cube-adventure{
   width: var(--cs); height: var(--cs);
-  position: absolute; top: 100px; left: 800px;
+  position: absolute; top: 20%; right: 5%;
 
   /* background-color: lightblue; */
 
@@ -147,7 +153,8 @@ front, right-side, top{
 
 .front,
 front{
-  background-color: pink;
+  /* background-color: pink; */
+  /* font-size: 0.6; */
   transform:
   translate3d(0px, 0px, var(--hs));
 }
@@ -155,19 +162,19 @@ front{
 .c-front{
   background-image: var(--i-c-front);
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.99;
 }
 
 .g-front{
   background-image: var(--i-g-front);
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.99;
 }
 
 .a-front{
   background-image: var(--i-a-front);
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.99;
 }
 
 .right-side,

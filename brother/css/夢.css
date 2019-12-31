@@ -4,14 +4,41 @@
   --cube-size: 200px;
   --half-size: calc(0.5 * var(--cube-size));
 
-  --i-c-front: url("../pics/夢/城（縦）.jpg");
-  --i-c-right: url("https://shirasukuu.github.io/brother/pics/ege.jpg");
-  --i-c-top: url("https://shirasukuu.github.io/brother/pics/ege.jpg");
+  --i-bg: url("https://shirasukuu.github.io/brother/pics/夢/銀河.jpg");
+
+  --i-c-front: url("https://shirasukuu.github.io/brother/pics/夢/城（縦）.jpg");
+  --i-c-right: url("https://shirasukuu.github.io/brother/pics/夢/城（海）.jpg");
+  --i-c-top: url("https://shirasukuu.github.io/brother/pics/夢/城（平面）.jpg");
+
+  --i-g-front: url("https://shirasukuu.github.io/brother/pics/夢/人形1.jpg");
+  --i-g-right: url("https://shirasukuu.github.io/brother/pics/夢/人形2.jpg");
+  --i-g-top: url("https://shirasukuu.github.io/brother/pics/夢/人形3.jpg");
+
+
+  --i-a-front: url("https://shirasukuu.github.io/brother/pics/夢/ラスコー.jpg");
+  --i-a-right: url("https://shirasukuu.github.io/brother/pics/夢/地図.jpg");
+  --i-a-top: url("https://shirasukuu.github.io/brother/pics/夢/秘宝.jpg");
 
 }
 
 
-body {}
+body {
+      background-color: black;
+    color: white;
+
+      background-image:
+          radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
+          url("https://shirasukuu.github.io/brother/pics/夢/銀河.jpg");
+      background-position:
+          top 0% left 0%,
+          top 0% left 0%;
+      background-size:
+          cover,
+          cover;
+      background-repeat:
+          no-repeat,
+          no-repeat;
+}
 .page {
   background-color: black;
   color: white;
@@ -118,11 +145,6 @@ front, right-side, top{
   position: absolute;
 }
 
-.parts{
-  width: var(--cs); height: var(--cs);
-  position: absolute;
-}
-
 .front,
 front{
   background-color: pink;
@@ -132,6 +154,18 @@ front{
 
 .c-front{
   background-image: var(--i-c-front);
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.g-front{
+  background-image: var(--i-g-front);
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.a-front{
+  background-image: var(--i-a-front);
   background-size: cover;
   opacity: 0.7;
 }
@@ -150,6 +184,18 @@ right-side{
   opacity: 0.7;
 }
 
+.g-right{
+  background-image: var(--i-g-right);
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.a-right{
+  background-image: var(--i-a-right);
+  background-size: cover;
+  opacity: 0.7;
+}
+
 .top,
 top{
   background-color: lightblue;
@@ -160,6 +206,18 @@ top{
 
 .c-top{
   background-image: var(--i-c-top);
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.g-top{
+  background-image: var(--i-g-top);
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.a-top{
+  background-image: var(--i-a-top);
   background-size: cover;
   opacity: 0.7;
 }

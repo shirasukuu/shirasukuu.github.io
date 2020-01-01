@@ -179,11 +179,18 @@ full-mid,
 }
 
 /*footer*/
+aaa,
+.aaa{
+  color: lightgreen;
+  background-color: red;
+  position: absolute;
+  top: 1rem;
+}
 previous-page,
 .previous-page {
     bottom: 1rem;
     left: 10%;
-    width: 6rem;
+    width: 15rem;
     height: 1rem;
 }
 

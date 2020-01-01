@@ -20,15 +20,18 @@
   --i-a-top: url("https://shirasukuu.github.io/brother/pics/夢/秘宝.jpg");
 
 }
-
+html{
+/* body でgradient を使うときには何故か必要。 */
+  min-height: 100%;
+}
 
 body {
-      background-color: black;
+      /* background-color: black; */
     color: white;
 
       background-image:
-          radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
-          url("https://shirasukuu.github.io/brother/pics/夢/銀河.jpg");
+          radial-gradient(ellipse at bottom right, rgba(0, 0, 0, 0.1) 30%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.5) 100%),
+          var(--i-bg);
       background-position:
           top 0% left 0%,
           top 0% left 0%;
@@ -39,30 +42,6 @@ body {
           no-repeat,
           no-repeat;
 }
-/* .page {
-  background-color: black;
-  color: white;
-
-    background-image:
-        radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
-        url("../../brother/pics/water-black.jpg");
-    background-position:
-        top 0% left 0%,
-        top 0% left 0%;
-    background-size:
-        cover,
-        cover;
-    background-repeat:
-        no-repeat,
-        no-repeat;
-
-    font-size: 0.8rem;
-
-    border-radius: 1%;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-} */
 
 a{
   position: absolute;
@@ -100,7 +79,7 @@ cube-city{
 
 cube-garden{
   width: var(--cs); height: var(--cs);
-  position: absolute; top: 35%; left: 45%;
+  position: absolute; top: 35%; left: 40%;
 
   /* background-color: lightblue; */
 
@@ -114,7 +93,7 @@ cube-garden{
 /* 移動、変形 */
   transform-origin: 50% 50% 0px;
   transform:
-    perspective(500px) /* 奥行き感の設定 */
+    perspective(700px) /* 奥行き感の設定 */
     translate3d(0px, 0px, 100px);
 
   backface-visibility: visible;

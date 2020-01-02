@@ -28,7 +28,7 @@ html{
 body {
       /* background-color: black; */
     color: white;
-
+/*
       background-image:
           radial-gradient(ellipse at bottom right, rgba(0, 0, 0, 0.1) 30%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.5) 100%),
           var(--i-bg);
@@ -40,7 +40,7 @@ body {
           cover;
       background-repeat:
           no-repeat,
-          no-repeat;
+          no-repeat; */
 }
 
 a{
@@ -49,25 +49,8 @@ a{
   color: white;
 }
 
-.c-front a{
-  font-size: 0.7rem;
-  position: absolute;
-  bottom: 3%;
-  left: 30%;
-}
-
 .g-front a{
-  font-size: 0.6rem;
-  position: absolute;
-  bottom: 3%;
-  left: 30%;
-}
-
-.a-front a{
-  font-size: 1rem;
-  position: absolute;
-  bottom: 3%;
-  left: 30%;
+  font-size: 0.5rem;
 }
 
 
@@ -111,7 +94,7 @@ cube-garden{
   transform-origin: 50% 50% 0px;
   transform:
     perspective(700px) /* 奥行き感の設定 */
-    translate3d(0px, 0px, 100px);
+    translate3d(0px, 0px, 0px);
 
   backface-visibility: visible;
 }
@@ -223,4 +206,78 @@ top{
   background-image: var(--i-a-top);
   background-size: cover;
   opacity: 0.7;
+}
+
+
+
+
+
+cube-city1{
+  width: var(--cs); height: var(--cs);
+  position: absolute; top: 20%; left: 15%;
+
+  /* background-color: lightblue; */
+
+/* 視点の設定 */
+  perspective: 1000px; /* 奥行の長さ */
+  perspective-origin: -300% 300%; /* X-Y */
+
+/* ３Ｄ空間の宣言 */
+  transform-style: preserve-3d;
+
+/* 移動、変形 */
+  transform-origin: 50% 50% 0px;
+  transform:
+    perspective(500px) /* 奥行き感の設定 */
+    translate3d(300px, 300px, 0px)
+    rotateX(-25deg)
+    rotateY(45deg);
+
+  backface-visibility: visible;
+}
+
+
+cube-garden{
+  width: var(--cs); height: var(--cs);
+  position: absolute; top: 35%; left: 40%;
+
+  /* background-color: lightblue; */
+
+/* 視点の設定 */
+  perspective: 1000px; /* 奥行の長さ */
+  perspective-origin: 300% -300%; /* X-Y */
+
+/* ３Ｄ空間の宣言 */
+  transform-style: preserve-3d;
+
+/* 移動、変形 */
+  transform-origin: 50% 50% 0px;
+  transform:
+    perspective(700px) /* 奥行き感の設定 */
+    translate3d(0px, 0px, 100px);
+
+  backface-visibility: visible;
+}
+
+
+cube-adventure{
+  width: var(--cs); height: var(--cs);
+  position: absolute; top: 20%; right: 5%;
+
+  /* background-color: lightblue; */
+
+/* 視点の設定 */
+  perspective: 1000px; /* 奥行の長さ */
+  perspective-origin: 300% -300%; /* X-Y */
+
+/* ３Ｄ空間の宣言 */
+  transform-style: preserve-3d;
+
+/* 移動、変形 */
+  transform-origin: 50% 50% 0px;
+  transform:
+    perspective(500px) /* 奥行き感の設定 */
+    translate3d(0px, 0px, -200px);
+
+  backface-visibility: visible;
 }

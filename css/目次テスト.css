@@ -315,11 +315,11 @@ bottom{
   /* background-color: gray; */
   background-image: url(../pics/wood-d.jpg);
 
-/* boder image settings */
+/* boder image settings
   border-image: url("../pics/gold.jpg") 30  round;
   border-bottom-width: 30px;
   border-style: solid;
-
+*/
   transform-origin: bottom;
   transform:
     rotatex(90deg)

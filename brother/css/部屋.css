@@ -1,0 +1,190 @@
+body{
+  overflow: hidden;
+}
+.page {
+    background:
+        linear-gradient(to right bottom, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
+        url(../../brother/pics/wood-deck-small-b.jpg);
+}
+
+room{
+  width: 80%; height: 80vh;
+  position: absolute;
+  top: 0; left: 0;
+  border: 1px solid  black;
+  /* pers */
+  perspective: 800px;
+  /* perspective-origin: 50% 50%; */
+
+  /* transform */
+
+  /* transform-style: preserve-3d; */
+  transform-style: flat;
+  transform-origin: 50% 50% 0px;
+
+  transform:
+    perspective(1000px)
+    translate3d(0px, 0px, 0px);
+}
+
+back{
+  width: 100%; height: 100%;
+  position: absolute; top: 0; left: 0;
+  background-color: lightblue;
+  transform:
+    translate3d(0px, 0px, 0px);
+}
+
+right{
+  width: 300px; height: 100%;
+  position: absolute;
+  top: 0px; left: 100%;
+  background-color: yellowgreen;
+  transform-origin: left;
+  transform:
+    rotateY(-90deg);
+    translate3d(0px, 0px, 0px);
+}
+
+floor{
+  width: 100%; height: 300px;
+  position: absolute;
+  top: calc(100% - 300px);
+  left: 0%;
+  background-color: lightgreen;
+  transform-origin: bottom;
+  transform:
+    rotateX(-90deg)
+    translate3d(0px, 0px, 0px);
+}
+
+
+table{
+  width: 30%; height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  background-color: yellow;
+  transform-origin: bottom;
+  transform:
+    rotateX(-100deg)
+    translate3d(0px, 0px, 0px);
+}
+
+
+mado1,
+.mado1 {
+  position: absolute;
+    top: 0%;
+    left: 0%;
+
+    height: 100%;
+    width: 100%;
+
+    background:
+        center/cover url("../../brother/pics/brother1.png");
+    /*
+    clip-path:
+        polygon(0% 10%, 90% 10%, 100% 40%, 10% 40%) circle(10% at 20% 60%);
+*/
+    clip-path:
+        inset(10% 70% 60% 2% round 20px 20px 10px 10px);
+    opacity: 0.8;
+}
+
+mado2,
+.mado2 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    height: 100%;
+    width: 100%;
+
+    background:
+        center/cover url("../../brother/pics/brother1.png");
+
+    clip-path:
+        inset(10% 40% 60% 31% round 20px 20px 10px 10px);
+    opacity: 0.8;
+}
+
+mado3,
+.mado3 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    height: 100%;
+    width: 100%;
+
+    background:
+        center/cover url("../../brother/pics/brother1.png");
+
+    clip-path:
+        inset(10% 10% 60% 61% round 20px 20px 10px 10px);
+    opacity: 0.8;
+}
+
+.left-food{
+    top: 40%;
+    left: 2rem;
+    width: calc(50% - 4rem);
+    white-space: pre-wrap;
+}
+
+.right-food{
+    top: 40%;
+    left: calc(50% + 2rem);
+    width: calc(50% - 4rem);
+    white-space: pre-wrap;
+}
+
+.table {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 40%;
+    height: 45%;
+
+    background-image: url(../pics/wood-deck-small-b.jpg);
+
+    /*    transform-style: preserve-3d;*/
+    /*    perspective-origin: 0% 100%;*/
+    transform:
+        rotate(-30deg) rotateY(-45deg) rotateX(-45deg);
+    box-shadow:
+        1px 5px 3px brown,
+        1px 5px 1px black;
+}
+
+.foods {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+
+    background:
+        left 10% top 60% no-repeat url("../pics/fruit_green_papaya.png"),
+        no-repeat top 60% left 50% url("../pics/fruit_cassis.png"),
+        no-repeat top 90% left 30% url("../pics/soup_food_scotch_broth.png"),
+        no-repeat top 80% left 90% url("../pics/breads.png"),
+        no-repeat top 90% left 70% url("../pics/pans.png"),
+        no-repeat top 70% left 70% url("../pics/knife.png");
+}
+
+.left-food{
+  position: absolute;
+  top:45%;
+  left: 2rem;
+  width: calc(50% - 4rem);
+}
+
+
+.right-food{
+  position: absolute;
+  top:45%;
+  left: calc(50% + 2rem);
+  width: calc(50% - 4rem);
+}

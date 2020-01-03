@@ -297,7 +297,7 @@ top{
   height: var(--sheet-depth);
 
   /* background-color: lightblue; */
-  background-image: url(../pics/wood.jpg);
+  background-image: url(../pics/wood-l.jpg);
 
 
   transform-origin: top;
@@ -313,7 +313,7 @@ bottom{
   top:calc(var(--sheet-height) - var(--sheet-depth));
 
   /* background-color: gray; */
-  background-image: url(../pics/wood.jpg);
+  background-image: url(../pics/wood-d.jpg);
 
 /* boder image settings */
   border-image: url("../pics/gold.jpg") 30  round;

@@ -44,9 +44,7 @@ body {
 }
 
 a{
-  /* position: absolute;
-  bottom: 0%; left:30%; */
-  color: white;
+    color: white;
 }
 
 .c-front a{

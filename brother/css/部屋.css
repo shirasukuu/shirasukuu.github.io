@@ -71,10 +71,10 @@ floor{
 
 
 table{
-  width: 50%; height: 200px;
+  width: 45%; height: 250px;
   position: absolute;
-  top: 50%;
-  left: 8%;
+  top: 40%;
+  left: 12%;
   /* background-color: yellow; */
   background:
       linear-gradient(to left top, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
@@ -91,7 +91,7 @@ table{
   transform-origin: bottom;
   transform:
     rotateX(-100deg)
-    translate3d(0px, 0px, 0px);
+    translate3d(0px, -50px, 0px);
 }
 
 

@@ -19,14 +19,14 @@ body {
   /* background-color: silver; */
 }
 
-.city{
+oldpaper{
   position: absolute;
   top: 30%;
   left: 30%;
   width: 50%;
   height: 50%;
   border-radius: 0%;
-  opacity:0.7;
+  opacity:0.5;
 
   z-index: 1;
 }

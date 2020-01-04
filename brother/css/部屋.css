@@ -1,11 +1,11 @@
 body{
   overflow: hidden;
 }
-.page {
+/* .page {
     background:
         linear-gradient(to right bottom, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
         url(../../brother/pics/wood-deck-small-b.jpg);
-}
+} */
 
 room{
   width: 80%; height: 80vh;
@@ -30,7 +30,11 @@ room{
 back{
   width: 100%; height: 100%;
   position: absolute; top: 0; left: 0;
-  background-color: lightblue;
+  /* background-color: lightblue; */
+  background:
+      linear-gradient(to right bottom, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
+      url(../../brother/pics/wood-deck-small-b.jpg);
+
   transform:
     translate3d(0px, 0px, 0px);
 }
@@ -39,7 +43,10 @@ right{
   width: 300px; height: 100%;
   position: absolute;
   top: 0px; left: 100%;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
+  background:
+      linear-gradient(to left bottom, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
+      url(../../brother/pics/wood-deck-small-b.jpg);
   transform-origin: left;
   transform:
     rotateY(-90deg);
@@ -51,7 +58,11 @@ floor{
   position: absolute;
   top: calc(100% - 300px);
   left: 0%;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
+  background:
+      linear-gradient(to right bottom, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
+      url(../../brother/pics/wood-d.jpg);
+
   transform-origin: bottom;
   transform:
     rotateX(-90deg)
@@ -60,11 +71,23 @@ floor{
 
 
 table{
-  width: 30%; height: 200px;
+  width: 50%; height: 200px;
   position: absolute;
   top: 50%;
-  left: 30%;
-  background-color: yellow;
+  left: 8%;
+  /* background-color: yellow; */
+  background:
+      linear-gradient(to left top, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
+      url(../../brother/pics/wood-yoko.jpg);
+
+  /* border: 4px solid brown; */
+  border-radius: 10px;
+  box-shadow:
+  2px
+  2px
+  2px
+  brown;
+
   transform-origin: bottom;
   transform:
     rotateX(-100deg)
@@ -126,41 +149,10 @@ mado3,
     opacity: 0.8;
 }
 
-.left-food{
-    top: 40%;
-    left: 2rem;
-    width: calc(50% - 4rem);
-    white-space: pre-wrap;
-}
-
-.right-food{
-    top: 40%;
-    left: calc(50% + 2rem);
-    width: calc(50% - 4rem);
-    white-space: pre-wrap;
-}
-
-.table {
-    position: absolute;
-    top: 60%;
-    left: 5%;
-    width: 40%;
-    height: 45%;
-
-    background-image: url(../pics/wood-deck-small-b.jpg);
-
-    /*    transform-style: preserve-3d;*/
-    /*    perspective-origin: 0% 100%;*/
-    transform:
-        rotate(-30deg) rotateY(-45deg) rotateX(-45deg);
-    box-shadow:
-        1px 5px 3px brown,
-        1px 5px 1px black;
-}
-
+foods,
 .foods {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0%;
     width: 50%;
     height: 50%;
@@ -179,6 +171,7 @@ mado3,
   top:45%;
   left: 2rem;
   width: calc(50% - 4rem);
+  white-space: pre-wrap;
 }
 
 
@@ -187,4 +180,5 @@ mado3,
   top:45%;
   left: calc(50% + 2rem);
   width: calc(50% - 4rem);
+  white-space: pre-wrap;
 }

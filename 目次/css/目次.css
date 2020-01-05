@@ -1,102 +1,81 @@
 :root{
-  --変形幅 : 80vw;
-
 }
 
 body {
   margin: 0;
   padding: 0;
-  overflow:hidden;
+  /* overflow:hidden; */
+  background-color: black;
 }
-
-  * {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    display: block;
-
-    width: 100vw;
-    height: 100vh;
-
-    position: absolute;
-    top:0px;
-    left: 0px;
-
-    border: 0px solid black;
-    color: black;
-    }
-
-    .目次１,
-    .目次２,
-    .目次３{
-      padding-top: 4rem;
-      padding-left: 3rem;
-      padding-right: 5rem;
-      padding-bottom: 9rem;
-
-      width:calc(0.22*100vw);
-
-      top: 27%;
-      font-size: 0.7rem;
-
-      filter: drop-shadow(5px 5px 8px brown);
-
-        /* transform: translateZ(50px); */
-
-        cursor: pointer;
-        transition-duration: 1s;
-    }
 
 .壁紙{
-  background-color: gray;
+  width: 100%;
+  height: 100vh;
+  position: absolute; top: 0; left: 0;
+  /* background-color: brown; */
   background-image:
-    url("../pics/leather.jpg");
-
-  opacity: 0.5;
-
-  /*  url("../pics/paper.jpg");
-  background-size: 20%,
+    /* url("../pics/brown-paper-pen.png"), */
+    url("../pics/back.png");
+  background-size:
+  /* 55%, */
   cover;
-  background-position:
-  bottom 0 right 0;
   background-repeat: no-repeat;
-
-  background-blend-mode:
-  background-blend-mode: overlay;*/
+  /* background-position:
+  bottom 10%
+  right 5%; */
+  /* background-blend-mode: hard-light; */
+  /* opacity: 0.79; */
 }
 
+.目次{
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  padding-top: 5rem;
+  padding-left: 10rem;
+  padding-right: 5rem;
+  padding-bottom: 2rem;
+  /* border: 1px solid black; */
+}
+
+
+.小さい目次{
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  bottom: 15px; right: 50px;
+  background:
+    url("../pics/brown-paper-pen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 5rem;
+  padding-bottom: 2rem;
+  /* border: 1px solid black; */
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+  color:brown;
+}
+
+.small-text{
+  font-size: 0.7rem;
+}
+
+/*
 .視点{
   perspective: 2000px;
   perspective-origin: 50% 50%;
 }
 
 .変形{
-  width: var(--変形幅);
-  margin-left: calc(0.5*(100vw - var(--変形幅)));
-  margin-top: 5vh;
-
-    background-image:
-      url("../pics/old-paper2.jpg"),
-      url("../pics/paper.jpg");
-    background-size: 20%,
-    cover;
-    background-position:
-    bottom 0 right 0;
-    background-repeat: no-repeat;
-
-    /* background-blend-mode:  */
-    background-blend-mode: overlay;
-
-    box-shadow:
-    3px
-    3px
-    3px
-    brown;
-    color: white;
-
-    padding-top: 8rem;
-    padding-left: 3rem;
-
   transform-style: preserve-3d;
   transform-origin:
     50% 50%  -100px;
@@ -104,337 +83,7 @@ body {
   perspective(800px)
   rotateY(3deg)
   rotateX(15deg);
-
-}
-
-.目次 {
-  width: 200px;
-  height: 50px;
-
-  position: absolute;
-  top:5%;
-  left: calc(0.5*((var(--変形幅) - 200px)));
-  border-radius: 5px;
-  box-shadow:
-  3px
-  3px
-  3px
-  brown;
-
-  color: white;
-  font-size: 1.8rem;
-  text-shadow:
-  3px
-  3px
-  3px
-  brown;
-
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.目次１{
-  /* width:calc(0.22*100vw); */
-  /* height: calc(0.7*100vh); */
-
-  /* top:30%; */
-  left:20%;
-
-  background-image: url("../pics/old-paper-r.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-
-  /* filter: drop-shadow(5px 5px 8px brown); */
-
-  transform: translateZ(100px);
-  }
-
-  .目次１:hover{
-    opacity: 0.2;
-  }
-
-.目次２{
-  /* width:calc(0.25*100vw); */
-  /* height: calc(0.7*100vh); */
-
-  /* top:30%; */
-  left:40%;
-
-  background-image: url("../pics/old-paper-r.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-
-  filter:
-  drop-shadow(5px 5px 8px brown)
-  hue-rotate(20deg);
-
-  transform: translateZ(50px);
-}
-
-.目次２:hover{
-  /* top: 15px; */
-  opacity: 1;
-  transform:
-    translateZ(105px);
-}
-
-.目次３{
-  /* width:calc(0.25*100vw); */
-  /* height: calc(0.7*100vh); */
-
-  /* top:30%; */
-  left:60%;
-
-  background-image: url("../pics/old-paper-r.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-
-  transform:
-    translateZ(10px);
-}
-
-.目次３:hover{
-  /* top: 20px; */
-  opacity: 1;
-  transform:
-    translateX(-100px)
-    translateZ(80px);
-}
-
-
-
-
-
-
-
-
-
-
-mokuji3{
-  width: 200px;
-  height:200px;
-  position: absolute;
-  top:50px;
-  left:50px;
-  border:1px solid black;
-  background-color: blue;
-  border-radius: 5px;
-  /* background-color: #EADCC2; */
-  background-image: url("../pics/old-paper-r.png");
-  background-size: 100% 100%;
-  /* background-position: -5px -5px; */
-  background-repeat: no-repeat;
-
-/* filter */
-  filter: drop-shadow(5px 5px 8px brown);
-
-  opacity: 0.8;
-  z-index: 2;
-
-  color: black;
-  padding-top: 9rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 8rem;
-
-  transform:    rotatey(45deg);
-}
-
-pers{
-  width:100vw;
-  height: 100vh;
-
-  position: absolute;
-  top: 0px;
-  left: 0px;
-/* background-color: yellow; */
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
-}
-
-henkei{
-  width: 100vw;
-  height: 100vh;
-
-  background-color: green;
-
-  /* これがないと変形しない？？ */
-  position: absolute;
-  top: 0%;
-  left: 0%;
-
-
-  /* perspective: 1000px;
-  perspective-origin: 50% 50%; */
-
-  transform-style: preserve-3d;
-  transform-origin: 50% 50% -100px;
-  /* transform:
-  perspective(10000px)
-  rotateX(45deg); */
-
-  opacity: 1.0;
-}
-
-gold-title{
-  width:450px;
-  height: 80px;
-  border-radius: 10px;
-  position: absolute;
-  top:10px;
-  left:calc(50% - 225px);
-
-  /* box-shadow:  */
-  box-shadow:
-    inset 2px 2px 2px white,
-    2px 2px 10px brown;
-
-  font-size: 3rem;
-  font-weight: bold;
-  font-style: italic;
-
-  text-align: center;
-  line-height: 80px; /*縦方向の中心に */
-
-/* background-clip:  */
-  background-image: url("../pics/gold.jpg");
-  color: transparent; /*必要*/
-  background-clip: text;
-  -webkit-background-clip: text;
-
-/* transform:  */
-  transform:
-      rotateY(-15deg) rotatex(-45deg) scalex(0.7) scaleY(1.1);
-
-  z-index: 10;
-}
-
-/* after 使ってない！！ */
-gold-title::after{
-  content:"";
-}
-
-gold-title-shadow{
-  width:450px;
-  height: 80px;
-  border-radius: 10px;
-  position: absolute;
-  top:10px;
-  left:calc(50% - 225px);
-
-  font-size: 3rem;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  line-height: 80px;
-
-  /* 必要なのはここだけ */
-  text-shadow:
-   1px 1px 2px black,
-   4px 4px 8px brown;
-
-  color: transparent;
-  transform:
-      rotatey(-15deg) rotatex(-45deg) scalex(0.7) scaleY(1.1);
-  z-index: 9;
-}
-
-mokuji-1{
-  width: 300px;
-  height:400px;
-  position: absolute;
-  top:90px;
-  left:10%;
-  border-radius: 5px;
-  /* background-color: #EADCC2; */
-  background-image: url("../pics/old-paper-r.png");
-  background-size: 102% 102%;
-  background-position: -5px -5px;
-  background-repeat: no-repeat;
-
-/* filter */
-  filter: drop-shadow(5px 5px 8px brown);
-
-  opacity: 0.8;
-  z-index: 2;
-
-  color: black;
-  padding-top: 9rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 8rem;
-
-  /* transform:
-    rotatey(45deg); */
-}
-
-mokuji-2{
-  width: 300px;
-  height:400px;
-  border-radius: 10px;
-  position: absolute;
-  top:100px;
-  left:calc(10% + 150px);
-  /* background-color: #EADCC2; */
-  background-image: url("../pics/old-paper-r.png");
-  background-size: 102% 102%;
-  background-position: -5px -5px;
-  background-repeat: no-repeat;
-
-  /* filter:  */
-  filter: hue-rotate(20deg) drop-shadow(1px 1px 10px brown);
-
-  opacity: 0.6;
-  z-index: 1;
-
-  color: black;
-  padding-top: 9rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 8rem;
-
-
-/* hover setting. */
-  /* cursor: pointer; */
-  transition-duration: 1s;
-}
-
-/*hover window.*/
-mokuji-2:hover{
-  position: absolute;
-  top:
-  0px;
-  opacity: 0.8;
-  z-index: 3;
-}
-
-
-/* animation */
-.picture {
-  width: 100%;
-  height: 100%;
-  background: url("https://dl.dropbox.com/s/pzaxobsyspbfrjw/wa.png?dl=0");
-  background-attachment: fixed;
-  background-size: cover;
-  /* clip-path: circle(40%); */
-  animation: clipmove 12s ease-in-out infinite;
-}
-
-/* animation */
-@keyframes clipmove {
-  0%,
-  100% {
-    clip-path: circle(10% at 0 0);
-  }
-
-  50% {
-    clip-path: circle(10% at 100% 100%);
-  }
-}
-
-
+} */
 
 /* ???.container??? */
 /* hover */

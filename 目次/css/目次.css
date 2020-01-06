@@ -1,6 +1,3 @@
-:root{
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -17,36 +14,30 @@ body {
     /* url("../pics/brown-paper-pen.png"), */
     url("../pics/back.png");
   background-size:
-  /* 55%, */
   cover;
   background-repeat: no-repeat;
-  /* background-position:
-  bottom 10%
-  right 5%; */
   /* background-blend-mode: hard-light; */
-  /* opacity: 0.79; */
 }
 
 .目次{
   width: 40%;
   height: 80%;
   position: absolute;
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-left: 10rem;
   padding-right: 5rem;
   padding-bottom: 2rem;
   /* border: 1px solid black; */
 }
 
-
 .小さい目次{
-  width: 400px;
-  height: 500px;
+  width: 40%;
+  height: 60%;
   position: absolute;
   bottom: 15px; right: 50px;
   background:
     url("../pics/brown-paper-pen.png");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
   padding-top: 1rem;
   padding-left: 3rem;
@@ -68,31 +59,3 @@ a:hover{
 .small-text{
   font-size: 0.7rem;
 }
-
-/*
-.視点{
-  perspective: 2000px;
-  perspective-origin: 50% 50%;
-}
-
-.変形{
-  transform-style: preserve-3d;
-  transform-origin:
-    50% 50%  -100px;
-  transform:
-  perspective(800px)
-  rotateY(3deg)
-  rotateX(15deg);
-} */
-
-/* ???.container??? */
-/* hover */
-/* animation */
-/* ???before,after??? */
-/* box-shadow */
-/* text-shadow */
-/* background-blend-mode */
-/* -webkit-background-clip: text; */
-/* background: linear-gradient(to right, #200122, #6f0000); */
-/* transform */
-/* filter */

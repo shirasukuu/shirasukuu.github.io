@@ -3,6 +3,7 @@ body {
   padding: 0;
   /* overflow:hidden; */
   background-color: black;
+  /* font-size: 0.9rem; */
 }
 
 .壁紙{
@@ -14,7 +15,7 @@ body {
     /* url("../pics/brown-paper-pen.png"), */
     url("../pics/back.png");
   background-size:
-  cover;
+  100% 100%;
   background-repeat: no-repeat;
   /* background-blend-mode: hard-light; */
 }

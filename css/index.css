@@ -171,9 +171,7 @@ front{
   /* border-left: 0.5px solid var(--deep-blue); */
   border-bottom: 0.5px solid var(--deep-blue);
 
-  /* font-size: 1.3rem;
-  text-shadow:
-    1px 1px 1px blue; */
+  font-size: 1rem;
 
   background:
     var(--front-gradient);

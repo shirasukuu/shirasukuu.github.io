@@ -102,6 +102,7 @@ logo,
     width: 200px;
     height: 50px;
     font-size: 0.8rem;
+    z-index: 10;
 }
 
 logo span,
@@ -109,6 +110,7 @@ logo span,
     top: 25px;
     left: 50px;
     width: 5rem;
+    z-index: 10;
 }
 
 story-title,
@@ -118,6 +120,7 @@ story-title,
     /*position at center*/
     transform: translate(-50%, -50%);
     font-size: 1.1rem;
+    z-index: 10;
 }
 
 subtitle,
@@ -127,6 +130,7 @@ subtitle,
     transform: translate(-50%, -50%);
     font-size: 0.8rem;
     font-weight: bold;
+    z-index: 10;
 }
 
 /*contents*/
@@ -183,26 +187,29 @@ full-mid,
 previous-page,
 .previous-page {
     bottom: 1rem;
-    left: 10%;
+    left: 5%;
     width: 15rem;
     height: 1rem;
+    z-index: 10;
 }
 
 current-page,
 .current-page {
     bottom: 1rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 45%;
+    /* transform: translate(-50%, -50%); */
     width: 6rem;
     height: 1rem;
+    z-index: 10;
 }
 
 next-page,
 .next-page {
     bottom: 1rem;
-    right: 10%;
+    right: 5%;
     width: 6rem;
     height: 1rem;
+    z-index: 10;
 }
 
 ._alpha-mask,

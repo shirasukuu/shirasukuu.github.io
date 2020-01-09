@@ -1,7 +1,6 @@
-body {}
 .page {
   background-color: black;
-  color: white;
+  color: black;
 
     background-image:
         radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.7) 100%),
@@ -18,22 +17,23 @@ body {}
 
     font-size: 0.8rem;
 
-    border-radius: 2%;
+    border-radius: 2px;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
-a{
+/* a{
   color: white;
-}
+} */
 
 .ikutsu-dream{
+  /* border: 1px solid red; */
     position: absolute;
     top: 10%;
     left: 3rem;
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 20%;
 
     opacity: 0.6;
 
@@ -41,22 +41,9 @@ a{
     transition-duration: 0.5s;
 }
 
-.alpha-mask{
-  position: absolute;
-  top: 10%;
-  left:0%;
-  width: 100%;
-  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
-  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
-  mask-mode: alpha;
-  -webkit-mask-mode: alpha;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: 50% 50%;
-  -webkit-mask-position: 50% 50%;
-  mask-size: 100%;
-  -webkit-mask-size: 100%;
-}
+/* .ikutsu-dream::before{
+  content: "前に足す";
+} */
 
 .ikutsu-dream a {
     position: absolute;
@@ -91,14 +78,26 @@ a{
     transition-duration: 0.5s;
 }
 
+
+.satsuki-dream a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+
 .satsuki-dream:hover{
     position: absolute;
-    top: 40%;
+    top: 20%;
     right: 2%;
     width: 40%;
     height: 40%;
 
     opacity: 0.5;
+    /* z-index: 2; */
 }
 
 .hiromu-dream{
@@ -114,6 +113,16 @@ a{
     transition-duration: 0.5s;
 }
 
+.hiromu-dream a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+
 .hiromu-dream:hover{
     position: absolute;
     top: 50%;
@@ -124,4 +133,5 @@ a{
     border-radius: 40%;
 
     opacity: 0.5;
+    /* z-index: 2; */
 }

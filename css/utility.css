@@ -10,18 +10,17 @@ body {
     line-height: 1.3;
 }
 
-
-
 page,
 logo,
+logo1,
 story-title,
 subtitle,
-full,
-full-mid,
-left,
-left-mid,
-right,
-right-mid,
+full, full-mid,
+left, left-mid,
+right, right-mid,
+p-page, p-page a, p-page::before, p-page:hover,
+n-page, n-page a, n-page::before, n-page:hover,
+c-page,
 previous-page,
 current-page,
 next-page,
@@ -29,12 +28,9 @@ next-page,
 .logo,
 .story-title,
 .subtitle,
-.full,
-.full-mid,
-.left,
-.left-mid,
-.right,
-.right-mid,
+.full, .full-mid,
+.left, .left-mid,
+.right, .right-mid,
 .previous-page,
 .current-page,
 .next-page{
@@ -95,8 +91,70 @@ l5{
 }
 
 /*header*/
-logo,
-.logo {
+
+/* added logo template*/
+/* <logo1><a href="https://shirasukuu.github.io/index.html"></a></logo1> */
+
+logo1{
+  width: 150px; height: 50px;
+  position: absolute; top: 5px; left: 5px;
+  background-image:
+    url("https://shirasukuu.github.io/pics/logo.png");
+  background-size: 25% 80%;
+  background-repeat: no-repeat;
+}
+logo1::before{
+  position: absolute; top: 15px; left: 50px;
+  content: "三つの物語";
+}
+logo1 a {
+  position: absolute;
+  width: 100%; height: 100%;
+  text-indent:-999px;
+  z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+logo1:hover{
+  color: blue;
+}
+
+/* new logo template end */
+
+/* new header&footer */
+p-page{
+  width: 80px; height: 20px;
+  bottom: 1rem; left: 5%;
+}
+p-page::before{
+  top: 0px; left: 10px;
+  content: "前のページ";
+}
+n-page a, p-page a{
+  width: 100%; height: 100%;
+  text-indent: -999px
+}
+n-page:hover, p-page:hover{
+  color: blue;
+}
+
+n-page{
+  width: 80px; height: 20px;
+  bottom: 1rem; right: 5%;
+}
+n-page::before{
+  top: 0px; left: 10px;
+  content: "次のページ";
+}
+
+c-page {
+  bottom: 1rem; left: 45%;
+  width: 6rem; height: 1rem;
+  z-index: 10;
+}
+/* added */
+
+
+/* headers and footers */
+logo, .logo {
     top: 5px;
     left: 5px;
     width: 200px;
@@ -105,16 +163,14 @@ logo,
     z-index: 10;
 }
 
-logo span,
-.logo span {
+logo span, .logo span {
     top: 25px;
     left: 50px;
     width: 5rem;
     z-index: 10;
 }
 
-story-title,
-.story-title {
+story-title, .story-title {
     top: 2rem;
     left: 50%;
     /*position at center*/
@@ -123,8 +179,7 @@ story-title,
     z-index: 10;
 }
 
-subtitle,
-.subtitle {
+subtitle, .subtitle {
     top: 2rem;
     left: 75%;
     transform: translate(-50%, -50%);
@@ -134,58 +189,51 @@ subtitle,
 }
 
 /*contents*/
-left,
-.left{
+left, .left{
     top: 4rem;
     left: 2rem;
     width: calc(50% - 4rem);
     white-space: pre-wrap;
 }
 
-left-mid,
-.left-mid{
+left-mid, .left-mid{
     top: 50%;
     left: 2rem;
     width: calc(50% - 4rem);
     white-space: pre-wrap;
 }
 
-right,
-.right{
+right, .right{
     top: 4rem;
     left: calc(50% + 2rem);
     width: calc(50% - 4rem);
     white-space: pre-wrap;
 }
 
-right-mid,
-.right-mid{
+right-mid, .right-mid{
     top: 50%;
     left: calc(50% + 2rem);
     width: calc(50% - 4rem);
     white-space: pre-wrap;
 }
 
-full,
-.full{
+full, .full{
     top: 4rem;
     left: 2rem;
     width: calc(100% - 4rem);
     white-space: pre-wrap;
 }
 
-full-mid,
-.full-mid{
+full-mid, .full-mid{
     top: 50%;
     left: 2rem;
     width: calc(100% - 4rem);
     white-space: pre-wrap;
 }
+
 
 /*footer*/
-
-previous-page,
-.previous-page {
+previous-page, .previous-page {
     bottom: 1rem;
     left: 5%;
     width: 15rem;
@@ -193,8 +241,7 @@ previous-page,
     z-index: 10;
 }
 
-current-page,
-.current-page {
+current-page, .current-page {
     bottom: 1rem;
     left: 45%;
     /* transform: translate(-50%, -50%); */
@@ -203,8 +250,7 @@ current-page,
     z-index: 10;
 }
 
-next-page,
-.next-page {
+next-page, .next-page {
     bottom: 1rem;
     right: 5%;
     width: 6rem;
@@ -212,8 +258,7 @@ next-page,
     z-index: 10;
 }
 
-._alpha-mask,
-_alpha-mask{
+alpha-mask, .alpha-mask, ._alpha-mask, _alpha-mask{
       -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
     mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
     mask-mode: alpha;
@@ -226,9 +271,9 @@ _alpha-mask{
     -webkit-mask-size: 100%;
 }
 
-/* .city-mask{
-  -webkit-mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
-  mask-image:  radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 1.0) 30%, transparent 90%);
+.alpha-mask1{
+  -webkit-mask-image:  radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 1) 50%, transparent 70%);
+  mask-image:  radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 1) 50%, transparent 70%);
   mask-mode: alpha;
   -webkit-mask-mode: alpha;
   mask-repeat: no-repeat;
@@ -237,7 +282,7 @@ _alpha-mask{
   -webkit-mask-position: 50% 50%;
   mask-size: 100%;
   -webkit-mask-size: 100%;
-} */
+}
 
 /* ラインを書くユーティリティ　*/
 line,

@@ -14,7 +14,7 @@ page,
 logo,
 logo1,
 story-title,
-subtitle,
+sub-title, subtitle,
 full, full-mid,
 left, left-mid,
 right, right-mid,
@@ -121,28 +121,29 @@ logo1:hover{
 
 /* new header&footer */
 p-page{
-  width: 80px; height: 20px;
+  width: 50px; height: 20px;
   bottom: 1rem; left: 5%;
 }
 p-page::before{
   top: 0px; left: 10px;
-  content: "前のページ";
+  content: "戻る";
 }
 n-page a, p-page a{
   width: 100%; height: 100%;
-  text-indent: -999px
+  text-indent: -999px;
+  z-index: 2;
 }
 n-page:hover, p-page:hover{
   color: blue;
 }
 
 n-page{
-  width: 80px; height: 20px;
+  width: 50px; height: 20px;
   bottom: 1rem; right: 5%;
 }
 n-page::before{
   top: 0px; left: 10px;
-  content: "次のページ";
+  content: "進む";
 }
 
 c-page {
@@ -179,7 +180,7 @@ story-title, .story-title {
     z-index: 10;
 }
 
-subtitle, .subtitle {
+subtitle, .subtitle, sub-title, .sub-title {
     top: 2rem;
     left: 75%;
     transform: translate(-50%, -50%);

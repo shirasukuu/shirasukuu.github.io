@@ -1,0 +1,85 @@
+:root{
+  --w-w: var(--window-width);
+  --w-h: var(--window-height);
+  --w-d: var(--window-depth);
+  --window-width: 100%;
+  --window-height: 100%;
+  --window-depth: 5000px;
+}
+
+html{
+/*理由は分からないけどbodyでgradientを使うときには必要。*/
+  min-height: 100%;
+}
+
+body{
+  background-color: black;
+  color: black;
+  overflow: hidden;
+}
+
+*{border: 0px solid black;}
+
+room{
+  position: absolute;
+  top: calc(50% - calc(0.5 * var(--w-h))); left: calc(50% - calc(0.5 * var(--w-w)));
+  width: var(--w-w); height: var(--w-h);
+
+  perspective: 5000px;
+  perspective-origin: 200% 200%;
+
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% -0px;
+  transform:
+    perspective(1000px)
+    translate3d(0px, 0px, 0px);
+    z-index: 1;
+}
+
+front, back, top, bottom, left, right{
+  position: absolute; top: 0; left: 0;
+  width: var(--w-w); height: var(--w-h);
+  /* z-index: 10; */
+}
+
+front{
+
+}
+
+back{
+  background-color: red;
+  transform: translate3d(0px, 0px, calc(-1 * var(--w-d)));
+}
+
+top{
+
+}
+
+bottom{
+
+}
+
+left{
+  width: var(--w-d);
+  height: calc(1.0 * var(--w-h));
+
+  background-color: yellowgreen;
+
+  transform-origin: 0% 0% 0px;
+  transform:
+    rotatey(90deg)
+    translateX(0px);
+}
+
+right{
+  width: var(--w-d);
+  height: var(--w-h);
+  left: var(--w-w);
+
+  background-color: yellowgreen;
+
+  transform-origin: 0% 0% 0px;
+  transform:
+    rotatey(90deg)
+    translateX(0px);
+}

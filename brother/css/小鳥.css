@@ -71,7 +71,7 @@ floor{
   left: 0%;
   /* background-color: lightgreen; */
   background:
-      linear-gradient(to bottom, rgba(153, 0, 51, 0.8) 50%, rgba(153, 0, 51, 0.9) 80%), 
+      linear-gradient(to bottom, rgba(153, 0, 51, 0.8) 50%, rgba(153, 0, 51, 0.9) 80%),
       url(../../brother/pics/back-bottom.jpg);
 
     background-size: 100% 120%;
@@ -81,6 +81,15 @@ floor{
   transform:
     rotateX(90deg)
     translate3d(0px, 300px, 0px);
+}
+
+car{
+  width: 600px; height: 400px;
+  position: absolute; bottom: 30px; left: 200px;
+  background:
+    url(../../brother/pics/車.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 

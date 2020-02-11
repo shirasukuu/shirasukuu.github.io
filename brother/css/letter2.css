@@ -1,13 +1,13 @@
 body {}
 .page {
     background-image:
-        url("../pics/illust199s.png"),
+        url("../pics/dog1.png"),
         url("../pics/hashibirous.png"),
         url("../pics/hashibirousr.png"),
         url("../pics/hashibirous.png"),
         url("../pics/kodai.png"),
         radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.8) 100%),
-        url("../../brother/pics/brother1.png");
+        url("../../brother/pics/bg.png");
     background-position:
         top 85% left 40%,
         top 65% left 15%,
@@ -19,7 +19,7 @@ body {}
 
     background-size:
         /*added*/
-        100px auto,
+        200px auto,
         40px auto,
         50px auto,
         40px auto,

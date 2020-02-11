@@ -6,7 +6,6 @@ body{
         linear-gradient(to right bottom, rgba(255, 255, 255, 0.3) 50%, rgba(165, 42, 42, 0.5) 80%),
         url(../../brother/pics/wood-deck-small-b.jpg);
 } */
-
 room{
   width: 80%; height: 80vh;
   position: absolute;

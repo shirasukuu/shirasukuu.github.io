@@ -12,7 +12,7 @@ body {
   position: absolute; top: 0; left: 0;
   /* background-color: brown; */
   background-image:
-    /* url("../pics/brown-paper-pen.png"), */
+    linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0)),
     url("../pics/back.png");
   background-size:
   100% 100%;
